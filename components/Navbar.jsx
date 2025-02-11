@@ -17,25 +17,25 @@ const components = [
     {
         icon: BriefcaseBusiness,
         title: "Maletas",
-        href: "/productos/maletas",
+        href: "/coleccion/maletas",
         description: "Diseñadas para ofrecer durabilidad y estilo, ideales para viajes largos o cortos."
     },
     {
         icon: Briefcase,
-        title: "Bolsos",
-        href: "/productos/bolsos",
-        description: "Variedad de bolsos modernos y funcionales para el día a día o para viajes."
+        title: "Riñoneras",
+        href: "/coleccion/rinoneras",
+        description: "Variedad de niñoneras y funcionales para el día a día o para viajes."
     },
     {
         icon: Backpack,
         title: "Mochilas",
-        href: "/productos/mochilas",
+        href: "/coleccion/mochilas",
         description: "Mochilas ergonómicas y resistentes, perfectas para estudiantes y viajeros."
     },
-    {   
+    {
         icon: BriefcaseMedical,
         title: "Neceser",
-        href: "/productos/neceser",
+        href: "/coleccion/neceser",
         description: "Accesorios ideales para organizar artículos de higiene y cuidado personal."
     }
 ];
@@ -43,12 +43,14 @@ const components = [
 
 export default function Navbar() {
     return (
-        <header className="bg-azul text-white p-4 flex justify-around items-center ">
-            <Image
-                src={"/logo.png"}
-                width={80}
-                height={80}
-                alt='Logo de kert' />
+        <header className="m-0 bg-azul text-white p-4 flex justify-around items-center fixed z-50 w-full top-0 left-0">
+            <Link href="/" passHref>
+                <Image
+                    src={"/logo.png"}
+                    width={80}
+                    height={80}
+                    alt='Logo de kert' />
+            </Link>
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem>
@@ -60,7 +62,9 @@ export default function Navbar() {
 
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>Coleccion</NavigationMenuTrigger>
+                        <Link href="/coleccion" legacyBehavior passHref>
+                            <NavigationMenuTrigger>Coleccion</NavigationMenuTrigger>
+                        </Link>
                         <NavigationMenuContent>
                             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-azul border-0">
                                 {components.map((component) => (
@@ -72,7 +76,7 @@ export default function Navbar() {
                                     >
                                         {component.description}
                                     </ListItem>
-                                ))} 
+                                ))}
                             </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
@@ -85,7 +89,7 @@ export default function Navbar() {
                     </NavigationMenuItem> <NavigationMenuItem>
                         <Link href="/contacto" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                              Contacto
+                                Contacto
                             </NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>

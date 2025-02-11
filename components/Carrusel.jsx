@@ -8,6 +8,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils"; // Si usas esta función para concatenar clases
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 
 const items = [
   {
@@ -33,9 +35,20 @@ const items = [
   },
 ];
 
+
 export default function Carrusel() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  )
+
   return (
-    <Carousel className="w-full h-[600px] relative">
+    <Carousel 
+    plugins={[plugin.current]}
+    className="w-full h-[1000px] relative"
+    onMouseEnter={plugin.current.stop}
+    onMouseLeave={plugin.current.play}
+    >
+      {/* Aquí se asigna emblaRef al contenedor de los slides */}
       <CarouselContent className="h-full">
         {items.map((item, index) => (
           <CarouselItem key={index} className="h-full flex items-center justify-center">
@@ -49,7 +62,7 @@ export default function Carrusel() {
 
               {/* Contenido con fondo semitransparente */}
               <CardContent
-                className="relative z-10 w-2/3 h-full flex flex-col items-start justify-center px-20 bg-gradient-to-r from-azul/95 from-60% to-transparent"
+                className="relative z-10 w-2/3 h-full flex flex-col items-start justify-center px-20 bg-gradient-to-r from-azul from-60% to-transparent"
               >
                 <h3 className="text-4xl font-bold text-white">{item.title}</h3>
                 <p className="text-md text-white/60 mt-2">{item.description}</p>
@@ -69,3 +82,4 @@ export default function Carrusel() {
     </Carousel>
   );
 }
+

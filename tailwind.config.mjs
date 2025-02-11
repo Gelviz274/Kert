@@ -8,6 +8,12 @@ export default {
   ],
   theme: {
   	extend: {
+		animation: {
+			float: 'float 6s ease-in-out infinite',
+			fadeIn: 'fadeIn 0.8s ease-out forwards',
+			'pulse-slow': 'pulse 3s ease-in-out infinite',
+			'slide-in': 'slideIn 0.6s ease-out forwards',
+		  },
   		colors: {
 			azul: '#0C0844',
 			amarillo: '#FFCF00',

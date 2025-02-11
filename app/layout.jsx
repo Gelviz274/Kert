@@ -7,7 +7,7 @@ import WhatsappButton from "@/components/WhatsappButton";
 const RobotoFont = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"], 
+  weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export const metadata = {
@@ -21,15 +21,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${RobotoFont.variable} antialiased`}>
+      <body className={`${RobotoFont.variable} antialiased mt-[68px]`}>
         <Navbar />
-        {children}
+        
+          {children}
+        
         <Footer />
         <div>
           <WhatsappButton
-              message="¡Hola! Quisiera más información."
-              phoneNumber="12345789"
-            /></div>
+            message="¡Hola! Quisiera más información."
+            phoneNumber="12345789"
+          /></div>
       </body>
     </html>
   );
