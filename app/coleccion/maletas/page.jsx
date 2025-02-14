@@ -263,7 +263,7 @@ function App() {
             {/* CTA */}
             <div className="bg-[#FFCF00] p-4 rounded-lg shadow-md text-center">
               <p className="text-lg font-semibold text-[#0C0844] mb-3">¿Quieres hacer un pedido?</p>
-              <button className="bg-[#0C0844] text-white px-6 py-2 rounded-full">
+              <button className="bg-[#0C0844] text-white hover:bg-azul/95 px-6 py-2 rounded-full">
                 Solicitar Cotización
               </button>
             </div>

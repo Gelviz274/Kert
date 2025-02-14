@@ -102,12 +102,10 @@ export default function Home() {
           <div className="flex w-full items-center justify-center mt-10">
             <Link href="/coleccion">
               <motion.button
-                className="bg-[#FFCF00] text-[#0C0844] px-4 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-2 hover:bg-white transition-colors duration-300"
+                className="bg-[#FFCF00] text-[#0C0844] px-4 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-2 hover:bg-amarillo/90 transition-colors duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                whileHover={{ scale: 1.05 }}
-                whileFocus={{ scale: 1.05 }}
               >
                 Ver Colección<ArrowRight className="w-5 h-5" />
               </motion.button>

@@ -87,7 +87,7 @@ const fadeInUp = {
 
 export default function ColeccionPage() {
   return (
-    <main className="min-h-screen bg-[#0C0844] text-white">
+    <main className="min-h-screen bg-azul text-white">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -117,12 +117,11 @@ export default function ColeccionPage() {
             Calidad y diseño exclusivo para tu negocio
           </motion.p>
           <motion.button
-            className="bg-[#FFCF00] text-[#0C0844] px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 mx-auto hover:bg-white transition-colors duration-300"
+            className="bg-[#FFCF00] text-azul px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 mx-auto hover:bg-amarillo/80 transition-colors duration-300"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            
           >
             Solicitar catálogo  <ArrowRight className="w-5 h-5" />
           </motion.button>
@@ -181,7 +180,7 @@ export default function ColeccionPage() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0C0844] via-transparent to-transparent opacity-70" />
+                <div className="absolute inset-0 bg-gradient-to-t from-azul via-transparent to-transparent opacity-70" />
                 <div className="absolute bottom-0 left-0 p-8">
                   <h3 className="text-2xl font-bold mb-2">{category.title}</h3>
                   <p className="text-[#FFCF00] mb-4">{category.subtitle}</p>
@@ -249,12 +248,10 @@ export default function ColeccionPage() {
             Impulsa tu negocio con productos de calidad al mejor precio
           </motion.h2>
           <motion.button
-            className="bg-[#FFCF00] text-[#0C0844] px-12 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-2 hover:bg-white transition-colors duration-300"
+            className="bg-[#FFCF00] text-azul px-12 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-2 hover:bg-amarillo/80 transition-colors duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
             Contactar representante <ArrowRight className="w-5 h-5" />
           </motion.button>
