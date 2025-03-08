@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ShoppingBag, Package, Truck, Users } from "lucide-react";
+import { ArrowRight, Package, Truck, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
 
 const categories = [
   {
@@ -253,7 +254,7 @@ export default function ColeccionPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Contactar representante <ArrowRight className="w-5 h-5" />
+            Contactar <ArrowRight className="w-5 h-5" />
           </motion.button>
         </div>
       </section>

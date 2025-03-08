@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { Backpack, Ruler, Info, DollarSign } from 'lucide-react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const bags = [
@@ -33,109 +32,11 @@ const bags = [
       "/Productos/bolso-dhl-cerca.jpg",
       "/Productos/bolso-dhl-atras.jpg",
     ]
-  },
-  {
-    id: 2,
-    name: "Maleta Cemex",
-    category: "Maletas",
-    icon: <Backpack className="w-6 h-6" />,
-    dimensions: {
-      height: 45,
-      width: 30,
-      depth: 18
-    },
-    material: "Lona impermeable",
-    specifications: [
-      "Cuatro compartimientos con cierres reforzados",
-      "Bolsillo secreto antirrobo en la parte trasera",
-      "Espacio acolchonado para portátil de hasta 16\"",
-      "Reatas ajustables y acolchadas con ventilación",
-      "Diseño ergonómico con refuerzos laterales"
-    ],
-    price: 40000,
-    minOrder: 250,
-    maxOrder: 700,
-    images: [
-      "/Productos/maleta-cemex.jpg",
-      "/Productos/maleta-cemex-derecha.webp",
-      "/Productos/maleta-cemex-atras.webp",
-      "/Productos/maleta-cemex-izquierda.webp"
-    ]
-  },
-  {
-    id: 3,
-    name: "Maleta Isabel",
-    category: "Maletas",
-    icon: <Backpack className="w-6 h-6" />,
-    dimensions: {
-      height: 43,
-      width: 31,
-      depth: 18
-    },
-    material: "Lona Morral Importada",
-    specifications: [
-      "Seis compartimientos",
-      "Bolsillo para portátil y organizador",
-      "Dos bolsillos laterales en malla sándwich",
-      "Dos bolsillos principales",
-      "Bolsillo frontal",
-      "Cargadera con malla sándwich y Yumbolon #5",
-      "Reata de pulgada",
-      "Cremallera #10",
-      "Cierre #10",
-      "Bolso forrado totalmente con tifón",
-      "Morralera #6",
-      "Manija con Yumbolon y malla sándwich",
-    ],
-
-    price: 50000,
-    minOrder: 200,
-    maxOrder: 600,
-    images: [
-      "/Productos/Bolso-azul-rojo.jpg",
-      "/Productos/bolso-azul-rojo-izquierda.webp",
-      "/Productos/bolso-azul-rojo-atras.webp",
-      "/Productos/bolso-azul-rojo-arriba.webp"
-    ]
-  },
-  {
-    id: 4,
-    name: "Maleta Save the Children ",
-    category: "Maletas",
-    icon: <Backpack className="w-6 h-6" />,
-    dimensions: {
-      height: 42,
-      width: 33,
-      depth: 14
-    },
-    material: "Lona morral nacional ",
-    specifications: [
-      "Seis compartimientos",
-      "Bolsillo para portátil",
-      "Dos bolsillos laterales en malla sándwich y elástico",
-      "Bolsillo principal",
-      "Bolsillo frontal",
-      "Bolsillo interno",
-      "Cargadera y espalda con malla sándwich y Yumbolon #5",
-      "Reata de pulgada",
-      "Cremallera #10",
-      "Cierre #10",
-      "Bolso forrado totalmente con tafeta",
-    ],
-
-    price: 60000,
-    minOrder: 150,
-    maxOrder: 500,
-    images: [
-      "/Productos/bolso-save.jpg",
-      "/Productos/bolso-save-atras.webp",
-      "/Productos/bolso-save-derecha.webp"
-    ]
   }
 ];
 
 function App() {
-  const [selectedBag, setSelectedBag] = useState(bags[0]);
+  const [selectedBag] = useState(bags[0]);
   const [selectedImage, setSelectedImage] = useState(0);
 
   return (
@@ -145,31 +46,6 @@ function App() {
       <div className="bg-white shadow-md">
         <div className="container mx-auto px-4">
           
-            <motion.h2
-              animate={{ scale: 1.2 }}
-              transition={{ duration: 0.5 }}
-              className="text-blue text-4xl font-bold text-center py-8">
-              Colección de Maletas
-            </motion.h2>
-          
-          <div className="flex overflow-x-auto py-4 gap-4">
-            {bags.map((bag) => (
-              <button
-                key={bag.id}
-                onClick={() => {
-                  setSelectedBag(bag);
-                  setSelectedImage(0);
-                }}
-                className={`flex items-center px-4 py-2 rounded-lg whitespace-nowrap transition-colors ${selectedBag.id === bag.id
-                    ? 'bg-[#0C0844] text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-              >
-                {bag.icon}
-                <span className="ml-2">{bag.name}</span>
-              </button>
-            ))}
-          </div>
         </div>
       </div>
 
@@ -182,8 +58,8 @@ function App() {
               <Image
                 src={selectedBag.images[selectedImage]}
                 alt={selectedBag.name}
-                width={1800}
-                height={1800}
+                width={1400}
+                height={1400}
                 className="w-full h-full object-cover"
               />
             </div>
