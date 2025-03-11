@@ -1,71 +1,171 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Phone } from "lucide-react";
+import { 
+    Mail, 
+    Phone, 
+    MapPin, 
+    Instagram, 
+    Facebook, 
+    Twitter, 
+    Linkedin, 
+    ArrowRight, 
+    ChevronUp,
+    MessageCircle
+} from "lucide-react";
 
 export default function Footer() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
+    const currentYear = new Date().getFullYear();
+
     return (
-        <footer className="bg-[#0C0844] flex flex-col items-center justify-center text-white h-auto py-8 px-4">
-            <div className="container flex flex-col md:flex-row justify-evenly items-center md:items-start text-center md:text-left">
+        <footer className="bg-gradient-to-b from-azul to-[#050422] text-white">
+            {/* Botón de scroll to top */}
+            <button 
+                onClick={scrollToTop}
+                className="bg-amarillo hover:bg-white text-azul w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform hover:scale-105 transition-all duration-300 mx-auto -translate-y-6"
+                aria-label="Volver arriba"
+            >
+                <ChevronUp className="w-6 h-6" />
+            </button>
 
-                {/* Logo y Eslogan */}
-                <div className="flex flex-col items-center md:items-start">
-                    <Image src="/logo.png" alt="Kert" width={200} height={50} />
-                    <p className="text-sm mt-2">
-                        La calidad que tu negocio <strong className="text-[#FFCF00] font-semibold">necesita</strong>
-                    </p>
-                </div>
+            <div className="container mx-auto px-4 pt-12 pb-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    {/* Columna 1: Logo y descripción */}
+                    <div className="flex flex-col space-y-4">
+                        <div className="flex items-center space-x-2">
+                            <Image 
+                                src="/logo.png" 
+                                alt="Kert" 
+                                width={150} 
+                                height={40} 
+                                className="object-contain" 
+                            />
+                        </div>
+                        <p className="text-gray-300 text-sm leading-relaxed">
+                            Ofrecemos productos de alta calidad para tu negocio, con diseños personalizados y materiales duraderos que garantizan la 
+                            <span className="text-amarillo font-semibold"> satisfacción de tus clientes</span>.
+                        </p>
+                        
+                        {/* Redes sociales */}
+                        <div className="flex space-x-4 pt-4">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-amarillo hover:text-azul p-2 rounded-full transition-all duration-300">
+                                <Instagram size={18} />
+                            </a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-amarillo hover:text-azul p-2 rounded-full transition-all duration-300">
+                                <Facebook size={18} />
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-amarillo hover:text-azul p-2 rounded-full transition-all duration-300">
+                                <Twitter size={18} />
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-amarillo hover:text-azul p-2 rounded-full transition-all duration-300">
+                                <Linkedin size={18} />
+                            </a>
+                        </div>
+                    </div>
 
-                {/* Menú */}
-                <nav className="space-y-1">
-                    <h3 className="text-white font-bold text-xl">Menú</h3>
-                    <ul className="text-sm space-y-1">
-                        {[
-                            { href: "/", label: "Inicio" },
-                            { href: "/coleccion", label: "Colección" },
-                            { href: "/nuestra-historia", label: "Nuestra Historia" },
-                            { href: "/contacto", label: "Contacto" },
-                        ].map((link, index) => (
-                            <li key={index}>
-                                <Link href={link.href} className="hover:underline">
+                    {/* Columna 2: Enlaces rápidos */}
+                    <div className="flex flex-col space-y-4">
+                        <h3 className="text-lg font-bold border-b border-amarillo pb-2 mb-2 inline-block">Enlaces Rápidos</h3>
+                        <nav className="grid grid-cols-1 gap-2">
+                            {[
+                                { href: "/", label: "Inicio" },
+                                { href: "/coleccion", label: "Colección" },
+                                { href: "/coleccion/rinoneras", label: "Riñoneras" },
+                                { href: "/coleccion/maletas", label: "Maletas" },
+                                { href: "/nuestra-historia", label: "Nuestra Historia" },
+                                { href: "/contacto", label: "Contacto" },
+                            ].map((link, index) => (
+                                <Link 
+                                    key={index} 
+                                    href={link.href} 
+                                    className="text-gray-300 hover:text-amarillo transition-colors duration-300 flex items-center group"
+                                >
+                                    <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-1 transition-all duration-300" />
                                     {link.label}
                                 </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
-
-                {/* Contactos */}
-                <div className="space-y-2 flex flex-col items-start justify-center gap-2">
-                    <h3 className="text-white font-bold text-xl">Contactos</h3>
-                    <div className="text-sm flex items-center justify-center gap-4">
-                        <Mail size={30} color="#FFCF00" />
-                        <div className="flex flex-col items-start justify-start md:justify-start gap-2">
-                            <p className="font-semibold">Correo Electrónico</p>
-                            <a href="mailto:contacto@creacionkert.com" className="hover:underline">
-                                contacto@creacionkert.com
-                            </a>
-                        </div>
+                            ))}
+                        </nav>
                     </div>
-                    <div className="text-sm flex items-center justify-center gap-4">
-                        <Phone size={30} color="#FFCF00" />
-                        <div className="flex flex-col  items-start justify-start md:justify-start gap-2">
-                            <p className="font-semibold">Teléfonos</p>
-                            <a href="tel:+573213062852" className="hover:underline">
-                                <span>+57 321 3062 852</span>
-                            </a>
-                            <a href="tel:+573223006013" className="hover:underline">
-                                <span>+57 322 3006 013</span>
-                            </a>
+
+                    {/* Columna 3: Contacto */}
+                    <div className="flex flex-col space-y-4">
+                        <h3 className="text-lg font-bold border-b border-amarillo pb-2 mb-2 inline-block">Contacto</h3>
+                        
+                        <div className="space-y-4">
+                            <div className="flex items-start space-x-3">
+                                <div className="bg-white/10 p-2 rounded-full mt-1">
+                                    <Mail size={16} className="text-amarillo" />
+                                </div>
+                                <div>
+                                    <p className="font-medium text-sm">Correo Electrónico</p>
+                                    <a href="mailto:contacto@creacionkert.com" className="text-gray-300 hover:text-amarillo transition-colors duration-300 text-sm">
+                                        contacto@creacionkert.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div className="flex items-start space-x-3">
+                                <div className="bg-white/10 p-2 rounded-full mt-1">
+                                    <Phone size={16} className="text-amarillo" />
+                                </div>
+                                <div>
+                                    <p className="font-medium text-sm">Teléfonos</p>
+                                    <a href="tel:+573213062852" className="text-gray-300 hover:text-amarillo transition-colors duration-300 block text-sm">
+                                        +57 321 306 2852
+                                    </a>
+                                    <a href="tel:+573223006013" className="text-gray-300 hover:text-amarillo transition-colors duration-300 block text-sm">
+                                        +57 322 300 6013
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div className="flex items-start space-x-3">
+                                <div className="bg-white/10 p-2 rounded-full mt-1">
+                                    <MessageCircle size={16} className="text-amarillo" />
+                                </div>
+                                <div>
+                                    <p className="font-medium text-sm">WhatsApp</p>
+                                    <a 
+                                        href="https://wa.me/573213062852" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="text-gray-300 hover:text-amarillo transition-colors duration-300 block text-sm"
+                                    >
+                                        Contáctanos por WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                        
                         </div>
                     </div>
                 </div>
-            </div>
-
-            {/* Línea inferior */}
-            <div className="mt-6 text-center text-xs opacity-80">
-                Todos los derechos reservados Kert S.A.S © 2024
+                
+                {/* Separador */}
+                <div className="border-t border-white/10 my-6"></div>
+                
+                {/* Copyright y políticas */}
+                <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                    <div className="mb-4 md:mb-0">
+                        &copy; {currentYear} Kert S.A.S. Todos los derechos reservados.
+                    </div>
+                    <div className="flex space-x-6">
+                        <Link href="/politicas-de-privacidad" className="hover:text-amarillo transition-colors duration-300">
+                            Política de Privacidad
+                        </Link>
+                        <Link href="/terminos-y-condiciones" className="hover:text-amarillo transition-colors duration-300">
+                            Términos y Condiciones
+                        </Link>
+                    </div>
+                </div>
             </div>
         </footer>
     );
 }
-

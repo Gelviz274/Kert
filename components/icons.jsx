@@ -7,7 +7,7 @@ export const Whatsapp = ({
     ...props
   }) => (
     <svg
-      fill="#FFF"
+      fill="currentColor"
       width={size || width}
       height={size || height}
       id="Icon"

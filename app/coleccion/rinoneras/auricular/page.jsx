@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { BriefcaseBusiness, Ruler, Info, DollarSign } from "lucide-react";
+import { BriefcaseBusiness, Ruler, Info, ShoppingBag } from "lucide-react";
 import Image from "next/image";
 
 const bags = [
@@ -26,7 +26,6 @@ const bags = [
       "Reata de pulgada",
       "Chapa y tensor de pulgada",
     ],
-    price: 50000,
     minOrder: 200,
     maxOrder: 600,
     images: [
@@ -127,19 +126,26 @@ function App() {
               </ul>
             </div>
 
-            {/* Price */}
+            {/* Order Information */}
             <div className="bg-white p-4 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold flex items-center gap-2 mb-3">
-                <DollarSign className="text-[#0C0844]" />
-                Precio Unitario
+                <ShoppingBag className="text-[#0C0844]" />
+                Información de Pedido
               </h3>
-              <p className="text-xl font-bold text-gray-800">
-                ${selectedBag.price.toLocaleString()}
-              </p>
-              <p className="text-sm text-gray-600">
-                Para pedidos entre {selectedBag.minOrder.toLocaleString()} a{" "}
-                {selectedBag.maxOrder.toLocaleString()}
-              </p>
+              <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                <div className="text-center flex-1 border-r border-gray-200">
+                  <p className="text-sm text-gray-600">Pedido Mínimo</p>
+                  <p className="text-xl font-bold text-[#0C0844]">
+                    {selectedBag.minOrder.toLocaleString()} unidades
+                  </p>
+                </div>
+                <div className="text-center flex-1">
+                  <p className="text-sm text-gray-600">Pedido Máximo</p>
+                  <p className="text-xl font-bold text-[#0C0844]">
+                    {selectedBag.maxOrder.toLocaleString()} unidades
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* CTA */}
