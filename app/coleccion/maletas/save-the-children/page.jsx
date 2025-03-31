@@ -27,7 +27,7 @@ const bags = [
     minOrder: 150,
     maxOrder: 500,
     images: [
-      "/Productos/bolso-save.jpg",
+      "/Productos/Bolso-save.jpg",
       "/Productos/bolso-save-atras.webp",
       "/Productos/bolso-save-derecha.webp",
     ],

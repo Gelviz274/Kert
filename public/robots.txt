@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /coleccion/
+Allow: /coleccion/maletas/
+Allow: /coleccion/mochilas/
+Allow: /coleccion/rinoneras/
+Allow: /coleccion/neceser/
+Allow: /sobre-nosotros/
+Allow: /contacto/
+
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+Sitemap: https://kert.com/sitemap.xml 

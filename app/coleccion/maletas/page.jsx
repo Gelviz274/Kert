@@ -230,7 +230,7 @@ function MaletasPageMain() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-[#0C0844] to-[#1A1A60]">
+      <section className="py-16 bg-azul">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">¿Necesitas un diseño personalizado?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">

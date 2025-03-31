@@ -144,6 +144,7 @@ function App() {
                     {selectedBag.maxOrder.toLocaleString()} unidades
                   </p>
                 </div>
+
               </div>
             </div>
 
