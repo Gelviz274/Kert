@@ -149,7 +149,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-5 text-white">
             Nuestras Categorías de Productos
           </h2>
-          <hr className="w-2/6 h-1 *:p-0  bg-amarillo mx-auto mb-12  " />
+          <div className="w-2/6 h-1  bg-amarillo mx-auto mb-12  " />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {

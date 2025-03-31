@@ -43,7 +43,16 @@ function ContactPage() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section con gradiente y patrón */}
-            <div className="relative bg-gradient-to-r from-azul to-[#1a237e] text-white py-24 overflow-hidden">                
+            <div className="relative bg-gradient-to-r from-azul to-[#1a237e] text-white py-24 overflow-hidden">
+                {/* Patrón de fondo */}
+                <div className="absolute inset-0 opacity-10">
+                    <div className="absolute inset-0" style={{ 
+                        backgroundImage: 'url("/Fabrica/pattern.png")', 
+                        backgroundSize: '400px',
+                        transform: 'rotate(10deg)'
+                    }}></div>
+                </div>
+                
                 <div className="max-w-6xl mx-auto px-4 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -82,7 +91,10 @@ function ContactPage() {
                     </motion.div>
                 </div>
                 
-               
+                {/* Elemento decorativo */}
+                <div className="hidden md:block absolute right-0 bottom-0 w-1/3 h-full">
+                    <div className="absolute bottom-0 right-0 w-full h-full bg-amarillo/10 rounded-tl-[100px] transform translate-x-1/4"></div>
+                </div>
             </div>
 
             {/* Sección principal de contacto */}

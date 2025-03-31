@@ -1,11 +1,10 @@
 "use client"
 
-import { Building2, Award, Truck, Users, Compass, Target, Eye, Shield, Package, Rocket, Handshake } from 'lucide-react'
-import React from 'react'
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import Image from 'next/image'
-
+import { Building2, Award, Truck, Users, Compass, Target, Eye, Shield, Package, Rocket, Handshake } from 'lucide-react';
+import React from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const fundadores = [
     {
@@ -23,31 +22,24 @@ const fundadores = [
 function NosotrosPage() {
     return (
         <>
-            <div
-                className="relative h-[800px] bg-azul flex items-center justify-center"
-                style={{
-                    backgroundImage: "url('/Productos/olimpica-frente.webp')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundBlend: 'overlay'
-                }}
-            >
+            <div className="relative h-[800px] bg-azul flex items-center justify-center" style={{
+                backgroundImage: "url('/Productos/olimpica-frente.webp')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundBlend: 'overlay'
+            }}>
                 <div className="absolute inset-0 bg-azul/70"></div>
                 <div className="relative z-10 text-center px-4 flex flex-col items-center justify-center gap-5">
                     <h1 className="text-5xl font-bold text-white">Nuestra historia comienza con un sueño</h1>
                     <p className="text-xl text-white font-medium">
                         Fusionamos creatividad y calidad para diseñar soluciones prácticas que acompañan a nuestros clientes en cada aventura.
                     </p>
-                    <Link
-                        href="/coleccion">
-                        <motion.button
-                            className='bg-amarillo text-azul px-4 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-2 hover:bg-amarillo/90 transition-colors duration-300'>
-                            Nuestra coleccion
+                    <Link href="/coleccion">
+                        <motion.button className='bg-amarillo text-azul px-4 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-2 hover:bg-amarillo/90 transition-colors duration-300'>
+                            Nuestra colección
                         </motion.button>
                     </Link>
-
                 </div>
-
             </div>
 
             <section className="max-w-7xl mx-auto py-24 px-8">
@@ -79,7 +71,7 @@ function NosotrosPage() {
 
             <section className="bg-azul py-20 px-6 md:px-20 text-white relative overflow-hidden">
                 <div className="max-w-6xl mx-auto text-center">
-                <div className="text-center mb-16">
+                    <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-white mb-6">Nuestros Fundadores</h2>
                         <div className="h-1 w-52 bg-amarillo mx-auto"></div>
                     </div>
@@ -109,7 +101,6 @@ function NosotrosPage() {
                         <div className="h-1 w-52 bg-amarillo mx-auto"></div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-12">
-
                         <div className="bg-white/5 backdrop-blur-lg p-8 rounded-lg border border-white/10 transform hover:scale-105 transition-transform duration-300">
                             <div className="text-amarillo mb-6 flex justify-center">
                                 <Rocket size={48} />
@@ -244,7 +235,7 @@ function NosotrosPage() {
                 </div>
             </div>
         </>
-    )
+    );
 }
 
-export default NosotrosPage
+export default NosotrosPage;
