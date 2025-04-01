@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Backpack, ArrowRight } from 'lucide-react';
+import { Backpack, ArrowRight, Search } from 'lucide-react';
 import maletasData from './data/maletas.json';
 
 function MaletasPage() {
@@ -64,38 +64,43 @@ function MaletasPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <section className="relative h-[60vh] bg-azul/5">
-        <div className="absolute inset-0 bg-gradient-to-b from-azul/10 to-transparent"></div>
-        <div className="container mx-auto px-4 h-full flex flex-col justify-center">
+      <section className="relative h-[70vh] overflow-hidden">
+        <div className="absolute inset-0 bg-azul"></div>
+        <div className="absolute inset-0 backdrop-blur-sm"></div>
+        <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-azul mb-4">
-              Nuestra Colección de Maletas
+            <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-lg">
+              Colección de Maletas
+              <span className="block text-amarillo mt-2">Premium</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Descubre nuestra selección de maletas de alta calidad, perfectas para viajes y uso diario.
+            <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+              Descubre nuestra exclusiva selección de maletas diseñadas para combinar estilo, durabilidad y funcionalidad.
             </p>
           </motion.div>
         </div>
       </section>
 
       {/* Search Section */}
-      <section className="py-8 bg-white">
+      <section className="py-8">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
-            <div className="relative">
+            <div className="relative bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+                <Search className="h-5 w-5 text-gray-400" />
+              </div>
               <input
                 type="text"
-                placeholder="Buscar maletas..."
+                placeholder="Buscar maletas por nombre..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full px-6 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amarillo"
+                className="w-full pl-12 pr-6 py-4 rounded-2xl bg-transparent border-none focus:outline-none focus:ring-2 focus:ring-amarillo text-azul placeholder-gray-400"
               />
             </div>
           </div>
@@ -105,7 +110,16 @@ function MaletasPage() {
       {/* Featured Products */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-azul mb-8">Maletas Destacadas</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center justify-between mb-12"
+          >
+            <h2 className="text-4xl font-bold text-azul">
+              <span className="border-b-4 border-amarillo pb-2">Nuestras Maletas</span>
+            </h2>
+          </motion.div>
           
           {filteredMaletas.length === 0 ? (
             <div className="text-center py-16">
@@ -128,38 +142,38 @@ function MaletasPage() {
                 <motion.div
                   key={maleta.id}
                   variants={itemVariants}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                  className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
                 >
-                  <div className="relative h-64">
+                  <div className="relative h-72 overflow-hidden">
                     <Image
                       src={maleta.images[0]}
                       alt={maleta.name}
                       fill
-                      className="object-cover"
+                      className="object-cover transform group-hover:scale-110 transition-transform duration-500"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <div className="flex justify-between items-start mb-4">
-                      <div>
-                        <h3 className="text-xl font-bold text-azul">{maleta.name}</h3>
-                      </div>
+                  <div className="p-8 relative">
+                    <div className="absolute -top-8 right-8 bg-amarillo rounded-full p-3 shadow-lg transform -translate-y-1/2 group-hover:rotate-12 transition-transform duration-300">
                       <Backpack className="text-azul" size={24} />
                     </div>
-                    <div className="flex justify-between items-center mb-6">
-                      <div className="flex items-center gap-4">
-                        <div>
-                          <p className="text-sm text-gray-500">Pedido mínimo</p>
-                          <p className="font-semibold">{maleta.minOrder} unidades</p>
-                        </div>
-                        <div>
-                          <p className="text-sm text-gray-500">Pedido máximo</p>
-                          <p className="font-semibold">{maleta.maxOrder} unidades</p>
-                        </div>
+                    <div className="mb-6">
+                      <h3 className="text-2xl font-bold text-azul mb-2">{maleta.name}</h3>
+                      <div className="h-1 w-20 bg-amarillo rounded-full transform origin-left group-hover:scale-x-150 transition-transform duration-300"></div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-6 mb-8">
+                      <div className="bg-gray-50 rounded-xl p-4 text-center">
+                        <p className="text-sm text-gray-500 mb-1">Pedido mínimo</p>
+                        <p className="text-lg font-bold text-azul">{maleta.minOrder}</p>
+                      </div>
+                      <div className="bg-gray-50 rounded-xl p-4 text-center">
+                        <p className="text-sm text-gray-500 mb-1">Pedido máximo</p>
+                        <p className="text-lg font-bold text-azul">{maleta.maxOrder}</p>
                       </div>
                     </div>
-                    <Link href={`/coleccion/maletas/${maleta.id}`}>
-                      <button className="w-full bg-azul hover:bg-azul/90 text-white py-3 rounded-lg flex items-center justify-center gap-2 transition-colors">
-                        Ver detalles <ArrowRight size={18} />
+                    <Link href={`/coleccion/maletas/${maleta.name.replace(/\s+/g, '-').toLowerCase()}`} className="block">
+                      <button className="w-full bg-azul hover:bg-amarillo text-white hover:text-azul py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300 group-hover:shadow-lg">
+                        Ver detalles <ArrowRight size={18} className="transform group-hover:translate-x-1 transition-transform duration-300" />
                       </button>
                     </Link>
                   </div>
