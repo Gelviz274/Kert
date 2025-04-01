@@ -43,7 +43,7 @@ function Galery() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-[#0C0844] text-center mb-16">
+        <h2 className="text-4xl font-bold text-azul text-center mb-16">
           Nuestra Colección de Maletas
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -61,23 +61,23 @@ function Galery() {
                 group-hover:scale-110"
                 />
                 <div
-                  className="absolute inset-0 bg-gradient-to-t from-[#0C0844]/60 to-transparent 
+                  className="absolute inset-0 bg-gradient-to-t from-azul/60 to-transparent 
                   opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#0C0844] mb-2">
+                <h3 className="text-xl font-semibold text-azul mb-2">
                   {product.name}
                 </h3>
                 <p className="text-gray-600 mb-4">{product.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-[#0C0844] font-bold">
+                  <span className="text-azul font-bold">
                     {product.price}
                   </span>
                   <button
                     onClick={() => (window.location.href = product.href)}
-                    className="bg-[#FFCF00] text-[#0C0844] px-4 py-2 rounded-full text-sm font-semibold 
-                  hover:bg-[#0C0844] hover:text-[#FFCF00] transition-colors duration-300"
+                    className="bg-amarillo text-azul px-4 py-2 rounded-full text-sm font-semibold 
+                  hover:bg-azul hover:text-amarillo transition-colors duration-300"
                   >
                     Ver Detalles
                   </button>

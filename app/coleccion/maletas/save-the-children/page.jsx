@@ -61,7 +61,7 @@ function App() {
                   key={index}
                   onClick={() => setSelectedImage(index)}
                   className={`w-20 h-20 rounded-lg overflow-hidden ${
-                    selectedImage === index ? "ring-2 ring-[#FFCF00]" : ""
+                    selectedImage === index ? "ring-2 ring-amarillo" : ""
                   }`}
                 >
                   <img
@@ -77,7 +77,7 @@ function App() {
           {/* Product Details */}
           <div className="space-y-6">
             <div>
-              <h2 className="text-3xl font-bold text-[#0C0844]">
+              <h2 className="text-3xl font-bold text-azul">
                 {selectedBag.name}
               </h2>
               <p className="text-gray-600 flex items-center gap-2">
@@ -89,7 +89,7 @@ function App() {
             {/* Dimensions */}
             <div className="bg-white p-4 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold flex items-center gap-2 mb-3">
-                <Ruler className="text-[#0C0844]" />
+                <Ruler className="text-azul" />
                 Dimensiones
               </h3>
               <div className="grid grid-cols-3 gap-4">
@@ -117,7 +117,7 @@ function App() {
             {/* Specifications */}
             <div className="bg-white p-4 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold flex items-center gap-2 mb-3">
-                <Info className="text-[#0C0844]" />
+                <Info className="text-azul" />
                 Especificaciones
               </h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-600">
@@ -130,19 +130,19 @@ function App() {
             {/* Order Information */}
             <div className="bg-white p-4 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold flex items-center gap-2 mb-3">
-                <ShoppingBag className="text-[#0C0844]" />
+                <ShoppingBag className="text-azul" />
                 Información de Pedido
               </h3>
               <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                 <div className="text-center flex-1 border-r border-gray-200">
                   <p className="text-sm text-gray-600">Pedido Mínimo</p>
-                  <p className="text-xl font-bold text-[#0C0844]">
+                  <p className="text-xl font-bold text-azul">
                     {selectedBag.minOrder.toLocaleString()} unidades
                   </p>
                 </div>
                 <div className="text-center flex-1">
                   <p className="text-sm text-gray-600">Pedido Máximo</p>
-                  <p className="text-xl font-bold text-[#0C0844]">
+                  <p className="text-xl font-bold text-azul">
                     {selectedBag.maxOrder.toLocaleString()} unidades
                   </p>
                 </div>
@@ -150,11 +150,11 @@ function App() {
             </div>
 
             {/* CTA */}
-            <div className="bg-[#FFCF00] p-4 rounded-lg shadow-md text-center">
-              <p className="text-lg font-semibold text-[#0C0844] mb-3">
+            <div className="bg-amarillo p-4 rounded-lg shadow-md text-center">
+              <p className="text-lg font-semibold text-azul mb-3">
                 ¿Quieres hacer un pedido?
               </p>
-              <button className="bg-[#0C0844] hover:bg-azul/95 text-white px-6 py-2 rounded-full">
+              <button className="bg-azul hover:bg-azul/95 text-white px-6 py-2 rounded-full">
                 Solicitar Cotización
               </button>
             </div>

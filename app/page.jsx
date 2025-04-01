@@ -38,9 +38,9 @@ export default function Home() {
                   alt="Kert Workspace"
                   className="rounded-2xl shadow-2xl"
                 />
-                <div className="absolute inset-0 bg-[#0C0844] opacity-10 rounded-2xl"></div>
+                <div className="absolute inset-0 bg-azul opacity-10 rounded-2xl"></div>
               </div>
-              <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#FFCF00] rounded-2xl"></div>
+              <div className="absolute -top-4 -left-4 w-full h-full border-2 border-amarillo rounded-2xl"></div>
             </motion.div>
 
             <motion.div
@@ -50,8 +50,8 @@ export default function Home() {
               viewport={{ once: true }}
               className="space-y-8"
             >
-              <h2 className="text-4xl lg:text-5xl font-bold text-[#0C0844] leading-tight">
-                Sobre <span className="text-[#FFCF00]">Kert</span>
+              <h2 className="text-4xl lg:text-5xl font-bold text-azul leading-tight">
+                Sobre <span className="text-amarillo">Kert</span>
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 En Kert, nos dedicamos a revolucionar la industria de bolsos al
@@ -66,7 +66,7 @@ export default function Home() {
                   boxShadow: "0 10px 30px rgba(12, 8, 68, 0.2)",
                 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#FFCF00] text-[#0C0844] px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center transition-all duration-300 hover:bg-[#FFD700]"
+                className="bg-amarillo text-azul px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center transition-all duration-300 hover:bg-[#FFD700]"
               >
                 Conoce más
                 <ChevronRight className="ml-2 h-5 w-5" />
@@ -88,11 +88,11 @@ export default function Home() {
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.8 }}
-                className="w-16 h-16 mx-auto mb-6 bg-[#FFCF00] rounded-full flex items-center justify-center"
+                className="w-16 h-16 mx-auto mb-6 bg-amarillo rounded-full flex items-center justify-center"
               >
-                <TrendingUp className="h-8 w-8 text-[#0C0844]" />
+                <TrendingUp className="h-8 w-8 text-azul" />
               </motion.div>
-              <h3 className="text-xl font-semibold text-[#0C0844] mb-4">
+              <h3 className="text-xl font-semibold text-azul mb-4">
                 Socio de Crecimiento
               </h3>
               <p className="text-gray-600">
@@ -108,11 +108,11 @@ export default function Home() {
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.8 }}
-                className="w-16 h-16 mx-auto mb-6 bg-[#FFCF00] rounded-full flex items-center justify-center"
+                className="w-16 h-16 mx-auto mb-6 bg-amarillo rounded-full flex items-center justify-center"
               >
-                <Shield className="h-8 w-8 text-[#0C0844]" />
+                <Shield className="h-8 w-8 text-azul" />
               </motion.div>
-              <h3 className="text-xl font-semibold text-[#0C0844] mb-4">
+              <h3 className="text-xl font-semibold text-azul mb-4">
                 Calidad Garantizada
               </h3>
               <p className="text-gray-600">
@@ -128,11 +128,11 @@ export default function Home() {
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.8 }}
-                className="w-16 h-16 mx-auto mb-6 bg-[#FFCF00] rounded-full flex items-center justify-center"
+                className="w-16 h-16 mx-auto mb-6 bg-amarillo rounded-full flex items-center justify-center"
               >
-                <Globe className="h-8 w-8 text-[#0C0844]" />
+                <Globe className="h-8 w-8 text-azul" />
               </motion.div>
-              <h3 className="text-xl font-semibold text-[#0C0844] mb-4">
+              <h3 className="text-xl font-semibold text-azul mb-4">
                 Logística Global
               </h3>
               <p className="text-gray-600">
@@ -195,7 +195,7 @@ export default function Home() {
           <div className="flex w-full items-center justify-center mt-10">
             <Link href="/coleccion">
               <motion.button
-                className="bg-[#FFCF00] text-[#0C0844] px-4 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-2 hover:bg-amarillo/90 transition-colors duration-300"
+                className="bg-amarillo text-azul px-4 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-2 hover:bg-amarillo/90 transition-colors duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}

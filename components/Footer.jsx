@@ -54,21 +54,7 @@ export default function Footer() {
                             <span className="text-amarillo font-semibold"> satisfacción de tus clientes</span>.
                         </p>
                         
-                        {/* Redes sociales */}
-                        <div className="flex space-x-4 pt-4">
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-amarillo hover:text-azul p-2 rounded-full transition-all duration-300">
-                                <Instagram size={18} />
-                            </a>
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-amarillo hover:text-azul p-2 rounded-full transition-all duration-300">
-                                <Facebook size={18} />
-                            </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-amarillo hover:text-azul p-2 rounded-full transition-all duration-300">
-                                <Twitter size={18} />
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-amarillo hover:text-azul p-2 rounded-full transition-all duration-300">
-                                <Linkedin size={18} />
-                            </a>
-                        </div>
+
                     </div>
 
                     {/* Columna 2: Enlaces rápidos */}

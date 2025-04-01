@@ -118,7 +118,7 @@ export default function ColeccionPage() {
             Calidad y diseño exclusivo para tu negocio
           </motion.p>
           <motion.button
-            className="bg-[#FFCF00] text-azul px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 mx-auto hover:bg-amarillo/80 transition-colors duration-300"
+            className="bg-amarillo text-azul px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 mx-auto hover:bg-amarillo/80 transition-colors duration-300"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -147,7 +147,7 @@ export default function ColeccionPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
               >
-                <benefit.icon className="w-12 h-12 mx-auto mb-4 text-[#FFCF00]" />
+                <benefit.icon className="w-12 h-12 mx-auto mb-4 text-amarillo" />
                 <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
                 <p className="text-gray-400">{benefit.description}</p>
               </motion.div>
@@ -184,7 +184,7 @@ export default function ColeccionPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-azul via-transparent to-transparent opacity-70" />
                 <div className="absolute bottom-0 left-0 p-8">
                   <h3 className="text-2xl font-bold mb-2">{category.title}</h3>
-                  <p className="text-[#FFCF00] mb-4">{category.subtitle}</p>
+                  <p className="text-amarillo mb-4">{category.subtitle}</p>
                   <Link href={category.href}>
                   <button className="flex items-center gap-2 text-white bg-white/20 px-4 py-2 rounded-lg backdrop-blur-sm hover:bg-white/30 transition-colors">
                     Ver catálogo <ArrowRight className="w-4 h-4" />
@@ -249,10 +249,11 @@ export default function ColeccionPage() {
             Impulsa tu negocio con productos de calidad al mejor precio
           </motion.h2>
           <motion.button
-            className="bg-[#FFCF00] text-azul px-12 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-2 hover:bg-amarillo/80 transition-colors duration-300"
+            className="bg-amarillo text-azul px-12 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-2 hover:bg-amarillo/80 transition-colors duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            onClick={() => window.open('https://wa.me/+573116095224', '_blank')}
           >
             Contactar <ArrowRight className="w-5 h-5" />
           </motion.button>

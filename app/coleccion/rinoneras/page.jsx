@@ -98,8 +98,8 @@ function RinonerasPage() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
-          <div className="w-16 h-16 border-4 border-[#FFCF00] border-t-[#0C0844] rounded-full animate-spin mx-auto mb-4"></div>
-          <h2 className="text-xl font-semibold text-[#0C0844]">Cargando colección...</h2>
+          <div className="w-16 h-16 border-4 border-amarillo border-t-azul rounded-full animate-spin mx-auto mb-4"></div>
+          <h2 className="text-xl font-semibold text-azul">Cargando colección...</h2>
         </div>
       </div>
     );
@@ -108,7 +108,7 @@ function RinonerasPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative h-[50vh] bg-gradient-to-r from-[#0C0844] to-[#1A1A60] overflow-hidden">
+      <section className="relative h-[50vh] bg-gradient-to-r from-azul to-[#1A1A60] overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image 
             src="/Productos/rinonera-pattern.jpg" 
@@ -125,7 +125,7 @@ function RinonerasPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              Colección de <span className="text-[#FFCF00]">Riñoneras</span>
+              Colección de <span className="text-amarillo">Riñoneras</span>
             </h1>
             <p className="text-xl text-gray-200 max-w-2xl">
               Descubre nuestra exclusiva línea de riñoneras diseñadas para combinar estilo, 
@@ -139,7 +139,7 @@ function RinonerasPage() {
       {/* Featured Products */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[#0C0844] mb-2">Riñoneras Destacadas</h2>
+          <h2 className="text-3xl font-bold text-azul mb-2">Riñoneras Destacadas</h2>
           <p className="text-gray-600 mb-8">Nuestros productos más populares para tus campañas promocionales</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -156,17 +156,17 @@ function RinonerasPage() {
                     fill
                     style={{ objectFit: 'cover' }}
                   />
-                  <div className="absolute top-4 left-4 bg-[#FFCF00] text-[#0C0844] text-sm font-semibold px-3 py-1 rounded-full">
+                  <div className="absolute top-4 left-4 bg-amarillo text-azul text-sm font-semibold px-3 py-1 rounded-full">
                     Destacado
                   </div>
                 </div>
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-[#0C0844]">{rinonera.name}</h3>
+                      <h3 className="text-xl font-bold text-azul">{rinonera.name}</h3>
                       <p className="text-gray-600">{rinonera.description}</p>
                     </div>
-                    <BriefcaseBusiness className="text-[#0C0844]" size={24} />
+                    <BriefcaseBusiness className="text-azul" size={24} />
                   </div>
                   <div className="flex justify-between items-center mb-6">
                     <div className="flex items-center gap-4">
@@ -181,7 +181,7 @@ function RinonerasPage() {
                     </div>
                   </div>
                   <Link href={`/coleccion/rinoneras/${rinonera.slug}`}>
-                    <button className="w-full bg-[#0C0844] hover:bg-[#0C0844]/90 text-white py-3 rounded-lg flex items-center justify-center gap-2 transition-colors">
+                    <button className="w-full bg-azul hover:bg-azul/90 text-white py-3 rounded-lg flex items-center justify-center gap-2 transition-colors">
                       Ver detalles <ArrowRight size={18} />
                     </button>
                   </Link>
@@ -195,13 +195,13 @@ function RinonerasPage() {
       {/* All Products Grid */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[#0C0844] mb-8">Todas las Riñoneras</h2>
+          <h2 className="text-3xl font-bold text-azul mb-8">Todas las Riñoneras</h2>
           
           {filteredRinoneras.length === 0 ? (
             <div className="text-center py-16">
               <p className="text-xl text-gray-600">No se encontraron riñoneras que coincidan con tu búsqueda.</p>
               <button 
-                className="mt-4 bg-[#FFCF00] text-[#0C0844] px-6 py-2 rounded-lg font-medium"
+                className="mt-4 bg-amarillo text-azul px-6 py-2 rounded-lg font-medium"
                 onClick={() => setSearchTerm('')}
               >
                 Ver todas
@@ -229,7 +229,7 @@ function RinonerasPage() {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-lg font-bold text-[#0C0844] mb-2">{rinonera.name}</h3>
+                    <h3 className="text-lg font-bold text-azul mb-2">{rinonera.name}</h3>
                     <p className="text-gray-600 text-sm mb-4">{rinonera.description}</p>
                     <div className="flex justify-between text-sm mb-4">
                       <div>
@@ -240,7 +240,7 @@ function RinonerasPage() {
                       </div>
                     </div>
                     <Link href={`/coleccion/rinoneras/${rinonera.slug}`}>
-                      <button className="w-full bg-gray-100 hover:bg-gray-200 text-[#0C0844] py-2 rounded-lg flex items-center justify-center gap-2 transition-colors">
+                      <button className="w-full bg-gray-100 hover:bg-gray-200 text-azul py-2 rounded-lg flex items-center justify-center gap-2 transition-colors">
                         Ver detalles <ArrowRight size={16} />
                       </button>
                     </Link>
@@ -253,13 +253,14 @@ function RinonerasPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-[#0C0844] to-[#1A1A60]">
+      <section className="py-16 bg-azul">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">¿Necesitas un diseño personalizado?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Podemos crear riñoneras personalizadas según tus especificaciones exactas para tu próxima campaña promocional.
           </p>
-          <button className="bg-[#FFCF00] hover:bg-[#FFCF00]/90 text-[#0C0844] px-8 py-3 rounded-lg font-semibold text-lg transition-colors">
+          <button onClick={() => window.open('https://wa.me/+573116095224', '_blank')} 
+          className="bg-amarillo hover:bg-amarillo/90 text-azul px-8 py-3 rounded-lg font-semibold text-lg transition-colors">
             Solicitar cotización
           </button>
         </div>

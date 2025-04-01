@@ -11,7 +11,7 @@ function ContactPage() {
     // Números de WhatsApp
     const whatsappNumbers = [
         {
-            number: '573213062852',
+            number: '573116095224',
             label: 'Ventas al por mayor'
         },
         {

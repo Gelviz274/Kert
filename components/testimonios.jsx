@@ -42,10 +42,10 @@ export default function Testimonios() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#0C0844] to-[#1A1A60]">
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-azul to-[#1A1A60]">
                         Lo Que Dicen Nuestros Clientes
                     </h2>
-                    <div className="h-1 w-2/6 bg-[#FFCF00] mx-auto rounded-full"></div>
+                    <div className="h-1 w-2/6 bg-amarillo mx-auto rounded-full"></div>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -60,15 +60,15 @@ export default function Testimonios() {
                         >
                             <div className="relative h-full bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 p-8 flex flex-col">
                                 {/* Elemento decorativo */}
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-[#FFCF00]/5 rounded-bl-full transform group-hover:scale-110 transition-transform duration-500"></div>
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-amarillo/5 rounded-bl-full transform group-hover:scale-110 transition-transform duration-500"></div>
                                 
                                 {/* Icono de cita */}
-                                <Quote className="absolute top-4 right-4 text-[#FFCF00] opacity-20 w-8 h-8 transform group-hover:rotate-12 transition-transform duration-300" />
+                                <Quote className="absolute top-4 right-4 text-amarillo opacity-20 w-8 h-8 transform group-hover:rotate-12 transition-transform duration-300" />
                                 
                                 {/* Contenido principal */}
                                 <div className="relative z-10 flex flex-col h-full">
                                     <div className="mb-6">
-                                        <h3 className="text-2xl font-bold text-[#0C0844] mb-2">{testimonial.name}</h3>
+                                        <h3 className="text-2xl font-bold text-azul mb-2">{testimonial.name}</h3>
                                         <p className="text-gray-600 text-sm font-medium">{testimonial.role}</p>
                                     </div>
                                     
@@ -80,7 +80,7 @@ export default function Testimonios() {
                                         {[...Array(testimonial.rating)].map((_, i) => (
                                             <Star
                                                 key={i}
-                                                className="w-5 h-5 text-[#FFCF00] fill-current transform group-hover:scale-110 transition-transform duration-300"
+                                                className="w-5 h-5 text-amarillo fill-current transform group-hover:scale-110 transition-transform duration-300"
                                                 style={{ transitionDelay: `${i * 50}ms` }}
                                             />
                                         ))}
@@ -102,7 +102,9 @@ export default function Testimonios() {
                     <p className="text-gray-600 mb-6">
                         ¿Quieres ser parte de nuestra historia de éxito?
                     </p>
-                    <button className="bg-[#0C0844] hover:bg-[#0C0844]/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#0C0844]/20">
+                    <button 
+                    onClick={() => window.open('https://wa.me/+573116095224', '_blank')}
+                    className="bg-azul hover:bg-azul/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-azul/20">
                         Contáctanos hoy
                     </button>
                 </motion.div>
