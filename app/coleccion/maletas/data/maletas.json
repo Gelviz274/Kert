@@ -1,0 +1,115 @@
+{
+  "maletas": [
+    {
+      "id": "isabel",
+      "name": "Maleta Isabel",
+      "name-title": "maleta-isabel",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 43,
+        "width": 31,
+        "depth": 18
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Seis compartimientos",
+        "Bolsillo para portátil y organizador",
+        "Dos bolsillos laterales en malla sándwich",
+        "Dos bolsillos principales",
+        "Bolsillo frontal",
+        "Cargadera con malla sándwich y Yumbolon",
+        "Bolso forrado totalmente con tifón"
+      ],
+      "minOrder": 200,
+      "maxOrder": 600,
+      "images": [
+        "/Productos/Bolso-azul-rojo.jpg",
+        "/Productos/bolso-azul-rojo-izquierda.webp",
+        "/Productos/bolso-azul-rojo-atras.webp",
+        "/Productos/bolso-azul-rojo-arriba.webp"
+      ]
+    },
+    {
+      "id": "save-the-children",
+      "name": "Maleta Save the Children",
+      "name-title": "maleta-save-the-children",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 40,
+        "width": 30,
+        "depth": 15
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Múltiples compartimientos",
+        "Espacio para portátil",
+        "Bolsillos laterales",
+        "Bolsillo frontal",
+        "Cargadera ajustable",
+        "Forrado con tifón"
+      ],
+      "minOrder": 300,
+      "maxOrder": 800,
+      "images": [
+        "/Productos/Bolso-save.jpg",
+        "/Productos/bolso-save-derecha.webp",
+        "/Productos/bolso-save-atras.webp"
+      ]
+    },
+    {
+      "id": "cemex",
+      "name": "Maleta Cemex",
+      "name-title": "maleta-cemex",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 45,
+        "width": 35,
+        "depth": 20
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Compartimientos organizados",
+        "Bolsillo para portátil",
+        "Bolsillos laterales",
+        "Bolsillo frontal",
+        "Cargadera resistente",
+        "Forrado con tifón"
+      ],
+      "minOrder": 250,
+      "maxOrder": 700,
+      "images": [
+        "/Productos/maleta-cemex.jpg",
+        "/Productos/maleta-cemex-izquierda.webp",
+        "/Productos/maleta-cemex-atras.webp"
+      ]
+    },
+    {
+      "id": "dhl",
+      "name": "Bolso DHL",
+      "name-title": "bolso-dhl",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 38,
+        "width": 28,
+        "depth": 12
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Cinco compartimientos",
+        "Bolsillo para portátil",
+        "Bolsillos laterales",
+        "Bolsillo frontal",
+        "Cargadera ajustable",
+        "Forrado con tifón"
+      ],
+      "minOrder": 300,
+      "maxOrder": 800,
+      "images": [
+        "/Productos/bolso-dhl.jpg",
+        "/Productos/bolso-dhl-izquierda.jpg",
+        "/Productos/bolso-dhl-atras.jpg",
+        "/Productos/bolso-dhl-cerca.jpg"
+      ]
+    }
+  ]
+} 
