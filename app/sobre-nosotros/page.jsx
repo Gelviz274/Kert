@@ -10,12 +10,12 @@ const fundadores = [
     {
         name: "Sandra",
         role: "Madre emprendedora y el pilar detrás de KERT.",
-        image: "/Sandra.jpg",
+        description: "Sandra ha sido la fuerza motriz detrás de la visión empresarial de KERT. Su liderazgo empático y su profundo conocimiento en gestión de calidad han sido fundamentales para establecer los altos estándares que caracterizan a nuestra marca. Como madre emprendedora, ha sabido equilibrar perfectamente la dirección empresarial con los valores familiares que son el corazón de KERT."
     },
     {
         name: "Steben",
         role: "Diseñador apasionado, soñador y la fuerza creativa de la marca.",
-        image: "/Steben.jpg",
+        description: "Steben, con su formación en diseño industrial y su pasión por la innovación, ha revolucionado el concepto de maletería moderna. Su enfoque creativo y su atención al detalle han permitido desarrollar productos que no solo son funcionales, sino verdaderas obras de arte. Su visión futurista y su compromiso con la sostenibilidad han sido clave en el desarrollo de nuestras colecciones más exitosas."
     },
 ];
 
@@ -69,56 +69,96 @@ function NosotrosPage() {
                 </div>
             </section>
 
-            <section className="bg-azul py-20 px-6 md:px-20 text-white relative overflow-hidden">
-                <div className="max-w-6xl mx-auto text-center">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-white mb-6">Nuestros Fundadores</h2>
-                        <div className="h-1 w-52 bg-amarillo mx-auto"></div>
+            <section className="bg-azul py-32 px-6 md:px-20 text-white relative overflow-hidden">
+                <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+                <div className="max-w-7xl mx-auto relative">
+                    <div className="text-center mb-20">
+                        <h2 className="text-5xl font-bold text-white mb-8 tracking-tight">Nuestros Fundadores</h2>
+                        <div className="h-1 w-64 bg-amarillo mx-auto"></div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-5">
                         {fundadores.map((founder, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center text-center relative overflow-hidden transform hover:scale-105 transition-transform duration-300"
-                                whileHover={{ scale: 1.05 }}
+                                className="group relative"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: index * 0.2 }}
+                                viewport={{ once: true }}
                             >
-                                <div className="w-44 h-44 relative rounded-full overflow-hidden mb-6 border-4 border-amarillo shadow-lg">
-                                    <Image src={founder.image} alt={founder.name} layout="fill" objectFit="cover" />
+                                <div className="absolute -inset-1 bg-gradient-to-r from-amarillo to-azul rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                                <div className="relative bg-white/5 backdrop-blur-xl rounded-2xl p-10 border border-white/10 transform transition-all duration-500 hover:scale-[1.02] hover:bg-white/10">
+                                    <div className="flex flex-col items-center">
+                                        <div className="relative mb-8">
+                                            <div className="absolute inset-0 bg-gradient-to-br from-amarillo/30 to-azul/30 rounded-full blur-xl"></div>
+                                            <div className="relative w-24 h-24 rounded-full bg-gradient-to-br from-amarillo/20 to-azul/20 flex items-center justify-center border-2 border-white/20">
+                                                <span className="text-5xl font-bold bg-gradient-to-r from-amarillo to-white bg-clip-text text-transparent">
+                                                    {founder.name[0]}
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <h3 className="text-3xl font-bold text-white mb-2 tracking-wide">{founder.name}</h3>
+                                        <p className="text-amarillo text-lg mb-6 text-center">{founder.role}</p>
+                                        <div className="h-0.5 w-32 bg-amarillo/50 mb-6"></div>
+                                        <p className="text-gray-200 text-base leading-relaxed max-w-md text-center">
+                                            {founder.description}
+                                        </p>
+                                    </div>
                                 </div>
-                                <h3 className="text-3xl font-bold text-azul">{founder.name}</h3>
-                                <p className="text-gray-700 text-xl mt-2">{founder.role}</p>
-                                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-azul opacity-30 pointer-events-none"></div>
                             </motion.div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            <div className="bg-gradient-to-b from-azul to-azul/90 py-24 px-8 ">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-white mb-6">Nuestro Propósito</h2>
-                        <div className="h-1 w-52 bg-amarillo mx-auto"></div>
+            <div className="bg-azul py-32 px-6 md:px-20 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+                <div className="max-w-7xl mx-auto relative">
+                    <div className="text-center mb-20">
+                        <h2 className="text-5xl font-bold text-white mb-8 tracking-tight">Nuestro Propósito</h2>
+                        <div className="h-1 w-64 bg-amarillo mx-auto"></div>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-12">
-                        <div className="bg-white/5 backdrop-blur-lg p-8 rounded-lg border border-white/10 transform hover:scale-105 transition-transform duration-300">
-                            <div className="text-amarillo mb-6 flex justify-center">
-                                <Rocket size={48} />
+                    <div className="grid md:grid-cols-2 gap-16">
+                        <motion.div 
+                            className="group relative"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="absolute -inset-1 bg-gradient-to-r from-amarillo to-azul rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                            <div className="relative bg-white/5 backdrop-blur-xl rounded-2xl p-10 border border-white/10 transform transition-all duration-500 hover:scale-[1.02] hover:bg-white/10">
+                                <div className="flex flex-col items-center">
+                                    <div className="text-amarillo mb-8">
+                                        <Rocket size={48} />
+                                    </div>
+                                    <h3 className="text-3xl font-bold text-white mb-6 text-center">Misión</h3>
+                                    <p className="text-gray-200 text-base leading-relaxed text-center">
+                                        En KERT SAS, nos dedicamos a crear productos excepcionales que combinan calidad, innovación y estilo, satisfaciendo las necesidades de nuestros clientes con soluciones prácticas y elegantes en maletería.
+                                    </p>
+                                </div>
                             </div>
-                            <h3 className="text-2xl font-semibold text-white mb-4 text-center">Misión</h3>
-                            <p className="text-gray-300 text-center leading-relaxed">
-                                En KERT SAS, nos dedicamos a crear productos excepcionales que combinan calidad, innovación y estilo, satisfaciendo las necesidades de nuestros clientes con soluciones prácticas y elegantes en maletería.
-                            </p>
-                        </div>
-                        <div className="bg-white/5 backdrop-blur-lg p-8 rounded-lg border border-white/10 transform hover:scale-105 transition-transform duration-300">
-                            <div className="text-amarillo mb-6 flex justify-center">
-                                <Eye size={48} />
+                        </motion.div>
+                        <motion.div 
+                            className="group relative"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="absolute -inset-1 bg-gradient-to-r from-amarillo to-azul rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                            <div className="relative bg-white/5 backdrop-blur-xl rounded-2xl p-10 border border-white/10 transform transition-all duration-500 hover:scale-[1.02] hover:bg-white/10">
+                                <div className="flex flex-col items-center">
+                                    <div className="text-amarillo mb-8">
+                                        <Eye size={48} />
+                                    </div>
+                                    <h3 className="text-3xl font-bold text-white mb-6 text-center">Visión</h3>
+                                    <p className="text-gray-200 text-base leading-relaxed text-center">
+                                        Ser una de las fábricas más grandes en Colombia, líderes y referentes en el diseño y fabricación de maletas, distinguiéndonos por la excelencia en diseño, durabilidad y compromiso con la satisfacción del cliente.
+                                    </p>
+                                </div>
                             </div>
-                            <h3 className="text-2xl font-semibold text-white mb-4 text-center">Visión</h3>
-                            <p className="text-gray-300 text-center leading-relaxed">
-                                Ser una de las fábricas más grandes en Colombia, líderes y referentes en el diseño y fabricación de maletas, distinguiéndonos por la excelencia en diseño, durabilidad y compromiso con la satisfacción del cliente.
-                            </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
