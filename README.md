@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4b901e8a-51a9-43ec-a3d6-ea07152c1007" alt="Logo de Kert" width="500"/>
+</p>
 
-## Getting Started
+<h1 align="center">🌐 Proyecto del Sitio Web de Kert</h1>
+Bienvenido al repositorio del sitio web de Kert, un proyecto desarrollado con [Next.js](https://nextjs.org) para ofrecer una experiencia de usuario moderna y optimizada. Este documento proporciona una visión general del proyecto, sus requisitos de compilación y despliegue.
 
-First, run the development server:
+## 📋 Requisitos Previos
+
+Antes de comenzar, asegúrese de tener instalados los siguientes componentes:
+
+- **Node.js** (versión 14 o superior) 🟢
+- **npm** o **yarn** como gestor de paquetes 📦
+
+## 🚀 Instalación
+
+Para instalar las dependencias necesarias, ejecute el siguiente comando en su terminal:
+
+```bash
+npm install
+# o
+yarn install
+```
+
+## 🛠️ Ejecución del Servidor de Desarrollo
+
+Inicie el servidor de desarrollo con el siguiente comando:
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) en su navegador para ver el resultado.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📂 Estructura del Proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **`app/page.jsx`**: Archivo principal para la edición de la página.
+- **`public/`**: Contiene los recursos estáticos del proyecto.
+- **`components/`**: Componentes reutilizables de la interfaz de usuario.
 
-## Learn More
+## 🎨 Optimización de Fuentes
 
-To learn more about Next.js, take a look at the following resources:
+Este proyecto utiliza [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) para optimizar y cargar automáticamente la familia de fuentes [Geist](https://vercel.com/font).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚢 Despliegue
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+El despliegue del sitio web se realiza a través de la [Plataforma Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), garantizando un rendimiento óptimo y una integración continua.
 
-## Deploy on Vercel
+## 🤝 Contribuciones
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Las contribuciones al proyecto son bienvenidas. Por favor, siga las pautas establecidas en el archivo `CONTRIBUTING.md` para asegurar un proceso de colaboración eficiente.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📚 Recursos Adicionales
+
+- [Documentación de Next.js](https://nextjs.org/docs) 📖
+- [Tutorial Interactivo de Next.js](https://nextjs.org/learn) 🎓
+
+Para más información, no dude en consultar el [repositorio de GitHub de Next.js](https://github.com/vercel/next.js).
+
+## 👥 Creadores
+
+- **Juan David Gelviz Jaimes** - Desarrollador Web Junior
+- **Victoria Bayona Bernal** - Fotógrafa
+
+---
