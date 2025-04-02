@@ -171,7 +171,7 @@ function MaletasPage() {
                         <p className="text-lg font-bold text-azul">{maleta.maxOrder}</p>
                       </div>
                     </div>
-                    <Link href={`/coleccion/maletas/${maleta.name.replace(/\s+/g, '-').toLowerCase()}`} className="block">
+                    <Link href={`/coleccion/maletas/${maleta['name-title']}`} className="block">
                       <button className="w-full bg-azul hover:bg-amarillo text-white hover:text-azul py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300 group-hover:shadow-lg">
                         Ver detalles <ArrowRight size={18} className="transform group-hover:translate-x-1 transition-transform duration-300" />
                       </button>
