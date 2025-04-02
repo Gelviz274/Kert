@@ -1,0 +1,106 @@
+{
+  "rinoneras": [
+    {
+      "id": "anebre",
+      "name": "Riñonera Anebre",
+      "name-title": "rinonera-anebre",
+      "category": "Riñoneras",
+      "dimensions": {
+        "height": 25,
+        "width": 35,
+        "depth": 10
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Múltiples compartimientos",
+        "Bolsillos laterales",
+        "Bolsillo frontal",
+        "Cargadera ajustable",
+        "Forrado con tifón"
+      ],
+      "minOrder": 100,
+      "maxOrder": 500,
+      "images": [
+        "/Productos/rinonera-anebre.jpg",
+        "/Productos/anebre-atras.webp",
+        "/Productos/anebre-arriba.webp",
+        "/Productos/anebre-a-izq.webp"
+      ]
+    },
+    {
+      "id": "auricular",
+      "name": "Riñonera Auricular",
+      "name-title": "rinonera-auricular",
+      "category": "Riñoneras",
+      "dimensions": {
+        "height": 20,
+        "width": 30,
+        "depth": 8
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Espacio especial para auriculares",
+        "Dos compartimientos principales",
+        "Bolsillos laterales",
+        "Cargadera ajustable",
+        "Forrado con tifón"
+      ],
+      "minOrder": 200,
+      "maxOrder": 600,
+      "images": [
+        "/Productos/rinonera-negra.jpg"
+      ]
+    },
+    {
+      "id": "etib",
+      "name": "Riñonera Etib",
+      "name-title": "rinonera-etib",
+      "category": "Riñoneras",
+      "dimensions": {
+        "height": 22,
+        "width": 32,
+        "depth": 9
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Cuatro servicios",
+        "Bolsillos laterales",
+        "Bolsillo frontal",
+        "Cargadera ajustable",
+        "Forrado con tifón"
+      ],
+      "minOrder": 100,
+      "maxOrder": 500,
+      "images": [
+        "/Productos/rinonera-etib.webp",
+        "/Productos/rinonera-etib-c.webp"
+      ]
+    },
+    {
+      "id": "olimpica",
+      "name": "Riñonera Olímpica",
+      "name-title": "rinonera-olimpica",
+      "category": "Riñoneras",
+      "dimensions": {
+        "height": 24,
+        "width": 34,
+        "depth": 11
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Seis compartimientos",
+        "Bolsillo para portátil",
+        "Bolsillos laterales",
+        "Bolsillo frontal",
+        "Cargadera ajustable",
+        "Forrado con tifón"
+      ],
+      "minOrder": 150,
+      "maxOrder": 500,
+      "images": [
+        "/Productos/rinonera-olimpica.jpg",
+        "/Productos/olimpica-izq.webp"
+      ]
+    }
+  ]
+} 

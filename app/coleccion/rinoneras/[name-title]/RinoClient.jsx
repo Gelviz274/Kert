@@ -1,46 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { Ruler, Info, ShoppingBag, BriefcaseBusiness } from "lucide-react";
+import { Backpack, Ruler, Info, ShoppingBag } from "lucide-react";
 import Image from "next/image";
 
-const bags = [
-  {
-    id: 1,
-    name: "Anebre",
-    category: "Riñoneras",
-    icon: <BriefcaseBusiness className="w-6 h-6" />,
-    dimensions: {
-      height: 16,
-      width: 36,
-      depth: 10
-    },
-    material: "Lona Colmena",
-    specifications: [
-      "Tres compartimientos",
-      "Bolsillo trasero",
-      "Bolsillo frontal",
-      "Bolsillo principal",
-      "Espalda con malla sándwich y Yumbolon",
-      "Reata de 1 1/4 pulgada",
-      "Chapa de 1 1/4 pulgada",
-      "Cremallera #6",
-      "Cierre #6",
-      "Forrado totalmente con tafeta",
-    ],
-    minOrder: 150,
-    maxOrder: 500,
-    images: [
-      "/Productos/rinonera-anebre.jpg",
-      "/Productos/anebre-atras.webp",
-      "/Productos/anebre-arriba.webp",
-      "/Productos/anebre-a-izq.webp",
-    ]
-  },
-];
-
-function App() {
-  const [selectedBag, setSelectedBag] = useState(bags[0]);
+function RinoClient({ rinonera }) {
   const [selectedImage, setSelectedImage] = useState(0);
 
   return (
@@ -52,15 +16,15 @@ function App() {
           <div className="space-y-4">
             <div className="aspect-square rounded-lg overflow-hidden bg-white shadow-lg">
               <Image
-                src={selectedBag.images[selectedImage]}
-                alt={selectedBag.name}
-                width={1800}
-                height={1800}
+                src={rinonera.images[selectedImage]}
+                alt={rinonera.name}
+                width={900}
+                height={900}
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="flex gap-4">
-              {selectedBag.images.map((image, index) => (
+              {rinonera.images.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
@@ -70,7 +34,7 @@ function App() {
                 >
                   <img
                     src={image}
-                    alt={`${selectedBag.name} vista ${index + 1}`}
+                    alt={`${rinonera.name} vista ${index + 1}`}
                     className="w-full h-full object-cover"
                   />
                 </button>
@@ -82,11 +46,11 @@ function App() {
           <div className="space-y-6">
             <div>
               <h2 className="text-3xl font-bold text-azul">
-                {selectedBag.name}
+                {rinonera.name}
               </h2>
               <p className="text-gray-600 flex items-center gap-2">
-                {selectedBag.icon}
-                {selectedBag.category}
+                <Backpack className="w-6 h-6" />
+                {rinonera.category}
               </p>
             </div>
 
@@ -100,19 +64,19 @@ function App() {
                 <div className="text-center">
                   <p className="text-sm text-gray-600">Alto</p>
                   <p className="font-semibold">
-                    {selectedBag.dimensions.height} cm
+                    {rinonera.dimensions.height} cm
                   </p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-gray-600">Ancho</p>
                   <p className="font-semibold">
-                    {selectedBag.dimensions.width} cm
+                    {rinonera.dimensions.width} cm
                   </p>
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-gray-600">Profundidad</p>
                   <p className="font-semibold">
-                    {selectedBag.dimensions.depth} cm
+                    {rinonera.dimensions.depth} cm
                   </p>
                 </div>
               </div>
@@ -125,7 +89,7 @@ function App() {
                 Especificaciones
               </h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                {selectedBag.specifications.map((spec, index) => (
+                {rinonera.specifications.map((spec, index) => (
                   <li key={index}>{spec}</li>
                 ))}
               </ul>
@@ -141,13 +105,13 @@ function App() {
                 <div className="text-center flex-1 border-r border-gray-200">
                   <p className="text-sm text-gray-600">Pedido Mínimo</p>
                   <p className="text-xl font-bold text-azul">
-                    {selectedBag.minOrder.toLocaleString()} unidades
+                    {rinonera.minOrder.toLocaleString()} unidades
                   </p>
                 </div>
                 <div className="text-center flex-1">
                   <p className="text-sm text-gray-600">Pedido Máximo</p>
                   <p className="text-xl font-bold text-azul">
-                    {selectedBag.maxOrder.toLocaleString()} unidades
+                    {rinonera.maxOrder.toLocaleString()} unidades
                   </p>
                 </div>
               </div>
@@ -158,7 +122,10 @@ function App() {
               <p className="text-lg font-semibold text-azul mb-3">
                 ¿Quieres hacer un pedido?
               </p>
-              <button className="bg-azul hover:bg-azul/95 text-white px-6 py-2 rounded-full">
+              <button 
+                onClick={() => window.open('https://wa.me/+573116095224', '_blank')}
+                className="bg-azul hover:bg-azul/95 text-white px-6 py-2 rounded-full"
+              >
                 Solicitar Cotización
               </button>
             </div>
@@ -169,4 +136,4 @@ function App() {
   );
 }
 
-export default App;
+export default RinoClient; 

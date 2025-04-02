@@ -110,6 +110,59 @@
         "/Productos/bolso-dhl-atras.jpg",
         "/Productos/bolso-dhl-cerca.jpg"
       ]
+    },{
+      "id": "fura",
+      "name": "Maleta Fura",
+      "name-title": "maleta-fura",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 42,
+        "width": 26,
+        "depth": 15
+      },
+      "material": "Lona Morral Nacional",
+      "specifications": [
+        "Tres compartimientos",
+        "Bolsillo para portátil",
+        "Cierre de lujo",
+        "Malla para sándwich", 
+        "Bolsillos laterales",
+        "Bolsillo frontal",
+        "Cargadera ajustable",
+        "Forrado con tifón"
+      ],
+      "minOrder": 300,
+      "maxOrder": 800,
+      "images": [
+        "/Productos/maleta-fura.webp",
+        "/Productos/maleta-fura-atras.webp",
+        "/Productos/maleta-fura-izq.webp"
+      ]
+    },{
+      "id": "igac",  
+      "name": "Maleta IGAC",
+      "name-title": "maleta-igac",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 42,
+        "width": 26,
+        "depth": 15
+      },
+      "material": "Lona Morral Nacional",
+      "specifications": [
+        "Tres compartimientos",
+        "Cremallera: Cierre de lujo #6.",
+        "Cargaderas y espalda: Hechas con lona.",
+        "Materiales adicionales", 
+        "Rellenado con poliuretano."
+      ],
+      "minOrder": 300,
+      "maxOrder": 800,  
+      "images": [
+        "/Productos/maleta-igac.jpg",
+        "/Productos/maleta-igac-dere.jpg",
+        "/Productos/maleta-igac-atras.jpg"
+      ]
     }
   ]
 } 

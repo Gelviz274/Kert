@@ -1,41 +1,20 @@
 import React from "react";
-import { BriefcaseBusiness } from "lucide-react";
+import { Backpack } from "lucide-react";
 import NavProduct from "@/components/navproduct";
+import rinonerasData from "./data/rinoneras.json";
 
-const bags = [
-  {
-    id: 1,
-    name: "Riñonera Anebre",
-    category: "Riñoneras",
-    icon: <BriefcaseBusiness className="w-6 h-6" />,
-    direccion: "/coleccion/rinoneras/anebre",
-  },
-  {
-    id: 2,
-    name: "Riñonera Auricular",
-    category: "Riñoneras",
-    icon: <BriefcaseBusiness className="w-6 h-6" />,
-    direccion: "/coleccion/rinoneras/auricular",
-  },
-  {
-    id: 3,
-    name: "Riñonera Etib",
-    category: "Riñoneras",
-    icon: <BriefcaseBusiness className="w-6 h-6" />,
-    direccion: "/coleccion/rinoneras/etib",
-  },
-  {
-    id: 4,
-    name: "Riñonera Olimpica",
-    category: "Riñoneras",
-    icon: <BriefcaseBusiness className="w-6 h-6" />,
-    direccion: "/coleccion/rinoneras/olimpica",
-  },
-];
+const bags = rinonerasData.rinoneras.map(rinonera => ({
+  id: rinonera.id,
+  name: rinonera.name,
+  category: rinonera.category,
+  icon: <Backpack className="w-6 h-6" />,
+  direccion: `/coleccion/rinoneras/${rinonera["name-title"]}`
+}));
+
 function Layout({ children }) {
   return (
     <div>
-      <NavProduct bags={bags} />
+      <NavProduct bags={bags}/>
       {children}
     </div>
   );
