@@ -11,13 +11,19 @@ const bags = maletasData.maletas.map(maleta => ({
   direccion: `/coleccion/maletas/${maleta["name-title"]}`
 }));
 
-function Layout({ children }) {
+export const metadata = {
+  title: "Maletas | Kert S.A.S - Catálogo de Maletas al Por Mayor",
+  description: "Explora nuestra exclusiva colección de maletas al por mayor. Calidad premium, diseños modernos y materiales duraderos para distribuidores.",
+  alternates: {
+    canonical: "https://creacionkert.com/coleccion/maletas",
+  },
+};
+
+export default function MaletasLayout({ children }) {
   return (
-    <div>
+    <div className="flex flex-col w-full">
       <NavProduct bags={bags}/>
       {children}
     </div>
   );
 }
-
-export default Layout;

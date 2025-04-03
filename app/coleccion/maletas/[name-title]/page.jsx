@@ -8,8 +8,11 @@ export async function generateMetadata({ params }) {
   const nameTitle = (await params)['name-title'];
   const maleta = maletasData.maletas.find(m => m['name-title'] === nameTitle);
   return {
-    title: maleta ? `${maleta.name} | Kert S.A.S` : 'Maleta no encontrada',
-    description: maleta ? `Detalles de ${maleta.name} - ${maleta.category}` : 'Maleta no encontrada'
+    title: maleta ? `${maleta.name} | Kert S.A.S - Maletas al Por Mayor` : 'Maleta no encontrada',
+    description: maleta ? `Detalles de ${maleta.name} - ${maleta.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Maleta no encontrada',
+    alternates: {
+      canonical: `https://creacionkert.com/coleccion/maletas/${nameTitle}`,
+    }
   };
 }
 

@@ -11,13 +11,19 @@ const bags = rinonerasData.rinoneras.map(rinonera => ({
   direccion: `/coleccion/rinoneras/${rinonera["name-title"]}`
 }));
 
-function Layout({ children }) {
+export const metadata = {
+  title: "Riñoneras | Kert S.A.S - Catálogo de Riñoneras al Por Mayor",
+  description: "Descubre nuestra línea de riñoneras al por mayor. Diseños modernos, materiales duraderos y precios competitivos para distribuidores.",
+  alternates: {
+    canonical: "https://creacionkert.com/coleccion/rinoneras",
+  },
+};
+
+export default function RinonerasLayout({ children }) {
   return (
-    <div>
+    <div className="flex flex-col w-full">
       <NavProduct bags={bags}/>
       {children}
     </div>
   );
 }
-
-export default Layout;

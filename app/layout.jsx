@@ -10,10 +10,14 @@ const RobotoFont = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
 });
 
+// Exportamos directamente metadata como un objeto
 export const metadata = {
   title: "Kert S.A.S | Fabricante de Maletas al Por Mayor en Colombia",
   description: "Fabricante líder de maletas, mochilas y accesorios al por mayor en Colombia. Calidad premium, precios competitivos y pedidos mínimos accesibles. Especialistas en producción de maletas promocionales y corporativas.",
   keywords: "maletas al por mayor, fabricante de maletas, maletas promocionales, maletas corporativas, mochilas al por mayor, accesorios de viaje, producción de maletas, Colombia, maletas personalizadas, maletas publicitarias",
+  alternates: {
+    canonical: "https://creacionkert.com",
+  },
   openGraph: {
     title: "Kert S.A.S | Fabricante de Maletas al Por Mayor en Colombia",
     description: "Fabricante líder de maletas, mochilas y accesorios al por mayor en Colombia. Calidad premium, precios competitivos y pedidos mínimos accesibles.",
@@ -36,18 +40,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`${RobotoFont.variable} antialiased mt-[68px]`}>
         <Navbar />
-        
-          {children}
-        
+        {children}
         <Footer />
         <div>
           <WhatsappButton
             message="¡Hola! Quisiera más información."
             phoneNumber="+573116095224"
-          /></div>
+          />
+        </div>
       </body>
     </html>
   );

@@ -1,10 +1,10 @@
 "use client";
 
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Package, Truck, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
 
 const categories = [
   {
