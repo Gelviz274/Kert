@@ -1,3 +1,4 @@
+# Permitir a todos los robots de búsqueda rastrear el sitio
 User-agent: *
 Allow: /
 Allow: /coleccion/
@@ -7,9 +8,16 @@ Allow: /coleccion/rinoneras/
 Allow: /coleccion/neceser/
 Allow: /sobre-nosotros/
 Allow: /contacto/
+Allow: /_next/image
+Allow: /_next/static
 
+# Sitemap
+Sitemap: https://creacionkert.com/sitemap.xml
+
+# Disallow duplicated or unnecessary pages
 Disallow: /api/
-Disallow: /_next/
-Disallow: /static/
+Disallow: /_next/data/
+Disallow: /404
 
-Sitemap: https://kert.com/sitemap.xml 
+# No bloquear archivos estáticos
+# Disallow: /static/ 

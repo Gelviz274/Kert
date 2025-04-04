@@ -3,11 +3,52 @@ import React from 'react';
 export const metadata = {
   title: "Contacto | Kert S.A.S - Hablemos de tu Proyecto",
   description: "Contáctanos para obtener información sobre pedidos al por mayor de maletas, mochilas y accesorios. Estamos listos para ayudarte con tu proyecto.",
+  keywords: "contacto fabricante maletas, pedidos mayoristas bolsos, cotizar maletas al por mayor, proveedores mochilas Colombia, contacto Kert, comunicarse con fabricante",
   alternates: {
     canonical: "https://creacionkert.com/contacto",
+  },
+  openGraph: {
+    title: "Contacto | Kert S.A.S - Hablemos de tu Proyecto",
+    description: "Contáctanos para obtener información sobre pedidos al por mayor de maletas, mochilas y accesorios. Estamos listos para ayudarte con tu proyecto.",
+    url: "https://creacionkert.com/contacto",
+    type: "website",
   },
 };
 
 export default function ContactoLayout({ children }) {
-  return <>{children}</>;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "Kert S.A.S",
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+573213062852",
+                  "contactType": "customer service",
+                  "areaServed": "CO",
+                  "availableLanguage": "Spanish"
+                },
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+573223006013",
+                  "contactType": "sales",
+                  "areaServed": "CO",
+                  "availableLanguage": "Spanish"
+                }
+              ],
+              "email": "contacto@creacionkert.com"
+            }
+          })
+        }}
+      />
+      {children}
+    </>
+  );
 } 

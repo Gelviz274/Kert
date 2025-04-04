@@ -16,7 +16,7 @@ export const metadata = {
   description:
     "Fabricante líder de maletas, mochilas y accesorios al por mayor en Colombia. Calidad premium, precios competitivos y pedidos mínimos accesibles.",
   keywords:
-    "maletas al por mayor, fabricante de maletas, maletas promocionales, maletas corporativas, mochilas al por mayor, accesorios de viaje, producción de maletas, Colombia, maletas personalizadas, maletas publicitarias",
+    "maletas al por mayor, fabricante de maletas, maletas promocionales, maletas corporativas, mochilas al por mayor, accesorios de viaje, producción de maletas, Colombia, maletas personalizadas, maletas publicitarias, riñoneras mayoristas, bolsos empresariales",
   alternates: {
     canonical: "https://creacionkert.com",
   },
@@ -27,6 +27,21 @@ export const metadata = {
     type: "website",
     locale: "es_CO",
     siteName: "Kert S.A.S",
+    url: "https://creacionkert.com",
+    images: [
+      {
+        url: "https://creacionkert.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Kert S.A.S - Maletas al por mayor",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kert S.A.S | Fabricante de Maletas al Por Mayor en Colombia",
+    description: "Fabricante líder de maletas, mochilas y accesorios al por mayor en Colombia.",
+    images: ["https://creacionkert.com/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -39,6 +54,9 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#0c0844",
+  category: "business",
 };
 
 export default function RootLayout({ children }) {
@@ -49,6 +67,36 @@ export default function RootLayout({ children }) {
         <meta
           name="google-site-verification"
           content="CNOPBrrmzN2I9WHIMN-XW5mT6WdZ4i6LgzqB39MeJ38"
+        />
+        {/* Manifest para PWA */}
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Kert S.A.S" />
+        {/* Datos estructurados JSON-LD para empresas locales */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Kert S.A.S",
+              "url": "https://creacionkert.com",
+              "logo": "https://creacionkert.com/logo.png",
+              "description": "Fabricante líder de maletas, mochilas y accesorios al por mayor en Colombia.",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+573213062852",
+                "contactType": "customer service",
+                "availableLanguage": "Spanish"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Colombia"
+              }
+            })
+          }}
         />
       </head>
 
