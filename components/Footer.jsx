@@ -120,7 +120,7 @@ export default function Footer() {
                                 <div>
                                     <p className="font-medium text-sm">WhatsApp</p>
                                     <a 
-                                        href="https://wa.me/573213062852" 
+                                        href="https://wa.me/573116095224" 
                                         target="_blank" 
                                         rel="noopener noreferrer" 
                                         className="text-gray-300 hover:text-amarillo transition-colors duration-300 block text-sm"
