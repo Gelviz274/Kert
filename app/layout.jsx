@@ -11,7 +11,6 @@ const RobotoFont = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
 });
 
-// Exportamos directamente metadata como un objeto
 export const metadata = {
   title: "Kert S.A.S | Fabricante de Maletas al Por Mayor en Colombia",
   description:
@@ -63,6 +62,18 @@ export default function RootLayout({ children }) {
           })(window,document,'script','dataLayer','GTM-NTNZD8WG');`}
         </Script>
 
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-5Q54M6CDKM"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-5Q54M6CDKM');`}
+        </Script>
+
         {/* Google Tag Manager - Body (noscript) */}
         <noscript>
           <iframe
@@ -78,6 +89,7 @@ export default function RootLayout({ children }) {
         <Footer />
 
         <div>
+          
           <WhatsappButton
             message="¡Hola! Quisiera más información."
             phoneNumber="+573116095224"
