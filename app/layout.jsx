@@ -89,6 +89,7 @@ export default function RootLayout({ children }) {
         <Footer />
 
         <div>
+          
           <WhatsappButton
             message="¡Hola! Quisiera más información."
             phoneNumber="+573116095224"
