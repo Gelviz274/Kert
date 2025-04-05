@@ -1,5 +1,9 @@
 import React from 'react';
 
+export const viewport = {
+  themeColor: "#0c0844",
+};
+
 export const metadata = {
   title: "Colección | Kert S.A.S - Catálogo de Productos al Por Mayor",
   description: "Explora nuestra colección de maletas, mochilas, riñoneras y accesorios al por mayor. Productos de alta calidad para distribuidores y mayoristas en Colombia.",

@@ -163,6 +163,30 @@
         "/Productos/maleta-igac-dere.jpg",
         "/Productos/maleta-igac-atras.jpg"
       ]
+    },{
+      "id": "botiquin",
+      "name": "Botiquín",
+      "name-title": "botiquin",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 25,
+        "width": 30,
+        "depth": 25
+      },
+      "material": "Lona Morral Nacional",
+      "specifications": [
+        "Cuatro compartimientos", 
+        "Dos bolsillos principales",
+        "Bolsillo frontal y interno",
+        "Incluye organizador", 
+        "Cinta reflectiva"
+      ],
+      "minOrder": 50,      
+      "maxOrder": 150,
+      "images": [
+        "/Productos/botiquin-cruz-roja.jpg",
+        "/Productos/maleta-botiquin-der.webp"
+      ]
     }
   ]
 } 

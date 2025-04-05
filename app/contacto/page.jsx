@@ -297,37 +297,7 @@ function ContactPage() {
                 </div>
 
                 {/* Sección de redes sociales */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                    className="mt-32 text-center"
-                >
-                    <h2 className="text-3xl font-bold mb-12">Síguenos en redes sociales</h2>
-                    <div className="flex justify-center gap-8">
-                        <motion.a
-                            whileHover={{ scale: 1.1, rotate: 5 }}
-                            whileTap={{ scale: 0.9 }}
-                            href="https://instagram.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-gradient-to-br from-purple-600 to-pink-500 text-white p-5 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 group"
-                        >
-                            <Instagram className="w-7 h-7 transform group-hover:rotate-12 transition-transform duration-300" />
-                        </motion.a>
-                        <motion.a
-                            whileHover={{ scale: 1.1, rotate: -5 }}
-                            whileTap={{ scale: 0.9 }}
-                            href="https://facebook.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-[#1877F2] text-white p-5 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 group"
-                        >
-                            <Facebook className="w-7 h-7 transform group-hover:rotate-12 transition-transform duration-300" />
-                        </motion.a>
-                    </div>
-                </motion.div>
+                
             </main>
 
             {/* CTA Final mejorado */}

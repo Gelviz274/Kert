@@ -64,9 +64,7 @@ export default function Footer() {
                             {[
                                 { href: "/", label: "Inicio" },
                                 { href: "/coleccion", label: "Colección" },
-                                { href: "/coleccion/rinoneras", label: "Riñoneras" },
-                                { href: "/coleccion/maletas", label: "Maletas" },
-                                { href: "/nuestra-historia", label: "Nuestra Historia" },
+                                { href: "/sobre-nosotros", label: "Sobre Nosotros" },
                                 { href: "/contacto", label: "Contacto" },
                             ].map((link, index) => (
                                 <Link 
@@ -143,7 +141,7 @@ export default function Footer() {
                         &copy; {currentYear} Kert S.A.S. Todos los derechos reservados.
                     </div>
                     <div className="flex space-x-6">
-                        <Link href="/politicas-de-privacidad" className="hover:text-amarillo transition-colors duration-300">
+                        <Link href="/politica-de-privacidad" className="hover:text-amarillo transition-colors duration-300">
                             Política de Privacidad
                         </Link>
                         <Link href="/terminos-y-condiciones" className="hover:text-amarillo transition-colors duration-300">

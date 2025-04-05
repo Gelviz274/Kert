@@ -20,22 +20,23 @@ const items = [
     title: "Maleta de Viaje",
     description: "Resistente y espaciosa, ideal para viajes largos y aventuras. Diseñada con materiales de alta calidad para mayor durabilidad.",
     buttonText: "Ver más",
-    href: "/productos/maletas",
+    href: "/coleccion/maletas",
   },
   {
     image: "/Fabrica/IMG_1878.jpg",
     title: "Mochila Escolar",
     description: "Ligera y cómoda para el uso diario. Perfecta para estudiantes y profesionales con múltiples compartimentos.",
     buttonText: "Comprar",
-    href: "/productos/mochilas",
+    href: "/coleccion/rinoneras",
   },
   {
-    image: "/Fabrica/IMG_1888.jpg",
+    image: "/Productos/hubemar.jpg",
     title: "Bolsa Deportiva",
     description: "Perfecta para el gimnasio y entrenamientos. Espacio amplio y materiales que resisten la humedad y el uso intensivo.",
     buttonText: "Explorar",
-    href: "/productos/bolsos",
+    href: "/coleccion/neceser",
   },
+  
 ];
 
 export default function Carrusel() {

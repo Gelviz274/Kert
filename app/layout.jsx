@@ -11,6 +11,12 @@ const RobotoFont = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0c0844",
+};
+
 export const metadata = {
   title: "Kert S.A.S | Fabricante de Maletas al Por Mayor en Colombia",
   description:
@@ -54,8 +60,6 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#0c0844",
   category: "business",
 };
 
