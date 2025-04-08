@@ -42,8 +42,9 @@ export default function ColeccionLayout({ children }) {
                     "@type": "Offer",
                     "availability": "https://schema.org/InStock",
                     "priceCurrency": "COP",
-                    "price": "0", // o puedes usar "Solicitar cotización" si lo deseas
-                    "url": "https://creacionkert.com/contacto" // o donde quieras que contacten
+                    "price": "0",
+                    "priceValidUntil": "2030-12-31",
+                    "url": "https://creacionkert.com/contacto"
                   }
                 }
               },
@@ -61,6 +62,7 @@ export default function ColeccionLayout({ children }) {
                     "availability": "https://schema.org/InStock",
                     "priceCurrency": "COP",
                     "price": "0",
+                    "priceValidUntil": "2030-12-31",
                     "url": "https://creacionkert.com/contacto"
                   }
                 }
@@ -69,7 +71,6 @@ export default function ColeccionLayout({ children }) {
           })
         }}
       />
-
       {children}
     </>
   );
