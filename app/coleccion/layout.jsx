@@ -37,7 +37,14 @@ export default function ColeccionLayout({ children }) {
                   "name": "Riñoneras",
                   "description": "Riñoneras de alta calidad para distribución al por mayor",
                   "url": "https://creacionkert.com/coleccion/rinoneras",
-                  "image": "https://creacionkert.com/Productos/rinonera-olimpica.jpg"
+                  "image": "https://creacionkert.com/Productos/rinonera-olimpica.jpg",
+                  "offers": {
+                    "@type": "Offer",
+                    "availability": "https://schema.org/InStock",
+                    "priceCurrency": "COP",
+                    "price": "0", // o puedes usar "Solicitar cotización" si lo deseas
+                    "url": "https://creacionkert.com/contacto" // o donde quieras que contacten
+                  }
                 }
               },
               {
@@ -48,13 +55,21 @@ export default function ColeccionLayout({ children }) {
                   "name": "Maletas",
                   "description": "Maletas de alta calidad para distribución al por mayor",
                   "url": "https://creacionkert.com/coleccion/maletas",
-                  "image": "https://creacionkert.com/Productos/Bolso-azul-rojo.jpg"
+                  "image": "https://creacionkert.com/Productos/Bolso-azul-rojo.jpg",
+                  "offers": {
+                    "@type": "Offer",
+                    "availability": "https://schema.org/InStock",
+                    "priceCurrency": "COP",
+                    "price": "0",
+                    "url": "https://creacionkert.com/contacto"
+                  }
                 }
               }
             ]
           })
         }}
       />
+
       {children}
     </>
   );
