@@ -1,12 +1,12 @@
 "use client"
 
-import { Building2, Award, Truck, Users, Compass, Target, Eye, Shield, Package, Rocket, Handshake } from 'lucide-react';
+import { Building2, Award, Truck, Users, Eye, Shield, Package, Rocket, Handshake } from 'lucide-react';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const fundadores = [
+const fundadores = [    
     {
         name: "Sandra",
         role: "Madre emprendedora y el pilar detrás de KERT.",
@@ -59,7 +59,7 @@ function NosotrosPage() {
                     <div className="relative">
                         <div className="absolute -inset-4 bg-azul rounded-lg transform rotate-2"></div>
                         <Image
-                            src="/Fabrica/nuestra-historia.jpg"
+                            src="/Productos/IMG_1860.jpg"
                             width={800}
                             height={500}
                             alt="Proceso de fabricación"

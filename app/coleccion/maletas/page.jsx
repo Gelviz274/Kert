@@ -161,15 +161,12 @@ function MaletasPage() {
                       <h3 className="text-2xl font-bold text-azul mb-2">{maleta.name}</h3>
                       <div className="h-1 w-20 bg-amarillo rounded-full transform origin-left group-hover:scale-x-150 transition-transform duration-300"></div>
                     </div>
-                    <div className="grid grid-cols-2 gap-6 mb-8">
+                    <div className="grid grid-cols-1 gap-6 mb-8">
                       <div className="bg-gray-50 rounded-xl p-4 text-center">
                         <p className="text-sm text-gray-500 mb-1">Pedido mínimo</p>
                         <p className="text-lg font-bold text-azul">{maleta.minOrder}</p>
                       </div>
-                      <div className="bg-gray-50 rounded-xl p-4 text-center">
-                        <p className="text-sm text-gray-500 mb-1">Pedido máximo</p>
-                        <p className="text-lg font-bold text-azul">{maleta.maxOrder}</p>
-                      </div>
+
                     </div>
                     <Link href={`/coleccion/maletas/${maleta['name-title']}`} className="block">
                       <button className="w-full bg-azul hover:bg-amarillo text-white hover:text-azul py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300 group-hover:shadow-lg">

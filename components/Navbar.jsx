@@ -81,16 +81,14 @@ export default function Navbar() {
                 <NavigationMenu>
                     <NavigationMenuList>
                         <NavigationMenuItem>
-                            <Link href="/" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+
+                                <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
                                     Inicio
                                 </NavigationMenuLink>
-                            </Link>
+
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <Link href="/coleccion" legacyBehavior passHref>
-                                <NavigationMenuTrigger>Coleccion</NavigationMenuTrigger>
-                            </Link>
+                                <NavigationMenuTrigger href="/coleccion">Coleccion</NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-azul border-0">
                                     {components.map((component) => (
@@ -107,18 +105,14 @@ export default function Navbar() {
                             </NavigationMenuContent>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <Link href="/sobre-nosotros" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                <NavigationMenuLink href='/sobre-nosotros' className={navigationMenuTriggerStyle()}>
                                     Sobre Nosotros
                                 </NavigationMenuLink>
-                            </Link>
                         </NavigationMenuItem> 
                         <NavigationMenuItem>
-                            <Link href="/contacto" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                <NavigationMenuLink href="/contacto" className={navigationMenuTriggerStyle()}>
                                     Contacto
                                 </NavigationMenuLink>
-                            </Link>
                         </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>

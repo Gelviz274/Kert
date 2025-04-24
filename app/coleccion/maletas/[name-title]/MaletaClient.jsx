@@ -102,18 +102,13 @@ function MaletaClient({ maleta }) {
                 Información de Pedido
               </h3>
               <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
-                <div className="text-center flex-1 border-r border-gray-200">
+                <div className="text-center flex-1 ">
                   <p className="text-sm text-gray-600">Pedido Mínimo</p>
                   <p className="text-xl font-bold text-azul">
                     {maleta.minOrder.toLocaleString()} unidades
                   </p>
                 </div>
-                <div className="text-center flex-1">
-                  <p className="text-sm text-gray-600">Pedido Máximo</p>
-                  <p className="text-xl font-bold text-azul">
-                    {maleta.maxOrder.toLocaleString()} unidades
-                  </p>
-                </div>
+                
               </div>
             </div>
 

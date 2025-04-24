@@ -1,17 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['images.unsplash.com', 'creacionkert.com'],
+        domains: ['creacionkert.com'],
         formats: ['image/avif', 'image/webp'],
     },
     compress: true,
     poweredByHeader: false,
     reactStrictMode: true,
-    swcMinify: true,
-    i18n: {
-        locales: ['es'],
-        defaultLocale: 'es',
-    },
     headers: async () => {
         return [
             {

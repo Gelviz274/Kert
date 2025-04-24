@@ -16,18 +16,18 @@ import { usePathname } from "next/navigation";
 
 const items = [
   {
-    image: "/Fabrica/IMG_1866.jpg",
-    title: "Maleta de Viaje",
-    description: "Resistente y espaciosa, ideal para viajes largos y aventuras. Diseñada con materiales de alta calidad para mayor durabilidad.",
-    buttonText: "Ver más",
-    href: "/coleccion/maletas",
+    image: "/Productos/Bolso-azul-rojo.jpg",
+    title: "Mochila Corporativa ",
+    description: "Diseñada para resistir el ritmo diario, esta mochila combina estilo y funcionalidad. Ideal para promociones, regalos empresariales o uso escolar. ¡Luce tu marca con calidad!",
+    buttonText: "Conócela ahora",
+    href: "/coleccion/maletas/maleta-isabel",
   },
   {
-    image: "/Fabrica/IMG_1878.jpg",
-    title: "Mochila Escolar",
-    description: "Ligera y cómoda para el uso diario. Perfecta para estudiantes y profesionales con múltiples compartimentos.",
-    buttonText: "Comprar",
-    href: "/coleccion/rinoneras",
+    image: "/Productos/rinonera-olimpica.jpg",
+    title: "Cangurera Deportiva Olímpica",
+    description: "Práctica, ligera y con el espacio justo para lo esencial. Ideal para eventos, promociones o uso diario. ¡Lleva tu marca a todas partes con estilo y comodidad!",
+    buttonText: "Descúbrela aquí",
+    href: "/coleccion/rinoneras/rinonera-olimpica",
   },
   {
     image: "/Productos/hubemar.jpg",

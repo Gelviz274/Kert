@@ -108,12 +108,6 @@ function NecesClient({ neceser }) {
                     {neceser.minOrder.toLocaleString()} unidades
                   </p>
                 </div>
-                <div className="text-center flex-1">
-                  <p className="text-sm text-gray-600">Pedido Máximo</p>
-                  <p className="text-xl font-bold text-azul">
-                    {neceser.maxOrder.toLocaleString()} unidades
-                  </p>
-                </div>
               </div>
             </div>
 
