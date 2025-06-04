@@ -3,11 +3,12 @@ User-agent: *
 Allow: /
 Allow: /coleccion/
 Allow: /coleccion/maletas/
-Allow: /coleccion/mochilas/
 Allow: /coleccion/rinoneras/
-Allow: /coleccion/neceser/
+Allow: /coleccion/otros/
 Allow: /sobre-nosotros/
 Allow: /contacto/
+Allow: /politica-de-privacidad/
+Allow: /terminos-y-condiciones/
 Allow: /_next/image
 Allow: /_next/static
 
@@ -18,6 +19,9 @@ Sitemap: https://creacionkert.com/sitemap.xml
 Disallow: /api/
 Disallow: /_next/data/
 Disallow: /404
+Disallow: /500
+Disallow: /*?*
+Disallow: /*/amp/
 
 # No bloquear archivos estáticos
 # Disallow: /static/ 

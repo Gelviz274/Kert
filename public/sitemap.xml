@@ -5,52 +5,59 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
 <url>
-  <loc>https://www.creacionkert.com/</loc>
-  <lastmod>2025-04-05T01:53:33+00:00</lastmod>
+  <loc>https://creacionkert.com/</loc>
+  <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.creacionkert.com/sobre-nosotros</loc>
-  <lastmod>2025-04-05T01:53:33+00:00</lastmod>
+  <loc>https://creacionkert.com/sobre-nosotros</loc>
+  <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.creacionkert.com/contacto</loc>
-  <lastmod>2025-04-05T01:53:33+00:00</lastmod>
+  <loc>https://creacionkert.com/contacto</loc>
+  <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.creacionkert.com/coleccion/maletas</loc>
-  <lastmod>2025-04-05T01:53:33+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://creacionkert.com/coleccion</loc>
+  <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://www.creacionkert.com/coleccion/rinoneras</loc>
-  <lastmod>2025-04-05T01:53:33+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://creacionkert.com/coleccion/maletas</loc>
+  <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
 </url>
 <url>
-  <loc>https://www.creacionkert.com/coleccion/neceser</loc>
-  <lastmod>2025-04-05T01:53:33+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://creacionkert.com/coleccion/rinoneras</loc>
+  <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
 </url>
 <url>
-  <loc>https://www.creacionkert.com/coleccion</loc>
-  <lastmod>2025-04-05T01:53:33+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://creacionkert.com/coleccion/otros</loc>
+  <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
 </url>
 <url>
-  <loc>https://www.creacionkert.com/politica-de-privacidad</loc>
-  <lastmod>2025-04-05T01:53:33+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://creacionkert.com/politica-de-privacidad</loc>
+  <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.50</priority>
 </url>
 <url>
-  <loc>https://www.creacionkert.com/terminos-y-condiciones</loc>
-  <lastmod>2025-04-05T01:53:33+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://creacionkert.com/terminos-y-condiciones</loc>
+  <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.50</priority>
 </url>
 
 

@@ -79,9 +79,9 @@
       "minOrder": 250,
       "maxOrder": 700,
       "images": [
-        "/Productos/MALETAS/Cemex/maleta-cemex.jpg",
-        "/Productos/MALETAS/Cemex/maleta-cemex-izquierda.webp",
-        "/Productos/MALETAS/Cemex/maleta-cemex-atras.webp"
+        "/Productos/MALETAS/cemex/maleta-cemex.jpg",
+        "/Productos/MALETAS/cemex/maleta-cemex-izquierda.webp",
+        "/Productos/MALETAS/cemex/maleta-cemex-atras.webp"
       ]
     },
     {
@@ -106,7 +106,7 @@
       "minOrder": 200,
       "maxOrder": 800,
       "images": [
-        "/Productos/MALETAS/DHL/cuadrante.png",
+        "/Productos/MALETAS/DHL/Cuadrante.png",
         "/Productos/MALETAS/DHL/bolso-dhl.jpg",
         "/Productos/MALETAS/DHL/bolso-dhl-izquierda.jpg",
         "/Productos/MALETAS/DHL/bolso-dhl-atras.jpg",
@@ -162,9 +162,9 @@
       "minOrder": 300,
       "maxOrder": 800,  
       "images": [
-        "/Productos/MALETAS/Igac/maleta-igac.jpg",
-        "/Productos/MALETAS/Igac/maleta-igac-dere.jpg",
-        "/Productos/MALETAS/Igac/maleta-igac-atras.jpg"
+        "/Productos/MALETAS/igac/maleta-igac.jpg",
+        "/Productos/MALETAS/igac/maleta-igac-dere.jpg",
+        "/Productos/MALETAS/igac/maleta-igac-atras.jpg"
       ]
     },{
       "id": "pionero",

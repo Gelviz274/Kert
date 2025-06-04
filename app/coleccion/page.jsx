@@ -23,7 +23,7 @@ const categories = [
   {
     title: "Bolsos",
     subtitle: "Pedido mínimo: 100 unidades",
-    image: "/Productos/bolso-dhl.jpg",
+    image: "/Productos/MALETAS/DHL/bolso-dhl.jpg",
     className: "col-span-1 row-span-1",
     href: "/coleccion/bolsos",
   },
@@ -67,7 +67,7 @@ const mas_vendidos = [
     Nombre: "Bolso 'Isabel'",
     Material: "Lona Morral importado",
     Pedido_min: 200,
-    image: "/Productos/Bolso-azul-rojo.jpg",
+    image: "/Productos/MALETAS/Isabel/Bolso-azul-rojo.jpg",
   },
   {
     id: 3,
@@ -99,7 +99,7 @@ export default function ColeccionPage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/Productos/Bolso-azul-rojo.jpg"
+            src="/Productos/MALETAS/Isabel/Bolso-azul-rojo.jpg"
             alt="Hero background"
             fill
             className="object-cover opacity-20"
