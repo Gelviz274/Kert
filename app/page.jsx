@@ -144,67 +144,96 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-azul">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-5 text-white">
-            Nuestras Categorías de Productos
-          </h2>
-          <div className="w-2/6 h-1  bg-amarillo mx-auto mb-12  " />
+      <section className="py-24 px-4 bg-gradient-to-b from-azul to-[#05004c] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+        <div className="max-w-6xl mx-auto relative">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-5xl font-bold mb-4 text-white">
+              Nuestras Categorías de Productos
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-amarillo to-amarillo/50 mx-auto rounded-full" />
+          </motion.div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 title: "Riñoneras",
-                image: "/Productos/rinonera-olimpica.jpg",
+                image: "/Productos/RINONERAS/Olimpica/CangureraOlimpica.webp",
                 description:
                   "El compañero perfecto para tus viajes y actividades diarias, combinando estilo y comodidad.",
               },
               {
                 title: "Mochilas",
-                image: "/Productos/Bolso-azul-rojo.jpg",
+                image: "/Productos/MALETAS/Isabel/Bolso-azul-rojo.jpg",
                 description: "Mochilas duraderas para uso diario y aventura",
               },
               {
                 title: "Bolsos de Negocios",
-                image: "/Productos/Bolso-negro-u.jpg",
+                image: "/Productos/BOLSODEMANO/Hubemar/hubemar.jpg",
                 description:
                   "Diseño moderno y funcional, ideal para el viajero urbano que busca calidad y practicidad.",
               },
             ].map((product, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="group relative overflow-hidden rounded-lg shadow-lg"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-amarillo/20 transition-all duration-500"
               >
                 <div
-                  className="h-80 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  className="h-96 bg-cover bg-center transition-all duration-700 group-hover:scale-110"
                   style={{ backgroundImage: `url(${product.image})` }}
                 />
-                <div
-                  className="absolute inset-0 flex flex-col items-center justify-center"
-                  style={{ backgroundColor: "rgba(12, 8, 68, 0.6)" }}
-                >
-                  <h3 className="text-amarillo/90 text-2xl font-bold mb-2">
+                <div className="absolute inset-0 bg-gradient-to-t from-azul/90 via-azul/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 flex flex-col items-center justify-end p-8 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                  <h3 className="text-amarillo text-3xl font-bold mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                     {product.title}
                   </h3>
-                  <p className="text-white text-center px-4">
+                  <p className="text-white/90 text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
                     {product.description}
                   </p>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileHover={{ scale: 1.05 }}
+                    className="mt-4"
+                  >
+                    <Link href={`/coleccion/${product.title.toLowerCase()}`}>
+                      <button className="bg-amarillo/90 hover:bg-amarillo text-azul px-6 py-2 rounded-full text-sm font-semibold transition-colors duration-300">
+                        Explorar
+                      </button>
+                    </Link>
+                  </motion.div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
-          <div className="flex w-full items-center justify-center mt-10">
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex w-full items-center justify-center mt-16"
+          >
             <Link href="/coleccion">
               <motion.button
-                className="bg-amarillo text-azul px-4 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-2 hover:bg-amarillo/90 transition-colors duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-amarillo text-azul px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-3 hover:bg-amarillo/90 transition-all duration-300 shadow-lg hover:shadow-amarillo/20"
               >
-                Ver Colección
+                Ver Colección Completa
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
       <Testimonios />

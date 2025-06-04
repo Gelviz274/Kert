@@ -23,10 +23,11 @@
       "minOrder": 200,
       "maxOrder": 600,
       "images": [
-        "/Productos/Bolso-azul-rojo.jpg",
-        "/Productos/bolso-azul-rojo-izquierda.webp",
-        "/Productos/bolso-azul-rojo-atras.webp",
-        "/Productos/bolso-azul-rojo-arriba.webp"
+        "/Productos/MALETAS/Isabel/Maletainpetu.webp",
+        "/Productos/MALETAS/Isabel/Bolso-azul-rojo.jpg",
+        "/Productos/MALETAS/Isabel/bolso-azul-rojo-izquierda.webp",
+        "/Productos/MALETAS/Isabel/bolso-azul-rojo-atras.webp",
+        "/Productos/MALETAS/Isabel/bolso-azul-rojo-arriba.webp"
       ]
     },
     {
@@ -51,9 +52,9 @@
       "minOrder": 300,
       "maxOrder": 800,
       "images": [
-        "/Productos/Bolso-save.jpg",
-        "/Productos/bolso-save-derecha.webp",
-        "/Productos/bolso-save-atras.webp"
+        "/Productos/MALETAS/SaveTheChildren/Bolso-save.jpg",
+        "/Productos/MALETAS/SaveTheChildren/bolso-save-derecha.webp",
+        "/Productos/MALETAS/SaveTheChildren/bolso-save-atras.webp"
       ]
     },
     {
@@ -78,9 +79,9 @@
       "minOrder": 250,
       "maxOrder": 700,
       "images": [
-        "/Productos/maleta-cemex.jpg",
-        "/Productos/maleta-cemex-izquierda.webp",
-        "/Productos/maleta-cemex-atras.webp"
+        "/Productos/MALETAS/Cemex/maleta-cemex.jpg",
+        "/Productos/MALETAS/Cemex/maleta-cemex-izquierda.webp",
+        "/Productos/MALETAS/Cemex/maleta-cemex-atras.webp"
       ]
     },
     {
@@ -102,13 +103,14 @@
         "Cargadera ajustable",
         "Forrado con tifón"
       ],
-      "minOrder": 300,
+      "minOrder": 200,
       "maxOrder": 800,
       "images": [
-        "/Productos/bolso-dhl.jpg",
-        "/Productos/bolso-dhl-izquierda.jpg",
-        "/Productos/bolso-dhl-atras.jpg",
-        "/Productos/bolso-dhl-cerca.jpg"
+        "/Productos/MALETAS/DHL/cuadrante.png",
+        "/Productos/MALETAS/DHL/bolso-dhl.jpg",
+        "/Productos/MALETAS/DHL/bolso-dhl-izquierda.jpg",
+        "/Productos/MALETAS/DHL/bolso-dhl-atras.jpg",
+        "/Productos/MALETAS/DHL/bolso-dhl-cerca.jpg"
       ]
     },{
       "id": "fura",
@@ -134,9 +136,10 @@
       "minOrder": 300,
       "maxOrder": 800,
       "images": [
-        "/Productos/maleta-fura.webp",
-        "/Productos/maleta-fura-atras.webp",
-        "/Productos/maleta-fura-izq.webp"
+        "/Productos/MALETAS/Fura/MaletaVeta.webp",
+        "/Productos/MALETAS/Fura/maleta-fura.webp",
+        "/Productos/MALETAS/Fura/maleta-fura-atras.webp",
+        "/Productos/MALETAS/Fura/maleta-fura-izq.webp"
       ]
     },{
       "id": "igac",  
@@ -159,33 +162,64 @@
       "minOrder": 300,
       "maxOrder": 800,  
       "images": [
-        "/Productos/maleta-igac.jpg",
-        "/Productos/maleta-igac-dere.jpg",
-        "/Productos/maleta-igac-atras.jpg"
+        "/Productos/MALETAS/Igac/maleta-igac.jpg",
+        "/Productos/MALETAS/Igac/maleta-igac-dere.jpg",
+        "/Productos/MALETAS/Igac/maleta-igac-atras.jpg"
       ]
     },{
-      "id": "botiquin",
-      "name": "Botiquín",
-      "name-title": "botiquin",
+      "id": "pionero",
+      "name": "Maleta Pionero",
+      "name-title": "maleta-pionero",
       "category": "Maletas",
       "dimensions": {
-        "height": 25,
+        "height": 45,
         "width": 30,
-        "depth": 25
+        "depth": 18
       },
       "material": "Lona Morral Nacional",
       "specifications": [
-        "Cuatro compartimientos", 
-        "Dos bolsillos principales",
-        "Bolsillo frontal y interno",
-        "Incluye organizador", 
-        "Cinta reflectiva"
+        "Tapa superior con broche tipo clic",
+        "Bolsillo frontal grande con tapa",
+        "Bolsillos laterales con cierre",
+        "Compartimento principal con cierre interno",
+        "con cordón",
+        "Correas acolchadas ajustables",
+        "Asa superior para colgar",
+        "Tela tipo lona resistente"
       ],
-      "minOrder": 50,      
-      "maxOrder": 150,
+      "minOrder": 250,
+      "maxOrder": 700,
       "images": [
-        "/Productos/botiquin-cruz-roja.jpg",
-        "/Productos/maleta-botiquin-der.webp"
+        "/Productos/MALETAS/Pionero/Maleta Drumond.webp",
+        "/Productos/MALETAS/Pionero/pionero.jpg",
+        "/Productos/MALETAS/Pionero/pionero2.jpg"
+      ]
+    },
+    {
+      "id": "arca",
+      "name": "Maleta Arca",
+      "name-title": "maleta-arca",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 39,
+        "width": 28,
+        "depth": 18
+      },
+      "material": "Lona Morral Nacional",
+      "specifications": [
+        "Tres compartimientos principales con cremallera",
+        "Bolsillo frontal con diseño curvo y cremallera",
+        "Bolsillos laterales en malla",
+        "Espaldar y cargaderas acolchadas",
+        "Asa superior para colgar",
+        "Tela de alta resistencia"
+      ],
+      "minOrder": 150,
+      "maxOrder": 400,
+      "images": [
+        "/Productos/MALETAS/Arca/Maleta HACIENDA.webp",
+        "/Productos/MALETAS/Arca/arca.jpg",
+        "/Productos/MALETAS/Arca/arca2.jpg"
       ]
     }
   ]

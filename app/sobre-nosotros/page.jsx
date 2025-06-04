@@ -42,30 +42,48 @@ function NosotrosPage() {
                 </div>
             </div>
 
-            <section className="max-w-7xl mx-auto py-24 px-8">
-                <div className="grid md:grid-cols-2 gap-16 items-center">
-                    <div>
-                        <h2 className="text-4xl font-bold text-azul mb-6">Nuestra Historia</h2>
-                        <div className="h-1 w-52 bg-amarillo mb-8"></div>
-                        <div className="space-y-6">
-                            <p className="text-gray-700 text-lg leading-relaxed">
+            <section className="max-w-7xl mx-auto py-32 px-8">
+                <div className="grid md:grid-cols-2 gap-20 items-center">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="relative"
+                    >
+                        <div className="absolute -left-8 top-0 w-1 h-full bg-gradient-to-b from-amarillo/50 to-azul/50"></div>
+                        <h2 className="text-6xl font-light text-azul mb-12 tracking-tight">
+                            Nuestra <span className="font-bold">Historia</span>
+                        </h2>
+                        <div className="space-y-8">
+                            <p className="text-gray-600 text-lg leading-relaxed">
                                 Durante el confinamiento de 2020, Sandra, una madre emprendedora, y su hijo Steben, un apasionado por el diseño, vieron en las maletas una oportunidad para reinventarse. Así nació KERT, una marca que combina calidad, estilo y funcionalidad, construida sobre valores familiares y un sueño compartido.
                             </p>
-                            <p className="text-gray-700 text-lg leading-relaxed">
+                            <p className="text-gray-600 text-lg leading-relaxed">
                                 Cada pieza que sale de nuestras instalaciones es el resultado de años de experiencia, innovación continua y un compromiso inquebrantable con la calidad. Nuestro equipo de expertos artesanos combina técnicas tradicionales con tecnología de última generación para crear productos que superan las expectativas.
                             </p>
                         </div>
-                    </div>
-                    <div className="relative">
-                        <div className="absolute -inset-4 bg-azul rounded-lg transform rotate-2"></div>
-                        <Image
-                            src="/Productos/IMG_1860.jpg"
-                            width={800}
-                            height={500}
-                            alt="Proceso de fabricación"
-                            className="relative w-full h-[500px] object-cover rounded-lg shadow-xl"
-                        />
-                    </div>
+                    </motion.div>
+                    <motion.div 
+                        className="relative"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 0.2 }}
+                        viewport={{ once: true }}
+                    >
+                        <div className="aspect-[4/3] relative overflow-hidden">
+                            <Image
+                                src="/Productos/MALETAS/Bolsoazul/IMG_1860.jpg"
+                                fill
+                                alt="Proceso de fabricación"
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
+                        </div>
+                        <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-amarillo/10 -z-10"></div>
+                        <div className="absolute -top-6 -left-6 w-32 h-32 bg-azul/10 -z-10"></div>
+                    </motion.div>
                 </div>
             </section>
 

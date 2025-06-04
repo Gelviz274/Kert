@@ -1,0 +1,51 @@
+{
+  "productos": [
+    {
+      "id": "botiquin",
+      "name": "Botiquín",
+      "name-title": "botiquin",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 25,
+        "width": 30,
+        "depth": 25
+      },
+      "material": "Lona Morral Nacional",
+      "specifications": [
+        "Cuatro compartimientos", 
+        "Dos bolsillos principales",
+        "Bolsillo frontal y interno",
+        "Incluye organizador", 
+        "Cinta reflectiva"
+      ],
+      "minOrder": 50,      
+      "maxOrder": 150,
+      "images": [
+        "/Productos/botiquin-cruz-roja.jpg",
+        "/Productos/maleta-botiquin-der.webp"
+      ]
+    },
+    {
+      "id": "piernera",
+      "name": "Riñonera Tipo Piernera",
+      "name-title": "rinonera-piernera",
+      "category": "Riñoneras",
+      "dimensions": {
+        "height": 25,
+        "width": 15,
+        "depth": 8
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Correas ajustables para la cintura y la pierna.",
+        "Múltiples compartimentos con cierre para guardar objetos personales como el celular,llaves, documentos, herramientas pequeñas, etc.",
+        "Un diseño que permite tener acceso rápido y manos libres."
+      ],
+      "minOrder": 100,
+      "maxOrder": 500,
+      "images": [
+        "/Productos/piernera.jpg"
+      ]
+    }
+  ]
+} 

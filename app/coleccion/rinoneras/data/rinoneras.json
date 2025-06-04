@@ -21,10 +21,11 @@
       "minOrder": 100,
       "maxOrder": 500,
       "images": [
-        "/Productos/rinonera-anebre.jpg",
-        "/Productos/anebre-atras.webp",
-        "/Productos/anebre-arriba.webp",
-        "/Productos/anebre-a-izq.webp"
+        "/Productos/RINONERAS/anebre/Riñonera enebre.webp",
+        "/Productos/RINONERAS/anebre/rinonera-anebre.jpg",
+        "/Productos/RINONERAS/anebre/anebre-atras.webp",
+        "/Productos/RINONERAS/anebre/anebre-arriba.webp",
+        "/Productos/RINONERAS/anebre/anebre-a-izq.webp"
       ]
     },
     {
@@ -48,6 +49,7 @@
       "minOrder": 200,
       "maxOrder": 600,
       "images": [
+        "/Productos/RINONERAS/NegraBasica/Cangurera negra.webp",
         "/Productos/rinonera-negra.jpg"
       ]
     },
@@ -72,8 +74,9 @@
       "minOrder": 100,
       "maxOrder": 500,
       "images": [
-        "/Productos/rinonera-etib.webp",
-        "/Productos/rinonera-etib-c.webp"
+        "/Productos/RINONERAS/etib/Cangurera naranja.webp",
+        "/Productos/RINONERAS/etib/rinonera-etib.webp",
+        "/Productos/RINONERAS/etib/rinonera-etib-c.webp"
       ]
     },
     {
@@ -98,6 +101,7 @@
       "minOrder": 150,
       "maxOrder": 500,
       "images": [
+        "/Productos/RINONERAS/Olimpica/CangureraOlimpica.webp",
         "/Productos/rinonera-olimpica.jpg",
         "/Productos/olimpica-izq.webp"
       ]
