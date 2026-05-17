@@ -6,10 +6,6 @@ import {
     Mail, 
     Phone, 
     MapPin, 
-    Instagram, 
-    Facebook, 
-    Twitter, 
-    Linkedin, 
     ArrowRight, 
     ChevronUp,
     MessageCircle
