@@ -3,8 +3,9 @@ import OtrosProductos from '../data/OtrosProductos.json';
 import OtroClient from './OtroClient';
 
 export async function generateMetadata({ params }) {
+  const { 'name-title': nameTitle } = await params;
   const producto = OtrosProductos.productos.find(
-    (p) => p["name-title"] === params["name-title"]
+    (p) => p["name-title"] === nameTitle
   );
 
   return {
@@ -13,9 +14,10 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function OtroPage({ params }) {
+export default async function OtroPage({ params }) {
+  const { 'name-title': nameTitle } = await params;
   const producto = OtrosProductos.productos.find(
-    (p) => p["name-title"] === params["name-title"]
+    (p) => p["name-title"] === nameTitle
   );
 
   if (!producto) {
