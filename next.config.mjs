@@ -1,12 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['creacionkert.com'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'creacionkert.com',
+            },
+        ],
         formats: ['image/avif', 'image/webp'],
     },
-    compress: true,
-    poweredByHeader: false,
-    reactStrictMode: true,
     headers: async () => {
         return [
             {
