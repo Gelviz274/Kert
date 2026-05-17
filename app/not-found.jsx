@@ -3,7 +3,6 @@
 import React, { useEffect } from 'react';
 import { PackageSearch, ArrowLeft, ShoppingBag, Search } from 'lucide-react';
 import Link from 'next/link';
-import Head from 'next/head';
 
 export default function NotFound() {
   // Registrar el evento de error 404 en Google Analytics
@@ -26,12 +25,6 @@ export default function NotFound() {
 
   return (
     <>
-      {/* Aunque Next.js gestiona los metadatos de forma diferente, añadimos esto para completitud */}
-      <Head>
-        <title>Página no encontrada | Kert S.A.S</title>
-        <meta name="robots" content="noindex, follow" />
-        <meta name="description" content="Lo sentimos, la página que estás buscando no existe o ha sido movida." />
-      </Head>
       
       <div className="min-h-screen bg-azul relative overflow-hidden">
         {/* Decorative Elements */}
