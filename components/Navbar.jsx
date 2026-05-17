@@ -147,7 +147,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && isMobile && (
           <motion.div
-            className="fixed inset-0 bg-gradient-to-b from-azul to-[#05004c] z-40 overflow-y-auto"
+            className="fixed inset-0 bg-linear-to-b from-azul to-[#05004c] z-40 overflow-y-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

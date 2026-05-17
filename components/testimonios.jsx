@@ -27,11 +27,11 @@ export default function Testimonios() {
     ];
 
     return (
-        <section className="py-24 px-4 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        <section className="py-24 px-4 bg-linear-to-b from-gray-50 to-white relative overflow-hidden">
             {/* Patrón de fondo mejorado */}
             <div className="absolute inset-0">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,currentColor_1px,transparent_0)] [background-size:16px_16px] opacity-5"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-transparent via-white/50 to-transparent"></div>
             </div>
 
             <div className="max-w-7xl mx-auto relative z-10">
@@ -42,7 +42,7 @@ export default function Testimonios() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-azul to-[#1A1A60]">
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-linear-to-r from-azul to-[#1A1A60]">
                         Lo Que Dicen Nuestros Clientes
                     </h2>
                     <div className="h-1 w-2/6 bg-amarillo mx-auto rounded-full"></div>

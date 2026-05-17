@@ -43,7 +43,7 @@ function ContactPage() {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section con gradiente y patrón */}
-            <div className="relative bg-gradient-to-br from-azul via-[#1a237e] to-azul text-white py-32 overflow-hidden">
+            <div className="relative bg-linear-to-br from-azul via-[#1a237e] to-azul text-white py-32 overflow-hidden">
                 {/* Patrón de fondo mejorado */}
                 <div className="absolute inset-0 opacity-5">
                     <div className="absolute inset-0" style={{ 
@@ -274,7 +274,7 @@ function ContactPage() {
                         className="relative"
                     >
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
-                            <div className="absolute inset-0 bg-gradient-to-t from-azul/90 via-azul/50 to-transparent z-10"></div>
+                            <div className="absolute inset-0 bg-linear-to-t from-azul/90 via-azul/50 to-transparent z-10"></div>
                             <Image
                                 src="/Fabrica/maquinas.jpg"
                                 alt="Fábrica de Kert"

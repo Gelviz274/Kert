@@ -64,7 +64,7 @@ function OtrosPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-linear-to-b from-gray-50 to-gray-100">
       {/* Hero Section */}
       <section className="relative h-[70vh] overflow-hidden">
         <div className="absolute inset-0 bg-azul"></div>
@@ -151,7 +151,7 @@ function OtrosPage() {
                       fill
                       className="object-cover transform group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div className="p-8 relative">
                     <div className="absolute -top-8 right-8 bg-amarillo rounded-full p-3 shadow-lg transform -translate-y-1/2 group-hover:rotate-12 transition-transform duration-300">

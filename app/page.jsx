@@ -144,7 +144,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 px-4 bg-gradient-to-b from-azul to-[#05004c] relative overflow-hidden">
+      <section className="py-24 px-4 bg-linear-to-b from-azul to-[#05004c] relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
         <div className="max-w-6xl mx-auto relative">
           <motion.div
@@ -157,7 +157,7 @@ export default function Home() {
             <h2 className="text-5xl font-bold mb-4 text-white">
               Nuestras Categorías de Productos
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-amarillo to-amarillo/50 mx-auto rounded-full" />
+            <div className="w-24 h-1 bg-linear-to-r from-amarillo to-amarillo/50 mx-auto rounded-full" />
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -192,7 +192,7 @@ export default function Home() {
                   className="h-96 bg-cover bg-center transition-all duration-700 group-hover:scale-110"
                   style={{ backgroundImage: `url(${product.image})` }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-azul/90 via-azul/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-t from-azul/90 via-azul/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute inset-0 flex flex-col items-center justify-end p-8 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                   <h3 className="text-amarillo text-3xl font-bold mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                     {product.title}

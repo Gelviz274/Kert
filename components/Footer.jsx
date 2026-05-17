@@ -22,7 +22,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-gradient-to-b from-azul to-[#050422] text-white">
+        <footer className="bg-linear-to-b from-azul to-[#050422] text-white">
             {/* Botón de scroll to top */}
             <button 
                 onClick={scrollToTop}

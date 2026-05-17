@@ -51,7 +51,7 @@ function NosotrosPage() {
                         viewport={{ once: true }}
                         className="relative"
                     >
-                        <div className="absolute -left-8 top-0 w-1 h-full bg-gradient-to-b from-amarillo/50 to-azul/50"></div>
+                        <div className="absolute -left-8 top-0 w-1 h-full bg-linear-to-b from-amarillo/50 to-azul/50"></div>
                         <h2 className="text-6xl font-light text-azul mb-12 tracking-tight">
                             Nuestra <span className="font-bold">Historia</span>
                         </h2>
@@ -79,7 +79,7 @@ function NosotrosPage() {
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
+                            <div className="absolute inset-0 bg-linear-to-t from-black/10 via-transparent to-transparent"></div>
                         </div>
                         <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-amarillo/10 -z-10"></div>
                         <div className="absolute -top-6 -left-6 w-32 h-32 bg-azul/10 -z-10"></div>
@@ -104,13 +104,13 @@ function NosotrosPage() {
                                 transition={{ duration: 0.5, delay: index * 0.2 }}
                                 viewport={{ once: true }}
                             >
-                                <div className="absolute -inset-1 bg-gradient-to-r from-amarillo to-azul rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                                <div className="absolute -inset-1 bg-linear-to-r from-amarillo to-azul rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                                 <div className="relative bg-white/5 backdrop-blur-xl rounded-2xl p-10 border border-white/10 transform transition-all duration-500 hover:scale-[1.02] hover:bg-white/10">
                                     <div className="flex flex-col items-center">
                                         <div className="relative mb-8">
-                                            <div className="absolute inset-0 bg-gradient-to-br from-amarillo/30 to-azul/30 rounded-full blur-xl"></div>
-                                            <div className="relative w-24 h-24 rounded-full bg-gradient-to-br from-amarillo/20 to-azul/20 flex items-center justify-center border-2 border-white/20">
-                                                <span className="text-5xl font-bold bg-gradient-to-r from-amarillo to-white bg-clip-text text-transparent">
+                                            <div className="absolute inset-0 bg-linear-to-br from-amarillo/30 to-azul/30 rounded-full blur-xl"></div>
+                                            <div className="relative w-24 h-24 rounded-full bg-linear-to-br from-amarillo/20 to-azul/20 flex items-center justify-center border-2 border-white/20">
+                                                <span className="text-5xl font-bold bg-linear-to-r from-amarillo to-white bg-clip-text text-transparent">
                                                     {founder.name[0]}
                                                 </span>
                                             </div>
@@ -144,7 +144,7 @@ function NosotrosPage() {
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true }}
                         >
-                            <div className="absolute -inset-1 bg-gradient-to-r from-amarillo to-azul rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                            <div className="absolute -inset-1 bg-linear-to-r from-amarillo to-azul rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                             <div className="relative bg-white/5 backdrop-blur-xl rounded-2xl p-10 border border-white/10 transform transition-all duration-500 hover:scale-[1.02] hover:bg-white/10">
                                 <div className="flex flex-col items-center">
                                     <div className="text-amarillo mb-8">
@@ -164,7 +164,7 @@ function NosotrosPage() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             viewport={{ once: true }}
                         >
-                            <div className="absolute -inset-1 bg-gradient-to-r from-amarillo to-azul rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                            <div className="absolute -inset-1 bg-linear-to-r from-amarillo to-azul rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                             <div className="relative bg-white/5 backdrop-blur-xl rounded-2xl p-10 border border-white/10 transform transition-all duration-500 hover:scale-[1.02] hover:bg-white/10">
                                 <div className="flex flex-col items-center">
                                     <div className="text-amarillo mb-8">
@@ -230,7 +230,7 @@ function NosotrosPage() {
             </div>
 
             {/* Por Qué Elegirnos */}
-            <div className="py-24 bg-gradient-to-b from-gray-50 to-white px-8">
+            <div className="py-24 bg-linear-to-b from-gray-50 to-white px-8">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-azul mb-6">¿Por Qué Elegirnos?</h2>
