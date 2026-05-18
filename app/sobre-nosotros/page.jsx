@@ -88,7 +88,7 @@ function NosotrosPage() {
             </section>
 
             <section className="bg-azul py-32 px-6 md:px-20 text-white relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+                <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
                 <div className="max-w-7xl mx-auto relative">
                     <div className="text-center mb-20">
                         <h2 className="text-5xl font-bold text-white mb-8 tracking-tight">Nuestros Fundadores</h2>
@@ -130,7 +130,7 @@ function NosotrosPage() {
             </section>
 
             <div className="bg-azul py-32 px-6 md:px-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+                <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
                 <div className="max-w-7xl mx-auto relative">
                     <div className="text-center mb-20">
                         <h2 className="text-5xl font-bold text-white mb-8 tracking-tight">Nuestro Propósito</h2>

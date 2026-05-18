@@ -106,7 +106,7 @@ export default function ColeccionPage() {
             priority
           />
           <div className="absolute inset-0 bg-linear-to-b from-azul/40 via-azul/20 to-azul/60" />
-          <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+          <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <motion.div
@@ -171,7 +171,7 @@ export default function ColeccionPage() {
 
       {/* Stats Section - Nueva */}
       <section className="py-16 bg-white/5 relative">
-        <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         <div className="max-w-7xl mx-auto px-4 relative">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -201,7 +201,7 @@ export default function ColeccionPage() {
 
       {/* Benefits Section - Mejorado */}
       <section className="py-24 relative">
-        <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         <div className="max-w-7xl mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -293,7 +293,7 @@ export default function ColeccionPage() {
 
       {/* Featured Products - Mejorado */}
       <section className="bg-white/5 py-24 relative">
-        <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         <div className="max-w-7xl mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -356,7 +356,7 @@ export default function ColeccionPage() {
 
       {/* CTA Section - Mejorado */}
       <section className="py-32 text-center relative">
-        <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         <div className="max-w-4xl mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

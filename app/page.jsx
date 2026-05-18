@@ -145,7 +145,7 @@ export default function Home() {
       </section>
 
       <section className="py-24 px-4 bg-linear-to-b from-azul to-[#05004c] relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         <div className="max-w-6xl mx-auto relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
