@@ -43,6 +43,7 @@ export default function Footer() {
                                 width={150} 
                                 height={40} 
                                 className="object-contain" 
+                                style={{ width: 'auto', height: 'auto' }}
                             />
                         </div>
                         <p className="text-gray-300 text-sm leading-relaxed">
@@ -55,7 +56,7 @@ export default function Footer() {
 
                     {/* Columna 2: Enlaces rápidos */}
                     <div className="flex flex-col space-y-4">
-                        <h3 className="text-lg font-bold border-b border-amarillo pb-2 mb-2 inline-block">Enlaces Rápidos</h3>
+                        <h3 className="text-lg font-bold border-b border-amarillo pb-2 mb-6 inline-block">Enlaces Rápidos</h3>
                         <nav className="grid grid-cols-1 gap-2">
                             {[
                                 { href: "/", label: "Inicio" },
@@ -77,7 +78,7 @@ export default function Footer() {
 
                     {/* Columna 3: Contacto */}
                     <div className="flex flex-col space-y-4">
-                        <h3 className="text-lg font-bold border-b border-amarillo pb-2 mb-2 inline-block">Contacto</h3>
+                        <h3 className="text-lg font-bold border-b border-amarillo pb-2 mb-6 inline-block">Contacto</h3>
                         
                         <div className="space-y-4">
                             <div className="flex items-start space-x-3">

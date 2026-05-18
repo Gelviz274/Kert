@@ -98,7 +98,7 @@ export default function Navbar() {
                 Coleccion
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-azul border-0">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-azul border border-1 border-amarillo">
                   {components.map((component) => (
                     <ListItem
                       icon={component.icon}
