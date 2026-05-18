@@ -2,7 +2,7 @@
   "name": "kert",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@11.1.2",
+  "packageManager": "pnpm@10.8.1",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
