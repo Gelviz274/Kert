@@ -31,7 +31,7 @@ export default function PoliticaPrivacidad() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-azul mt-8 mb-4">1. Introducción</h2>
             <p>
-              KERT S.A.S., identificada con NIT [insertar NIT], con domicilio en [insertar dirección], Colombia (en adelante "KERT", "nosotros" o "la empresa"), 
+              KERT S.A.S., identificada con NIT 901398420-7, con domicilio en Carrera 29B bis N.1 A-70, Colombia (en adelante "KERT", "nosotros" o "la empresa"), 
               está comprometida con la protección de la información personal de sus clientes, proveedores y público en general, en cumplimiento 
               de la Ley Estatutaria 1581 de 2012, el Decreto Reglamentario 1377 de 2013, y demás normas concordantes, por las cuales se dictan disposiciones 
               para la protección de datos personales.

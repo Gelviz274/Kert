@@ -98,7 +98,7 @@ export default function Navbar() {
                 Coleccion
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-azul border-0">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-azul border border-1 border-amarillo">
                   {components.map((component) => (
                     <ListItem
                       icon={component.icon}
@@ -147,7 +147,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && isMobile && (
           <motion.div
-            className="fixed inset-0 bg-gradient-to-b from-azul to-[#05004c] z-40 overflow-y-auto"
+            className="fixed inset-0 bg-linear-to-b from-azul to-[#05004c] z-40 overflow-y-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

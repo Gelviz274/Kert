@@ -94,7 +94,7 @@ const stats = [
 
 export default function ColeccionPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-azul to-[#05004c] text-white">
+    <main className="min-h-screen bg-linear-to-b from-azul to-[#05004c] text-white">
       {/* Hero Section - Mejorado */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -105,8 +105,8 @@ export default function ColeccionPage() {
             className="object-cover opacity-20"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-azul/40 via-azul/20 to-azul/60" />
-          <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+          <div className="absolute inset-0 bg-linear-to-b from-azul/40 via-azul/20 to-azul/60" />
+          <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <motion.div
@@ -120,7 +120,7 @@ export default function ColeccionPage() {
             </span>
           </motion.div>
           <motion.h1
-            className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80"
+            className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-linear-to-r from-white to-white/80"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -171,7 +171,7 @@ export default function ColeccionPage() {
 
       {/* Stats Section - Nueva */}
       <section className="py-16 bg-white/5 relative">
-        <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         <div className="max-w-7xl mx-auto px-4 relative">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -201,7 +201,7 @@ export default function ColeccionPage() {
 
       {/* Benefits Section - Mejorado */}
       <section className="py-24 relative">
-        <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         <div className="max-w-7xl mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -212,7 +212,7 @@ export default function ColeccionPage() {
             <span className="text-amarillo font-medium mb-2 block">
               ¿Por qué elegirnos?
             </span>
-            <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
+            <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-linear-to-r from-white to-white/80">
               Ventajas para Mayoristas
             </h2>
           </motion.div>
@@ -249,7 +249,7 @@ export default function ColeccionPage() {
           <span className="text-amarillo font-medium mb-2 block">
             Explora nuestra colección
           </span>
-          <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
+          <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-linear-to-r from-white to-white/80">
             Nuestro Catálogo
           </h2>
         </motion.div>
@@ -271,7 +271,7 @@ export default function ColeccionPage() {
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-azul via-azul/50 to-transparent opacity-80" />
+                <div className="absolute inset-0 bg-linear-to-t from-azul via-azul/50 to-transparent opacity-80" />
                 <div className="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                   <h3 className="text-2xl font-bold mb-2">{category.title}</h3>
                   <p className="text-amarillo mb-4">{category.subtitle}</p>
@@ -293,7 +293,7 @@ export default function ColeccionPage() {
 
       {/* Featured Products - Mejorado */}
       <section className="bg-white/5 py-24 relative">
-        <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         <div className="max-w-7xl mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -304,7 +304,7 @@ export default function ColeccionPage() {
             <span className="text-amarillo font-medium mb-2 block">
               Productos destacados
             </span>
-            <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
+            <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-linear-to-r from-white to-white/80">
               Productos Más Vendidos
             </h2>
           </motion.div>
@@ -356,7 +356,7 @@ export default function ColeccionPage() {
 
       {/* CTA Section - Mejorado */}
       <section className="py-32 text-center relative">
-        <div className="absolute inset-0 bg-[url('/pattern.png')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
         <div className="max-w-4xl mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -364,7 +364,7 @@ export default function ColeccionPage() {
             viewport={{ once: true }}
             className="bg-white/5 backdrop-blur-sm rounded-2xl p-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight bg-clip-text text-transparent bg-linear-to-r from-white to-white/80">
               Impulsa tu negocio con productos de calidad al mejor precio
             </h2>
             <p className="text-white/80 mb-8 max-w-2xl mx-auto">

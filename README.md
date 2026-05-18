@@ -10,16 +10,14 @@ Bienvenido al repositorio del sitio web de Kert, un proyecto desarrollado con [N
 Antes de comenzar, asegúrese de tener instalados los siguientes componentes:
 
 - **Node.js** (versión 14 o superior) 🟢
-- **npm** o **yarn** como gestor de paquetes 📦
+- **pnpm** como gestor de paquetes 📦
 
 ## 🚀 Instalación
 
 Para instalar las dependencias necesarias, ejecute el siguiente comando en su terminal:
 
 ```bash
-npm install
-# o
-yarn install
+pnpm install
 ```
 
 ## 🛠️ Ejecución del Servidor de Desarrollo
@@ -27,9 +25,7 @@ yarn install
 Inicie el servidor de desarrollo con el siguiente comando:
 
 ```bash
-npm run dev
-# o
-yarn dev
+pnpm dev
 ```
 
 Abra [http://localhost:3000](http://localhost:3000) en su navegador para ver el resultado.

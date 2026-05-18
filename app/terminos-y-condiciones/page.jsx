@@ -32,7 +32,7 @@ export default function TerminosCondiciones() {
             <h2 className="text-2xl font-semibold text-azul mt-8 mb-4">1. Introducción</h2>
             <p>
               Los presentes Términos y Condiciones (en adelante, los "Términos") rigen la relación contractual entre KERT S.A.S., 
-              identificada con NIT [NIT de Kert], con domicilio en [dirección de Kert], Colombia (en adelante "KERT", "nosotros" o "la empresa") 
+              identificada con NIT 901398420-7, con domicilio en Carrera 29B bis N.1 A-70, Colombia (en adelante "KERT", "nosotros" o "la empresa") 
               y los usuarios, clientes o visitantes (en adelante, "Usuario" o "Usuarios") que accedan, utilicen o adquieran 
               los productos y servicios ofrecidos por KERT.
             </p>
@@ -305,7 +305,7 @@ export default function TerminosCondiciones() {
             <ul className="space-y-2">
               <li>Correo electrónico: <a href="mailto:contacto@creacionkert.com" className="text-amarillo hover:underline">contacto@creacionkert.com</a></li>
               <li>Teléfono: +57 321 306 2852 o +57 322 300 6013</li>
-              <li>Dirección: [insertar dirección completa]</li>
+              <li>Dirección: Carrera 29B bis N.1 A-70</li>
             </ul>
           </section>
 
