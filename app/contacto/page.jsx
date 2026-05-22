@@ -276,7 +276,7 @@ function ContactPage() {
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
                             <div className="absolute inset-0 bg-linear-to-t from-azul/90 via-azul/50 to-transparent z-10"></div>
                             <Image
-                                src="/Fabrica/maquinas.jpg"
+                                src="/fabrica/maquinas.jpg"
                                 alt="Fábrica de Kert"
                                 width={800}
                                 height={600}

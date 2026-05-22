@@ -23,11 +23,13 @@
       "minOrder": 200,
       "maxOrder": 600,
       "images": [
-        "/Productos/MALETAS/Isabel/Maletainpetu.webp",
-        "/Productos/MALETAS/Isabel/Bolso-azul-rojo.jpg",
-        "/Productos/MALETAS/Isabel/bolso-azul-rojo-izquierda.webp",
-        "/Productos/MALETAS/Isabel/bolso-azul-rojo-atras.webp",
-        "/Productos/MALETAS/Isabel/bolso-azul-rojo-arriba.webp"
+        "/productos/isabel/maletainpetu.webp",
+        "/productos/isabel/bolso-azul-rojo.jpg",
+        "/productos/isabel/bolso-azul-rojo-izquierda.webp",
+        "/productos/isabel/bolso-azul-rojo-atras.webp",
+        "/productos/isabel/bolso-azul-rojo-arriba.webp",
+        "/productos/isabel/img_1735.webp",
+        "/productos/isabel/img_1737.webp"
       ]
     },
     {
@@ -52,9 +54,9 @@
       "minOrder": 300,
       "maxOrder": 800,
       "images": [
-        "/Productos/MALETAS/SaveTheChildren/Bolso-save.jpg",
-        "/Productos/MALETAS/SaveTheChildren/bolso-save-derecha.webp",
-        "/Productos/MALETAS/SaveTheChildren/bolso-save-atras.webp"
+        "/productos/save-the-children/bolso-save.jpg",
+        "/productos/save-the-children/bolso-save-derecha.webp",
+        "/productos/save-the-children/bolso-save-atras.webp"
       ]
     },
     {
@@ -79,9 +81,10 @@
       "minOrder": 250,
       "maxOrder": 700,
       "images": [
-        "/Productos/MALETAS/cemex/maleta-cemex.jpg",
-        "/Productos/MALETAS/cemex/maleta-cemex-izquierda.webp",
-        "/Productos/MALETAS/cemex/maleta-cemex-atras.webp"
+        "/productos/cemex/maleta-cemex.jpg",
+        "/productos/cemex/maleta-cemex-izquierda.webp",
+        "/productos/cemex/maleta-cemex-atras.webp",
+        "/productos/cemex/maleta-cemex-derecha.webp"
       ]
     },
     {
@@ -106,11 +109,11 @@
       "minOrder": 200,
       "maxOrder": 800,
       "images": [
-        "/Productos/MALETAS/DHL/Cuadrante.png",
-        "/Productos/MALETAS/DHL/bolso-dhl.jpg",
-        "/Productos/MALETAS/DHL/bolso-dhl-izquierda.jpg",
-        "/Productos/MALETAS/DHL/bolso-dhl-atras.jpg",
-        "/Productos/MALETAS/DHL/bolso-dhl-cerca.jpg"
+        "/productos/dhl/cuadrante.png",
+        "/productos/dhl/bolso-dhl.jpg",
+        "/productos/dhl/bolso-dhl-izquierda.jpg",
+        "/productos/dhl/bolso-dhl-atras.jpg",
+        "/productos/dhl/bolso-dhl-cerca.jpg"
       ]
     },{
       "id": "fura",
@@ -136,10 +139,11 @@
       "minOrder": 300,
       "maxOrder": 800,
       "images": [
-        "/Productos/MALETAS/Fura/MaletaVeta.webp",
-        "/Productos/MALETAS/Fura/maleta-fura.webp",
-        "/Productos/MALETAS/Fura/maleta-fura-atras.webp",
-        "/Productos/MALETAS/Fura/maleta-fura-izq.webp"
+        "/productos/fura/maletaveta.webp",
+        "/productos/fura/maleta-fura.webp",
+        "/productos/fura/maleta-fura-atras.webp",
+        "/productos/fura/maleta-fura-izq.webp",
+        "/productos/fura/bolso-negro-u.jpg"
       ]
     },{
       "id": "igac",  
@@ -162,9 +166,18 @@
       "minOrder": 300,
       "maxOrder": 800,  
       "images": [
-        "/Productos/MALETAS/igac/maleta-igac.jpg",
-        "/Productos/MALETAS/igac/maleta-igac-dere.jpg",
-        "/Productos/MALETAS/igac/maleta-igac-atras.jpg"
+        "/productos/igac/maleta-igac.jpg",
+        "/productos/igac/maleta-igac-dere.jpg",
+        "/productos/igac/maleta-igac-atras.jpg",
+        "/productos/igac/img_2267.jpg",
+        "/productos/igac/img_2268.jpg",
+        "/productos/igac/img_2269.jpg",
+        "/productos/igac/img_2272.jpg",
+        "/productos/igac/img_2273.jpg",
+        "/productos/igac/img_2274.jpg",
+        "/productos/igac/img_2275.jpg",
+        "/productos/igac/img_2276.jpg",
+        "/productos/igac/img_2277.jpg"
       ]
     },{
       "id": "pionero",
@@ -190,9 +203,17 @@
       "minOrder": 250,
       "maxOrder": 700,
       "images": [
-        "/Productos/MALETAS/Pionero/Maleta Drumond.webp",
-        "/Productos/MALETAS/Pionero/pionero.jpg",
-        "/Productos/MALETAS/Pionero/pionero2.jpg"
+        "/productos/pionero/maleta-drumond.webp",
+        "/productos/pionero/pionero.jpg",
+        "/productos/pionero/pionero2.jpg",
+        "/productos/pionero/pioneroh.jpg",
+        "/productos/pionero/img_2280.jpg",
+        "/productos/pionero/img_2281.jpg",
+        "/productos/pionero/img_2282.jpg",
+        "/productos/pionero/img_2283.jpg",
+        "/productos/pionero/img_2286.jpg",
+        "/productos/pionero/img_2287.jpg",
+        "/productos/pionero/img_2288.jpg"
       ]
     },
     {
@@ -217,9 +238,127 @@
       "minOrder": 150,
       "maxOrder": 400,
       "images": [
-        "/Productos/MALETAS/Arca/Maleta HACIENDA.webp",
-        "/Productos/MALETAS/Arca/arca.jpg",
-        "/Productos/MALETAS/Arca/arca2.jpg"
+        "/productos/arca/maleta-hacienda.webp",
+        "/productos/arca/arca.jpg",
+        "/productos/arca/arca2.jpg",
+        "/productos/arca/img_1834.jpg",
+        "/productos/arca/img_1836.jpg",
+        "/productos/arca/img_1837.jpg",
+        "/productos/arca/img_1839.jpg",
+        "/productos/arca/img_1845.jpg"
+      ]
+    },
+    {
+      "id": "urban",
+      "name": "Maleta Urban",
+      "name-title": "maleta-urban",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 44,
+        "width": 29,
+        "depth": 17
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Tres compartimientos principales",
+        "Bolsillo para portátil acolchado",
+        "Bolsillo frontal con organizador",
+        "Bolsillos laterales en malla",
+        "Espaldar y cargaderas acolchadas",
+        "Asa superior reforzada",
+        "Tela de alta resistencia"
+      ],
+      "minOrder": 200,
+      "maxOrder": 600,
+      "images": [
+        "/productos/maletas/urban/01.webp"
+      ]
+    },
+    {
+      "id": "active",
+      "name": "Maleta Active",
+      "name-title": "maleta-active",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 47,
+        "width": 32,
+        "depth": 20
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Cuatro compartimientos",
+        "Bolsillo para portátil",
+        "Bolsillo frontal con cierre vertical",
+        "Bolsillos laterales en malla",
+        "Cargaderas ajustables con malla transpirable",
+        "Espaldar ergonómico acolchado",
+        "Tela impermeable"
+      ],
+      "minOrder": 250,
+      "maxOrder": 700,
+      "images": [
+        "/productos/maletas/active/01.webp"
+      ]
+    },
+    {
+      "id": "explorer",
+      "name": "Maleta Explorer",
+      "name-title": "maleta-explorer",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 50,
+        "width": 33,
+        "depth": 22
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Cinco compartimientos",
+        "Bolsillo para portátil",
+        "Bolsillo frontal con organizador",
+        "Bolsillos laterales con cierre",
+        "Cintas de compresión laterales",
+        "Espaldar y cargaderas acolchadas",
+        "Tela resistente al agua"
+      ],
+      "minOrder": 200,
+      "maxOrder": 600,
+      "images": [
+        "/productos/maletas/explorer/01.webp"
+      ]
+    },
+    {
+      "id": "hubemar",
+      "name": "Maleta Hubemar",
+      "name-title": "maleta-hubemar",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 44,
+        "width": 29,
+        "depth": 17
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Múltiples compartimientos",
+        "Bolsillo frontal con cierre",
+        "Bolsillos laterales",
+        "Espaldar y cargaderas acolchadas",
+        "Asa superior reforzada"
+      ],
+      "minOrder": 200,
+      "maxOrder": 600,
+      "images": [
+        "/productos/hubemar/hubemar.jpg",
+        "/productos/hubemar/img_2254.jpg",
+        "/productos/hubemar/img_2255.jpg",
+        "/productos/hubemar/img_2257.jpg",
+        "/productos/hubemar/img_2258.jpg",
+        "/productos/hubemar/img_2259.jpg",
+        "/productos/hubemar/img_2261.jpg",
+        "/productos/hubemar/img_2262.jpg",
+        "/productos/hubemar/img_2263.jpg",
+        "/productos/hubemar/img_2264.jpg",
+        "/productos/hubemar/img_2265.jpg",
+        "/productos/hubemar/img_2266.jpg"
       ]
     }
   ]

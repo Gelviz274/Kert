@@ -13,9 +13,31 @@ const bags = rinonerasData.rinoneras.map(rinonera => ({
 
 export const metadata = {
   title: "Riñoneras | Kert S.A.S - Catálogo de Riñoneras al Por Mayor",
-  description: "Descubre nuestra línea de riñoneras al por mayor. Diseños modernos, materiales duraderos y precios competitivos para distribuidores.",
+  description: "Explora nuestra colección de riñoneras al por mayor. Diseños funcionales y modernos para distribuidores y empresas.",
   alternates: {
     canonical: "https://creacionkert.com/coleccion/rinoneras",
+  },
+  openGraph: {
+    title: "Riñoneras | Kert S.A.S - Catálogo de Riñoneras al Por Mayor",
+    description: "Explora nuestra colección de riñoneras al por mayor. Diseños funcionales y modernos para distribuidores y empresas.",
+    url: "https://creacionkert.com/coleccion/rinoneras",
+    type: "website",
+    locale: "es_CO",
+    siteName: "Kert S.A.S",
+    images: [
+      {
+        url: "https://creacionkert.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Riñoneras al por mayor - Kert S.A.S",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Riñoneras | Kert S.A.S - Catálogo de Riñoneras al Por Mayor",
+    description: "Explora nuestra colección de riñoneras al por mayor. Diseños funcionales y modernos para distribuidores y empresas.",
+    images: ["https://creacionkert.com/og-image.jpg"],
   },
 };
 

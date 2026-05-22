@@ -1,0 +1,79 @@
+{
+  "productos": [
+    {
+      "id": "cambrel-basic",
+      "name": "Bolsa Cambrel Basic",
+      "name-title": "bolsa-cambrel-basic",
+      "category": "Bolsas en Cambrel",
+      "dimensions": {
+        "height": 40,
+        "width": 35,
+        "depth": 10
+      },
+      "material": "Cambrel de alta resistencia",
+      "specifications": [
+        "Manijas reforzadas",
+        "Tela cambrel de alta resistencia",
+        "Costuras reforzadas",
+        "Amplia capacidad",
+        "Ideal para eventos y ferias",
+        "Reutilizable"
+      ],
+      "minOrder": 300,
+      "maxOrder": 800,
+      "images": [
+        "/productos/bolsas-cambrel/cambrel-basic/01.webp"
+      ]
+    },
+    {
+      "id": "cambrel-plus",
+      "name": "Bolsa Cambrel Plus",
+      "name-title": "bolsa-cambrel-plus",
+      "category": "Bolsas en Cambrel",
+      "dimensions": {
+        "height": 42,
+        "width": 38,
+        "depth": 12
+      },
+      "material": "Cambrel laminada",
+      "specifications": [
+        "Fuelle lateral e inferior",
+        "Manijas largas para hombro",
+        "Tela cambrel laminada",
+        "Acabado resistente y liviano",
+        "Diseño funcional",
+        "Ideal para uso promocional"
+      ],
+      "minOrder": 300,
+      "maxOrder": 800,
+      "images": [
+        "/productos/bolsas-cambrel/cambrel-plus/01.webp"
+      ]
+    },
+    {
+      "id": "cambrel-eco",
+      "name": "Bolsa Cambrel Eco",
+      "name-title": "bolsa-cambrel-eco",
+      "category": "Bolsas en Cambrel",
+      "dimensions": {
+        "height": 38,
+        "width": 33,
+        "depth": 8
+      },
+      "material": "Cambrel liviano",
+      "specifications": [
+        "Bolsa ecológica",
+        "Manijas troqueladas reforzadas",
+        "Cambrel liviano",
+        "Plegable",
+        "Ideal para promociones",
+        "Personalizable"
+      ],
+      "minOrder": 500,
+      "maxOrder": 2000,
+      "images": [
+        "/productos/bolsas-cambrel/cambrel-eco/01.webp"
+      ]
+    }
+  ]
+}

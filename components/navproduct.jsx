@@ -6,6 +6,11 @@ import { usePathname } from "next/navigation";
 const route_excuide = [
   "/coleccion/maletas",
   "/coleccion/rinoneras",
+  "/coleccion/bolsas-cambrel",
+  "/coleccion/bolsas-tela",
+  "/coleccion/bolsos",
+  "/coleccion/bolsos-multiuso",
+  "/coleccion/otros",
 ];
 
 function NavProduct({ bags }) {

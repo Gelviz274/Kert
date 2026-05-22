@@ -34,7 +34,7 @@ export default function Home() {
                 <Image
                   width={1200}
                   height={1200}
-                  src="/Fabrica/IMG_1871.jpg"
+                  src="/fabrica/img_1871.jpg"
                   alt="Kert Workspace"
                   className="rounded-2xl shadow-2xl"
                 />
@@ -164,18 +164,18 @@ export default function Home() {
             {[
               {
                 title: "Riñoneras",
-                image: "/Productos/RINONERAS/Olimpica/CangureraOlimpica.webp",
+                image: "/productos/olimpica/cangureraolimpica.webp",
                 description:
                   "El compañero perfecto para tus viajes y actividades diarias, combinando estilo y comodidad.",
               },
               {
                 title: "Mochilas",
-                image: "/Productos/MALETAS/Isabel/Bolso-azul-rojo.jpg",
+                image: "/productos/isabel/bolso-azul-rojo.jpg",
                 description: "Mochilas duraderas para uso diario y aventura",
               },
               {
                 title: "Bolsos de Negocios",
-                image: "/Productos/BOLSODEMANO/Hubemar/hubemar.jpg",
+                image: "/productos/hubemar/hubemar.jpg",
                 description:
                   "Diseño moderno y funcional, ideal para el viajero urbano que busca calidad y practicidad.",
               },

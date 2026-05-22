@@ -21,11 +21,11 @@
       "minOrder": 100,
       "maxOrder": 500,
       "images": [
-        "/Productos/RINONERAS/anebre/Riñonera enebre.webp",
-        "/Productos/RINONERAS/anebre/rinonera-anebre.jpg",
-        "/Productos/RINONERAS/anebre/anebre-atras.webp",
-        "/Productos/RINONERAS/anebre/anebre-arriba.webp",
-        "/Productos/RINONERAS/anebre/anebre-a-izq.webp"
+        "/productos/anebre/riñonera-enebre.webp",
+        "/productos/anebre/rinonera-anebre.jpg",
+        "/productos/anebre/anebre-atras.webp",
+        "/productos/anebre/anebre-arriba.webp",
+        "/productos/anebre/anebre-a-izq.webp"
       ]
     },
     {
@@ -49,8 +49,10 @@
       "minOrder": 200,
       "maxOrder": 600,
       "images": [
-        "/Productos/RINONERAS/NegraBasica/Cangurera negra.webp",
-        "/Productos/rinonera-negra.jpg"
+        "/productos/negra-basica/cangurera-negra.webp",
+        "/productos/negra-basica/img_1760.webp",
+        "/productos/negra-basica/img_1761.webp",
+        "/productos/rinonera-negra.jpg"
       ]
     },
     {
@@ -74,9 +76,10 @@
       "minOrder": 100,
       "maxOrder": 500,
       "images": [
-        "/Productos/RINONERAS/etib/Cangurera naranja.webp",
-        "/Productos/RINONERAS/etib/rinonera-etib.webp",
-        "/Productos/RINONERAS/etib/rinonera-etib-c.webp"
+        "/productos/etib/cangurera-naranja.webp",
+        "/productos/etib/rinonera-etib.webp",
+        "/productos/etib/rinonera-etib-c.webp",
+        "/productos/rinonera-etib-dentro.webp"
       ]
     },
     {
@@ -101,9 +104,86 @@
       "minOrder": 150,
       "maxOrder": 500,
       "images": [
-        "/Productos/RINONERAS/Olimpica/CangureraOlimpica.webp",
-        "/Productos/rinonera-olimpica.jpg",
-        "/Productos/olimpica-izq.webp"
+        "/productos/olimpica/cangureraolimpica.webp",
+        "/productos/olimpica/olimpica-frente.webp",
+        "/productos/olimpica/olimpica-izq.webp",
+        "/productos/rinonera-olimpica.jpg",
+        "/productos/olimpica-izq.webp"
+      ]
+    },
+    {
+      "id": "runner",
+      "name": "Riñonera Runner",
+      "name-title": "rinonera-runner",
+      "category": "Riñoneras",
+      "dimensions": {
+        "height": 18,
+        "width": 32,
+        "depth": 8
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Dos compartimientos principales",
+        "Bolsillo frontal con cierre",
+        "Bolsillo trasero oculto",
+        "Cargadera ajustable",
+        "Forrado con tifón",
+        "Tela resistente"
+      ],
+      "minOrder": 150,
+      "maxOrder": 400,
+      "images": [
+        "/productos/rinoneras/runner/01.webp"
+      ]
+    },
+    {
+      "id": "travel",
+      "name": "Riñonera Travel",
+      "name-title": "rinonera-travel",
+      "category": "Riñoneras",
+      "dimensions": {
+        "height": 22,
+        "width": 36,
+        "depth": 10
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Múltiples compartimentos",
+        "Bolsillo portadocumentos frontal",
+        "Bolsillos laterales compactos",
+        "Cargadera ajustable",
+        "Forrado con tifón",
+        "Tela impermeable"
+      ],
+      "minOrder": 200,
+      "maxOrder": 500,
+      "images": [
+        "/productos/rinoneras/travel/01.webp"
+      ]
+    },
+    {
+      "id": "sport",
+      "name": "Riñonera Sport",
+      "name-title": "rinonera-sport",
+      "category": "Riñoneras",
+      "dimensions": {
+        "height": 20,
+        "width": 34,
+        "depth": 9
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Tres servicios",
+        "Bolsillo frontal curvo",
+        "Correa ajustable",
+        "Forrado con tifón",
+        "Diseño ergonómico",
+        "Tela liviana de alta resistencia"
+      ],
+      "minOrder": 150,
+      "maxOrder": 400,
+      "images": [
+        "/productos/rinoneras/sport/01.webp"
       ]
     }
   ]

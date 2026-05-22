@@ -16,21 +16,21 @@ import { usePathname } from "next/navigation";
 
 const items = [
   {
-    image: "/Productos/MALETAS/Isabel/Bolso-azul-rojo.jpg",
+    image: "/productos/isabel/bolso-azul-rojo.jpg",
     title: "Mochila Corporativa ",
     description: "Diseñada para resistir el ritmo diario, esta mochila combina estilo y funcionalidad. Ideal para promociones, regalos empresariales o uso escolar. ¡Luce tu marca con calidad!",
     buttonText: "Conócela ahora",
     href: "/coleccion/maletas/maleta-isabel",
   },
   {
-    image: "/Productos/RINONERAS/Olimpica/CangureraOlimpica.webp",
+    image: "/productos/olimpica/cangureraolimpica.webp",
     title: "Cangurera Deportiva Olímpica",
     description: "Práctica, ligera y con el espacio justo para lo esencial. Ideal para eventos, promociones o uso diario. ¡Lleva tu marca a todas partes con estilo y comodidad!",
     buttonText: "Descúbrela aquí",
     href: "/coleccion/rinoneras/rinonera-olimpica",
   },
   {
-    image: "/Productos/MALETAS/Pionero/pioneroh.jpg", // Asumiendo que esta es la ruta de la imagen del Morral Pionero
+    image: "/productos/pionero/pioneroh.jpg", // Asumiendo que esta es la ruta de la imagen del Morral Pionero
     title: "Morral Pionero",
     description: "Diseñado para los que abren camino. Su robustez y amplio espacio te acompañan en cada aventura, desde la exploración urbana hasta los senderos más desafiantes.",
     buttonText: "Explorar",

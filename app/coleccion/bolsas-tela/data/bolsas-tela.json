@@ -1,0 +1,79 @@
+{
+  "productos": [
+    {
+      "id": "canvas-classic",
+      "name": "Bolsa Canvas Classic",
+      "name-title": "bolsa-canvas-classic",
+      "category": "Bolsas en Tela",
+      "dimensions": {
+        "height": 40,
+        "width": 37,
+        "depth": 12
+      },
+      "material": "Lona tipo canvas",
+      "specifications": [
+        "Tela tipo lona",
+        "Asas largas reforzadas",
+        "Bolsillo interno",
+        "Costuras reforzadas",
+        "Lavable",
+        "Ideal para uso diario"
+      ],
+      "minOrder": 200,
+      "maxOrder": 600,
+      "images": [
+        "/productos/bolsas-tela/canvas-classic/01.webp"
+      ]
+    },
+    {
+      "id": "shopper-premium",
+      "name": "Bolsa Shopper Premium",
+      "name-title": "bolsa-shopper-premium",
+      "category": "Bolsas en Tela",
+      "dimensions": {
+        "height": 45,
+        "width": 40,
+        "depth": 14
+      },
+      "material": "Tela resistente",
+      "specifications": [
+        "Amplio compartimento principal",
+        "Cierre superior",
+        "Asas de hombro",
+        "Bolsillo frontal",
+        "Tela resistente",
+        "Acabados de calidad"
+      ],
+      "minOrder": 200,
+      "maxOrder": 600,
+      "images": [
+        "/productos/bolsas-tela/shopper-premium/01.webp"
+      ]
+    },
+    {
+      "id": "multiuso",
+      "name": "Bolsa Multiuso",
+      "name-title": "bolsa-multiuso",
+      "category": "Bolsas en Tela",
+      "dimensions": {
+        "height": 38,
+        "width": 35,
+        "depth": 10
+      },
+      "material": "Tela durable",
+      "specifications": [
+        "Dos asas cortas y correa larga ajustable",
+        "Bolsillo interno",
+        "Base reforzada",
+        "Tela durable",
+        "Diseño versátil",
+        "Ideal para dotación"
+      ],
+      "minOrder": 150,
+      "maxOrder": 500,
+      "images": [
+        "/productos/bolsas-tela/multiuso/01.webp"
+      ]
+    }
+  ]
+}

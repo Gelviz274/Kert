@@ -1,8 +1,7 @@
 import React from "react";
-import { Backpack, Ruler, Info, ShoppingBag } from "lucide-react";
-import Image from "next/image";
+import Script from "next/script";
+import ProductClient from "@/components/ProductClient";
 import maletasData from "../data/maletas.json";
-import MaletaClient from "./MaletaClient";
 
 export async function generateMetadata({ params }) {
   const nameTitle = (await params)['name-title'];
@@ -12,7 +11,27 @@ export async function generateMetadata({ params }) {
     description: maleta ? `Detalles de ${maleta.name} - ${maleta.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Maleta no encontrada',
     alternates: {
       canonical: `https://creacionkert.com/coleccion/maletas/${nameTitle}`,
-    }
+    },
+    openGraph: {
+      title: maleta ? `${maleta.name} | Kert S.A.S - Maletas al Por Mayor` : 'Maleta no encontrada',
+      description: maleta ? `Detalles de ${maleta.name} - ${maleta.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Maleta no encontrada',
+      url: `https://creacionkert.com/coleccion/maletas/${nameTitle}`,
+      type: "website",
+      locale: "es_CO",
+      siteName: "Kert S.A.S",
+      images: maleta?.images?.[0] ? [{
+        url: `https://creacionkert.com${maleta.images[0]}`,
+        width: 800,
+        height: 600,
+        alt: maleta.name,
+      }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: maleta ? `${maleta.name} | Kert S.A.S - Maletas al Por Mayor` : 'Maleta no encontrada',
+      description: maleta ? `Detalles de ${maleta.name} - ${maleta.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Maleta no encontrada',
+      images: maleta?.images?.[0] ? [`https://creacionkert.com${maleta.images[0]}`] : [],
+    },
   };
 }
 
@@ -30,5 +49,50 @@ export default async function MaletaPage({ params }) {
     );
   }
 
-  return <MaletaClient maleta={maleta} />;
-} 
+  const productImage = maleta.images?.[0]
+    ? `https://creacionkert.com${maleta.images[0]}`
+    : "https://creacionkert.com/og-image.jpg";
+
+  return (
+    <>
+      <Script
+        id="schema-product"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": maleta.name,
+            "description": `Detalles de ${maleta.name} - ${maleta.category}. Especificaciones, características y opciones de pedido al por mayor.`,
+            "image": productImage,
+            "category": maleta.category,
+            "brand": { "@type": "Brand", "name": "Kert S.A.S" },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "COP",
+              "availability": "https://schema.org/InStock",
+              "url": `https://creacionkert.com/coleccion/maletas/${nameTitle}`,
+            },
+          }),
+        }}
+      />
+      <Script
+        id="schema-breadcrumb-product"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://creacionkert.com" },
+              { "@type": "ListItem", "position": 2, "name": "Colección", "item": "https://creacionkert.com/coleccion" },
+              { "@type": "ListItem", "position": 3, "name": "Maletas", "item": "https://creacionkert.com/coleccion/maletas" },
+              { "@type": "ListItem", "position": 4, "name": maleta.name, "item": `https://creacionkert.com/coleccion/maletas/${nameTitle}` },
+            ],
+          }),
+        }}
+      />
+      <ProductClient product={maleta} iconName="backpack" />
+    </>
+  );
+}
