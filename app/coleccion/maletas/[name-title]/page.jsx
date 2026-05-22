@@ -1,8 +1,6 @@
 import React from "react";
-import { Backpack, Ruler, Info, ShoppingBag } from "lucide-react";
-import Image from "next/image";
+import ProductClient from "@/components/ProductClient";
 import maletasData from "../data/maletas.json";
-import MaletaClient from "./MaletaClient";
 
 export async function generateMetadata({ params }) {
   const nameTitle = (await params)['name-title'];
@@ -30,5 +28,5 @@ export default async function MaletaPage({ params }) {
     );
   }
 
-  return <MaletaClient maleta={maleta} />;
-} 
+  return <ProductClient product={maleta} iconName="backpack" />;
+}

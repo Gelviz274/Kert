@@ -21,8 +21,8 @@
       "minOrder": 50,      
       "maxOrder": 150,
       "images": [
-        "/Productos/botiquin-cruz-roja.jpg",
-        "/Productos/maleta-botiquin-der.webp"
+        "/productos/botiquin-cruz-roja.jpg",
+        "/productos/maleta-botiquin-der.webp"
       ]
     },
     {
@@ -44,7 +44,85 @@
       "minOrder": 100,
       "maxOrder": 500,
       "images": [
-        "/Productos/piernera.jpg"
+        "/productos/piernera.jpg"
+      ]
+    },
+    {
+      "id": "cruz-roja-azul",
+      "name": "Cruz Roja Azul",
+      "name-title": "cruz-roja-azul",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 28,
+        "width": 32,
+        "depth": 15
+      },
+      "material": "Lona resistente",
+      "specifications": [
+        "Compartimiento principal amplio",
+        "Bolsillo frontal con cierre",
+        "Cierre resistente",
+        "Asa superior reforzada"
+      ],
+      "minOrder": 50,
+      "maxOrder": 200,
+      "images": [
+        "/productos/img_1747.webp",
+        "/productos/img_1748.webp",
+        "/productos/cruz-roja-azul/784984.webp",
+        "/productos/cruz-roja-azul/img_1749.webp",
+        "/productos/cruz-roja-azul/img_1750.webp",
+        "/productos/cruz-roja-azul/img_1751.webp",
+        "/productos/cruz-roja-azul/img_1752.webp",
+        "/productos/cruz-roja-azul/img_1753.webp",
+        "/productos/cruz-roja-azul/img_1758.webp",
+        "/productos/cruz-roja-azul/img_1759.webp"
+      ]
+    },
+    {
+      "id": "bolso-computador",
+      "name": "Bolso para Computador",
+      "name-title": "bolso-computador",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 35,
+        "width": 28,
+        "depth": 12
+      },
+      "material": "Lona resistente",
+      "specifications": [
+        "Bolsillo acolchado para portátil",
+        "Compartimiento principal amplio",
+        "Bolsillo frontal organizador",
+        "Asas y correa ajustable"
+      ],
+      "minOrder": 100,
+      "maxOrder": 400,
+      "images": [
+        "/productos/bolso-computador.jpg"
+      ]
+    },
+    {
+      "id": "canguro-coldeportes",
+      "name": "Canguro Coldeportes",
+      "name-title": "canguro-coldeportes",
+      "category": "Maletas",
+      "dimensions": {
+        "height": 38,
+        "width": 30,
+        "depth": 14
+      },
+      "material": "Lona resistente",
+      "specifications": [
+        "Diseño tipo canguro",
+        "Compartimiento principal con cierre",
+        "Bolsillos frontales",
+        "Correas ajustables"
+      ],
+      "minOrder": 100,
+      "maxOrder": 400,
+      "images": [
+        "/productos/canguro-coldeportes.jpg"
       ]
     }
   ]

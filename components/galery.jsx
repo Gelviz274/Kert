@@ -7,7 +7,7 @@ const products = [
     description:
       "La maleta DHL es la combinación perfecta entre diseño práctico y materiales de alta calidad. Confeccionado en H600, un material resistente y duradero, este bolso tipo maleta es ideal para quienes buscan comodidad y organización en su día a día.",
     price: "$299.99",
-    image: "/Productos/bolso-dhl.jpg",
+    image: "/productos/dhl/bolso-dhl.jpg",
     href: "/coleccion/maletas/bolso-dhl",
   },
   {
@@ -16,7 +16,7 @@ const products = [
     description:
       "La Maleta CEMEX está diseñada para quienes buscan funcionalidad, comodidad y resistencia en su día a día. Fabricada con lona morral, un material altamente duradero, esta maleta ofrece una estructura ligera pero robusta, ideal para el uso diario o profesional.",
     price: "$249.99",
-    image: "/Productos/maleta-cemex.jpg",
+    image: "/productos/cemex/maleta-cemex.jpg",
     href: "/coleccion/maletas/maleta-cemex",
   },
   {
@@ -25,7 +25,7 @@ const products = [
     description:
       "La Maleta ISABEL es la opción ideal para quienes necesitan amplitud, resistencia y organización en un solo producto. Fabricada con lona morral importada, ofrece una combinación perfecta de estilo y funcionalidad, asegurando un transporte cómodo y seguro para tus pertenencias.",
     price: "$399.99",
-    image: "/Productos/bolso-azul-rojo.jpg",
+    image: "/productos/isabel/bolso-azul-rojo.jpg",
     href: "/coleccion/maletas/bolso-isabel",
   },
   {
@@ -34,7 +34,7 @@ const products = [
     description:
       "La Maleta SAVE CHILDREN está diseñada para quienes buscan organización, resistencia y comodidad en su día a día. Confeccionada en lona morral nacional, esta maleta ofrece un diseño práctico y duradero, ideal para estudiantes, trabajadores y viajeros.",
     price: "$279.99",
-    image: "/Productos/Bolso-save.jpg",
+    image: "/productos/save-the-children/bolso-save.jpg",
     href: "/coleccion/maletas/maleta-save",
   },
 ];

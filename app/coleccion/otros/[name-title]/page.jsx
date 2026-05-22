@@ -1,6 +1,6 @@
 import React from 'react';
+import ProductClient from '@/components/ProductClient';
 import OtrosProductos from '../data/OtrosProductos.json';
-import OtroClient from './OtroClient';
 
 export async function generateMetadata({ params }) {
   const { 'name-title': nameTitle } = await params;
@@ -10,7 +10,10 @@ export async function generateMetadata({ params }) {
 
   return {
     title: producto ? `${producto.name} | Kert S.A.S` : 'Producto no encontrado',
-    description: producto ? producto.description : 'Producto no encontrado',
+    description: producto ? `Detalles de ${producto.name} - ${producto.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Producto no encontrado',
+    alternates: {
+      canonical: `https://creacionkert.com/coleccion/otros/${nameTitle}`,
+    }
   };
 }
 
@@ -21,8 +24,14 @@ export default async function OtroPage({ params }) {
   );
 
   if (!producto) {
-    return <div>Producto no encontrado</div>;
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="text-center">
+          <h2 className="text-xl font-semibold text-azul">Producto no encontrado</h2>
+        </div>
+      </div>
+    );
   }
 
-  return <OtroClient producto={producto} />;
-} 
+  return <ProductClient product={producto} iconName="briefcase" />;
+}

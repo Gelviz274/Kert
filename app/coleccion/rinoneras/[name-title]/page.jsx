@@ -1,6 +1,6 @@
 import React from "react";
+import ProductClient from "@/components/ProductClient";
 import rinonerasData from "../data/rinoneras.json";
-import RinoClient from "./RinoClient";
 
 export async function generateMetadata({ params }) {
   const { 'name-title': nameTitle } = await params;
@@ -28,5 +28,5 @@ export default async function RinoneraPage({ params }) {
     );
   }
 
-  return <RinoClient rinonera={rinonera} />;
-} 
+  return <ProductClient product={rinonera} iconName="backpack" />;
+}

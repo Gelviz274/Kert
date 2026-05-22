@@ -22,6 +22,7 @@ export const metadata = {
 export default function OtrosLayout({ children }) {
   return (
     <div className="flex flex-col w-full">
+      <NavProduct bags={productos} />
       {children}
     </div>
   );

@@ -1,0 +1,79 @@
+{
+  "productos": [
+    {
+      "id": "shopper",
+      "name": "Bolso Multiuso Shopper",
+      "name-title": "bolso-multiuso-shopper",
+      "category": "Bolsos Multiuso",
+      "dimensions": {
+        "height": 36,
+        "width": 42,
+        "depth": 14
+      },
+      "material": "Tela durable",
+      "specifications": [
+        "Amplio compartimento principal",
+        "Bolsillo interno",
+        "Asas largas de hombro",
+        "Base reforzada",
+        "Ideal para dotación y ferias",
+        "Tela durable"
+      ],
+      "minOrder": 200,
+      "maxOrder": 600,
+      "images": [
+        "/productos/bolsos-multiuso/shopper/01.webp"
+      ]
+    },
+    {
+      "id": "weekend",
+      "name": "Bolso Multiuso Weekend",
+      "name-title": "bolso-multiuso-weekend",
+      "category": "Bolsos Multiuso",
+      "dimensions": {
+        "height": 34,
+        "width": 46,
+        "depth": 18
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Bolso tipo viaje",
+        "Doble asa reforzada",
+        "Correa ajustable",
+        "Bolsillo frontal",
+        "Compartimiento principal amplio",
+        "Bolsillos laterales"
+      ],
+      "minOrder": 120,
+      "maxOrder": 400,
+      "images": [
+        "/productos/bolsos-multiuso/weekend/01.webp"
+      ]
+    },
+    {
+      "id": "multibolsillo",
+      "name": "Bolso Multibolsillo",
+      "name-title": "bolso-multibolsillo",
+      "category": "Bolsos Multiuso",
+      "dimensions": {
+        "height": 31,
+        "width": 39,
+        "depth": 13
+      },
+      "material": "Lona Morral Importada",
+      "specifications": [
+        "Tres compartimientos",
+        "Bolsillo frontal vertical",
+        "Organizador interno",
+        "Asas reforzadas",
+        "Diseño versátil",
+        "Forrado con tifón"
+      ],
+      "minOrder": 150,
+      "maxOrder": 500,
+      "images": [
+        "/productos/bolsos-multiuso/multibolsillo/01.webp"
+      ]
+    }
+  ]
+}

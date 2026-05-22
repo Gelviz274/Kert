@@ -16,23 +16,44 @@ const categories = [
   {
     title: "Maletas",
     subtitle: "Pedido mínimo: 50 unidades",
-    image: "/Productos/Bolso-negro-u.jpg",
+    image: "/productos/bolso-negro-u.jpg",
     className: "col-span-1 row-span-1",
     href: "/coleccion/maletas",
   },
   {
+    title: "Riñoneras",
+    subtitle: "Pedido mínimo: 150 unidades",
+    image: "/productos/rinonera-negra.jpg",
+    className: "col-span-1 row-span-1",
+    href: "/coleccion/rinoneras",
+  },
+  {
     title: "Bolsos",
-    subtitle: "Pedido mínimo: 100 unidades",
-    image: "/Productos/MALETAS/DHL/bolso-dhl.jpg",
+    subtitle: "Pedido mínimo: 150 unidades",
+    image: "/productos/dhl/bolso-dhl.jpg",
     className: "col-span-1 row-span-1",
     href: "/coleccion/bolsos",
   },
   {
-    title: "Rinoneras",
-    subtitle: "Pedido mínimo: 200 unidades",
-    image: "/Productos/rinonera-negra.jpg",
+    title: "Bolsos Multiuso",
+    subtitle: "Pedido mínimo: 120 unidades",
+    image: "/productos/isabel/bolso-azul-rojo.jpg",
     className: "col-span-1 row-span-1",
-    href: "/coleccion/rinoneras",
+    href: "/coleccion/bolsos-multiuso",
+  },
+  {
+    title: "Bolsas en Cambrel",
+    subtitle: "Pedido mínimo: 300 unidades",
+    image: "/productos/bolso-negro-u.jpg",
+    className: "col-span-1 row-span-1",
+    href: "/coleccion/bolsas-cambrel",
+  },
+  {
+    title: "Bolsas en Tela",
+    subtitle: "Pedido mínimo: 150 unidades",
+    image: "/productos/bolso-negro-u.jpg",
+    className: "col-span-1 row-span-1",
+    href: "/coleccion/bolsas-tela",
   },
 ];
 
@@ -60,28 +81,28 @@ const mas_vendidos = [
     Nombre: "Rinonera 'Auricular' ",
     Material: "Lona Guayera",
     Pedido_min: 100,
-    image: "/Productos/rinonera-negra.jpg",
+    image: "/productos/rinonera-negra.jpg",
   },
   {
     id: 2,
     Nombre: "Bolso 'Isabel'",
     Material: "Lona Morral importado",
     Pedido_min: 200,
-    image: "/Productos/MALETAS/Isabel/Bolso-azul-rojo.jpg",
+    image: "/productos/isabel/bolso-azul-rojo.jpg",
   },
   {
     id: 3,
     Nombre: "Morral 'Fura'",
     Material: "Lona Morral Nacional",
     Pedido_min: 200,
-    image: "/Productos/Bolso-negro-u.jpg",
+    image: "/productos/bolso-negro-u.jpg",
   },
   {
     id: 4,
     Nombre: "Botiquin Cruz Roja",
     Material: "Lona Morral Nacional",
     Pedido_min: 200,
-    image: "/Productos/Botiquin-cruz-roja.jpg",
+    image: "/productos/botiquin-cruz-roja.jpg",
   },
 ];
 
@@ -99,7 +120,7 @@ export default function ColeccionPage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/Productos/MALETAS/Isabel/Bolso-azul-rojo.jpg"
+            src="/productos/isabel/bolso-azul-rojo.jpg"
             alt="Hero background"
             fill
             className="object-cover opacity-20"

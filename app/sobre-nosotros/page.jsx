@@ -23,7 +23,7 @@ function NosotrosPage() {
     return (
         <>
             <div className="relative h-[800px] bg-azul flex items-center justify-center" style={{
-                backgroundImage: "url('/Productos/olimpica-frente.webp')",
+                backgroundImage: "url('/productos/olimpica-frente.webp')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundBlend: 'overlay'
@@ -73,7 +73,7 @@ function NosotrosPage() {
                     >
                         <div className="aspect-[4/3] relative overflow-hidden">
                             <Image
-                                src="/Productos/MALETAS/Bolsoazul/IMG_1860.jpg"
+                                src="/productos/bolso-azul/img_1860.jpg"
                                 fill
                                 alt="Proceso de fabricación"
                                 className="object-cover"
