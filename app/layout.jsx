@@ -78,8 +78,12 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Kert S.A.S" />
+      </head>
+      <body className={`${RobotoFont.variable} antialiased mt-[68px]`}>
         {/* Datos estructurados JSON-LD para empresas locales */}
-        <script
+        <Script
+          id="schema-organization"
+          strategy="beforeInteractive"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -102,9 +106,31 @@ export default function RootLayout({ children }) {
             })
           }}
         />
-      </head>
 
-      <body className={`${RobotoFont.variable} antialiased mt-[68px]`}>
+        {/* BreadcrumbList Structured Data */}
+        <Script
+          id="schema-breadcrumb"
+          strategy="beforeInteractive"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://creacionkert.com" },
+                { "@type": "ListItem", "position": 2, "name": "Colección", "item": "https://creacionkert.com/coleccion" },
+                { "@type": "ListItem", "position": 3, "name": "Maletas", "item": "https://creacionkert.com/coleccion/maletas" },
+                { "@type": "ListItem", "position": 4, "name": "Riñoneras", "item": "https://creacionkert.com/coleccion/rinoneras" },
+                { "@type": "ListItem", "position": 5, "name": "Bolsos", "item": "https://creacionkert.com/coleccion/bolsos" },
+                { "@type": "ListItem", "position": 6, "name": "Bolsos Multiuso", "item": "https://creacionkert.com/coleccion/bolsos-multiuso" },
+                { "@type": "ListItem", "position": 7, "name": "Bolsas en Cambrel", "item": "https://creacionkert.com/coleccion/bolsas-cambrel" },
+                { "@type": "ListItem", "position": 8, "name": "Bolsas en Tela", "item": "https://creacionkert.com/coleccion/bolsas-tela" },
+                { "@type": "ListItem", "position": 9, "name": "Otros Productos", "item": "https://creacionkert.com/coleccion/otros" }
+              ]
+            })
+          }}
+        />
+
         {/* Google Tag Manager - Head */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

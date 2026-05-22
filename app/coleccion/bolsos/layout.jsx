@@ -17,6 +17,28 @@ export const metadata = {
   alternates: {
     canonical: "https://creacionkert.com/coleccion/bolsos",
   },
+  openGraph: {
+    title: "Bolsos | Kert S.A.S - Catálogo de Bolsos al Por Mayor",
+    description: "Explora nuestra colección de bolsos al por mayor. Diseños modernos y funcionales para distribuidores.",
+    url: "https://creacionkert.com/coleccion/bolsos",
+    type: "website",
+    locale: "es_CO",
+    siteName: "Kert S.A.S",
+    images: [
+      {
+        url: "https://creacionkert.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bolsos al por mayor - Kert S.A.S",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bolsos | Kert S.A.S - Catálogo de Bolsos al Por Mayor",
+    description: "Explora nuestra colección de bolsos al por mayor. Diseños modernos y funcionales para distribuidores.",
+    images: ["https://creacionkert.com/og-image.jpg"],
+  },
 };
 
 export default function BolsosLayout({ children }) {

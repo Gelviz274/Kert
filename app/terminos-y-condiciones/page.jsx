@@ -5,6 +5,9 @@ export const metadata = {
   title: 'Términos y Condiciones | Kert S.A.S',
   description: 'Términos y Condiciones de Kert S.A.S según la legislación colombiana. Conoce tus derechos y obligaciones al utilizar nuestros servicios.',
   keywords: 'términos y condiciones, términos de uso, condiciones generales, Kert S.A.S, ley de protección al consumidor',
+  alternates: {
+    canonical: "https://creacionkert.com/terminos-y-condiciones",
+  },
 };
 
 export default function TerminosCondiciones() {
