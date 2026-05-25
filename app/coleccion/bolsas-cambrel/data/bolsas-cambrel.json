@@ -1,16 +1,11 @@
 {
   "productos": [
     {
-      "id": "cambrel-basic",
-      "name": "Bolsa Cambrel Basic",
-      "name-title": "bolsa-cambrel-basic",
+      "id": "ref-20",
+      "name": "CAMBREL BASIC",
+      "name-title": "ref-20-cambrel-basic",
       "category": "Bolsas en Cambrel",
-      "dimensions": {
-        "height": 40,
-        "width": 35,
-        "depth": 10
-      },
-      "material": "Cambrel de alta resistencia",
+      "dimensions": { "height": 40, "width": 35, "depth": 10 },
       "specifications": [
         "Manijas reforzadas",
         "Tela cambrel de alta resistencia",
@@ -20,22 +15,14 @@
         "Reutilizable"
       ],
       "minOrder": 300,
-      "maxOrder": 800,
-      "images": [
-        "/productos/bolsas-cambrel/cambrel-basic/01.webp"
-      ]
+      "images": ["/productos/bolsas-cambrel/ref-20-cambrel-basic/01.webp"]
     },
     {
-      "id": "cambrel-plus",
-      "name": "Bolsa Cambrel Plus",
-      "name-title": "bolsa-cambrel-plus",
+      "id": "ref-21",
+      "name": "CAMBREL PLUS",
+      "name-title": "ref-21-cambrel-plus",
       "category": "Bolsas en Cambrel",
-      "dimensions": {
-        "height": 42,
-        "width": 38,
-        "depth": 12
-      },
-      "material": "Cambrel laminada",
+      "dimensions": { "height": 42, "width": 38, "depth": 12 },
       "specifications": [
         "Fuelle lateral e inferior",
         "Manijas largas para hombro",
@@ -45,22 +32,14 @@
         "Ideal para uso promocional"
       ],
       "minOrder": 300,
-      "maxOrder": 800,
-      "images": [
-        "/productos/bolsas-cambrel/cambrel-plus/01.webp"
-      ]
+      "images": ["/productos/bolsas-cambrel/ref-21-cambrel-plus/01.webp"]
     },
     {
-      "id": "cambrel-eco",
-      "name": "Bolsa Cambrel Eco",
-      "name-title": "bolsa-cambrel-eco",
+      "id": "ref-22",
+      "name": "CAMBREL ECO",
+      "name-title": "ref-22-cambrel-eco",
       "category": "Bolsas en Cambrel",
-      "dimensions": {
-        "height": 38,
-        "width": 33,
-        "depth": 8
-      },
-      "material": "Cambrel liviano",
+      "dimensions": { "height": 38, "width": 33, "depth": 8 },
       "specifications": [
         "Bolsa ecológica",
         "Manijas troqueladas reforzadas",
@@ -70,10 +49,7 @@
         "Personalizable"
       ],
       "minOrder": 500,
-      "maxOrder": 2000,
-      "images": [
-        "/productos/bolsas-cambrel/cambrel-eco/01.webp"
-      ]
+      "images": ["/productos/bolsas-cambrel/ref-22-cambrel-eco/01.webp"]
     }
   ]
 }

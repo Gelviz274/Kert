@@ -1,316 +1,138 @@
 {
   "maletas": [
     {
-      "id": "isabel",
-      "name": "Maleta Isabel",
-      "name-title": "maleta-isabel",
+      "id": "ref-1",
+      "name": "COLOR BASIC",
+      "name-title": "ref-1-color-basic",
       "category": "Maletas",
-      "dimensions": {
-        "height": 43,
-        "width": 31,
-        "depth": 18
-      },
-      "material": "Lona Morral Importada",
-      "specifications": [
-        "Seis compartimientos",
-        "Bolsillo para portátil y organizador",
-        "Dos bolsillos laterales en malla sándwich",
-        "Dos bolsillos principales",
-        "Bolsillo frontal",
-        "Cargadera con malla sándwich y Yumbolon",
-        "Bolso forrado totalmente con tifón"
-      ],
-      "minOrder": 200,
-      "maxOrder": 600,
-      "images": [
-        "/productos/isabel/maletainpetu.webp",
-        "/productos/isabel/bolso-azul-rojo.jpg",
-        "/productos/isabel/bolso-azul-rojo-izquierda.webp",
-        "/productos/isabel/bolso-azul-rojo-atras.webp",
-        "/productos/isabel/bolso-azul-rojo-arriba.webp",
-        "/productos/isabel/img_1735.webp",
-        "/productos/isabel/img_1737.webp"
-      ]
-    },
-    {
-      "id": "save-the-children",
-      "name": "Maleta Save the Children",
-      "name-title": "maleta-save-the-children",
-      "category": "Maletas",
-      "dimensions": {
-        "height": 40,
-        "width": 30,
-        "depth": 15
-      },
-      "material": "Lona Morral Importada",
-      "specifications": [
-        "Múltiples compartimientos",
-        "Espacio para portátil",
-        "Bolsillos laterales",
-        "Bolsillo frontal",
-        "Cargadera ajustable",
-        "Forrado con tifón"
-      ],
-      "minOrder": 300,
-      "maxOrder": 800,
-      "images": [
-        "/productos/save-the-children/bolso-save.jpg",
-        "/productos/save-the-children/bolso-save-derecha.webp",
-        "/productos/save-the-children/bolso-save-atras.webp"
-      ]
-    },
-    {
-      "id": "cemex",
-      "name": "Maleta Cemex",
-      "name-title": "maleta-cemex",
-      "category": "Maletas",
-      "dimensions": {
-        "height": 45,
-        "width": 35,
-        "depth": 20
-      },
-      "material": "Lona Morral Importada",
-      "specifications": [
-        "Compartimientos organizados",
-        "Bolsillo para portátil",
-        "Bolsillos laterales",
-        "Bolsillo frontal",
-        "Cargadera resistente",
-        "Forrado con tifón"
-      ],
-      "minOrder": 250,
-      "maxOrder": 700,
-      "images": [
-        "/productos/cemex/maleta-cemex.jpg",
-        "/productos/cemex/maleta-cemex-izquierda.webp",
-        "/productos/cemex/maleta-cemex-atras.webp",
-        "/productos/cemex/maleta-cemex-derecha.webp"
-      ]
-    },
-    {
-      "id": "dhl",
-      "name": "Bolso DHL",
-      "name-title": "bolso-dhl",
-      "category": "Maletas",
-      "dimensions": {
-        "height": 38,
-        "width": 28,
-        "depth": 12
-      },
-      "material": "Lona Morral Importada",
-      "specifications": [
-        "Cinco compartimientos",
-        "Bolsillo para portátil",
-        "Bolsillos laterales",
-        "Bolsillo frontal",
-        "Cargadera ajustable",
-        "Forrado con tifón"
-      ],
-      "minOrder": 200,
-      "maxOrder": 800,
-      "images": [
-        "/productos/dhl/cuadrante.png",
-        "/productos/dhl/bolso-dhl.jpg",
-        "/productos/dhl/bolso-dhl-izquierda.jpg",
-        "/productos/dhl/bolso-dhl-atras.jpg",
-        "/productos/dhl/bolso-dhl-cerca.jpg"
-      ]
-    },{
-      "id": "fura",
-      "name": "Maleta Fura",
-      "name-title": "maleta-fura",
-      "category": "Maletas",
-      "dimensions": {
-        "height": 42,
-        "width": 26,
-        "depth": 15
-      },
-      "material": "Lona Morral Nacional",
+      "dimensions": { "height": 40, "width": 26, "depth": 15 },
       "specifications": [
         "Tres compartimientos",
-        "Bolsillo para portátil",
-        "Cierre de lujo",
-        "Malla para sándwich", 
-        "Bolsillos laterales",
-        "Bolsillo frontal",
-        "Cargadera ajustable",
-        "Forrado con tifón"
+        "Cremallera: Cierre de lujo",
+        "Cargaderas y espalda: Hechas con lona",
+        "Materiales adicionales: Rellenado con poliuretano"
       ],
       "minOrder": 300,
-      "maxOrder": 800,
-      "images": [
-        "/productos/fura/maletaveta.webp",
-        "/productos/fura/maleta-fura.webp",
-        "/productos/fura/maleta-fura-atras.webp",
-        "/productos/fura/maleta-fura-izq.webp",
-        "/productos/fura/bolso-negro-u.jpg"
-      ]
-    },{
-      "id": "igac",  
-      "name": "Maleta IGAC",
-      "name-title": "maleta-igac",
+      "images": ["/productos/maletas/ref-1-color-basic/01.webp"]
+    },
+    {
+      "id": "ref-2",
+      "name": "BLACK MEDIUM",
+      "name-title": "ref-2-black-medium",
       "category": "Maletas",
-      "dimensions": {
-        "height": 42,
-        "width": 26,
-        "depth": 15
-      },
-      "material": "Lona Morral Nacional",
-      "specifications": [
-        "Tres compartimientos",
-        "Cremallera: Cierre de lujo #6.",
-        "Cargaderas y espalda: Hechas con lona.",
-        "Materiales adicionales", 
-        "Rellenado con poliuretano."
-      ],
-      "minOrder": 300,
-      "maxOrder": 800,  
-      "images": [
-        "/productos/igac/maleta-igac.jpg",
-        "/productos/igac/maleta-igac-dere.jpg",
-        "/productos/igac/maleta-igac-atras.jpg",
-        "/productos/igac/img_2267.jpg",
-        "/productos/igac/img_2268.jpg",
-        "/productos/igac/img_2269.jpg",
-        "/productos/igac/img_2272.jpg",
-        "/productos/igac/img_2273.jpg",
-        "/productos/igac/img_2274.jpg",
-        "/productos/igac/img_2275.jpg",
-        "/productos/igac/img_2276.jpg",
-        "/productos/igac/img_2277.jpg"
-      ]
-    },{
-      "id": "pionero",
-      "name": "Maleta Pionero",
-      "name-title": "maleta-pionero",
-      "category": "Maletas",
-      "dimensions": {
-        "height": 45,
-        "width": 30,
-        "depth": 18
-      },
-      "material": "Lona Morral Nacional",
+      "dimensions": { "height": 45, "width": 30, "depth": 18 },
       "specifications": [
         "Tapa superior con broche tipo clic",
         "Bolsillo frontal grande con tapa",
         "Bolsillos laterales con cierre",
-        "Compartimento principal con cierre interno",
-        "con cordón",
+        "Compartimento principal con cierre interno con cordón",
         "Correas acolchadas ajustables",
         "Asa superior para colgar",
         "Tela tipo lona resistente"
       ],
       "minOrder": 250,
-      "maxOrder": 700,
-      "images": [
-        "/productos/pionero/maleta-drumond.webp",
-        "/productos/pionero/pionero.jpg",
-        "/productos/pionero/pionero2.jpg",
-        "/productos/pionero/pioneroh.jpg",
-        "/productos/pionero/img_2280.jpg",
-        "/productos/pionero/img_2281.jpg",
-        "/productos/pionero/img_2282.jpg",
-        "/productos/pionero/img_2283.jpg",
-        "/productos/pionero/img_2286.jpg",
-        "/productos/pionero/img_2287.jpg",
-        "/productos/pionero/img_2288.jpg"
-      ]
+      "images": ["/productos/maletas/ref-2-black-medium/01.webp"]
     },
     {
-      "id": "arca",
-      "name": "Maleta Arca",
-      "name-title": "maleta-arca",
+      "id": "ref-3",
+      "name": "COMPLEX",
+      "name-title": "ref-3-complex",
       "category": "Maletas",
-      "dimensions": {
-        "height": 39,
-        "width": 28,
-        "depth": 18
-      },
-      "material": "Lona Morral Nacional",
+      "dimensions": { "height": 45, "width": 32, "depth": 18 },
       "specifications": [
-        "Tres compartimientos principales con cremallera",
-        "Bolsillo frontal con diseño curvo y cremallera",
-        "Bolsillos laterales en malla",
-        "Espaldar y cargaderas acolchadas",
-        "Asa superior para colgar",
-        "Tela de alta resistencia"
-      ],
-      "minOrder": 150,
-      "maxOrder": 400,
-      "images": [
-        "/productos/arca/maleta-hacienda.webp",
-        "/productos/arca/arca.jpg",
-        "/productos/arca/arca2.jpg",
-        "/productos/arca/img_1834.jpg",
-        "/productos/arca/img_1836.jpg",
-        "/productos/arca/img_1837.jpg",
-        "/productos/arca/img_1839.jpg",
-        "/productos/arca/img_1845.jpg"
-      ]
-    },
-    {
-      "id": "urban",
-      "name": "Maleta Urban",
-      "name-title": "maleta-urban",
-      "category": "Maletas",
-      "dimensions": {
-        "height": 44,
-        "width": 29,
-        "depth": 17
-      },
-      "material": "Lona Morral Importada",
-      "specifications": [
-        "Tres compartimientos principales",
-        "Bolsillo para portátil acolchado",
-        "Bolsillo frontal con organizador",
-        "Bolsillos laterales en malla",
-        "Espaldar y cargaderas acolchadas",
-        "Asa superior reforzada",
-        "Tela de alta resistencia"
-      ],
-      "minOrder": 200,
-      "maxOrder": 600,
-      "images": [
-        "/productos/maletas/urban/01.webp"
-      ]
-    },
-    {
-      "id": "active",
-      "name": "Maleta Active",
-      "name-title": "maleta-active",
-      "category": "Maletas",
-      "dimensions": {
-        "height": 47,
-        "width": 32,
-        "depth": 20
-      },
-      "material": "Lona Morral Importada",
-      "specifications": [
-        "Cuatro compartimientos",
-        "Bolsillo para portátil",
-        "Bolsillo frontal con cierre vertical",
-        "Bolsillos laterales en malla",
-        "Cargaderas ajustables con malla transpirable",
-        "Espaldar ergonómico acolchado",
-        "Tela impermeable"
+        "Compartimento principal amplio con tapa y broches ajustables",
+        "Bolsillo frontal con cierre independiente",
+        "Bolsillos laterales multifuncionales",
+        "Correas acolchadas ajustables para espalda",
+        "Manija superior reforzada",
+        "Interior con forro y acabado premium",
+        "Costuras reforzadas y estructura semirrígida"
       ],
       "minOrder": 250,
-      "maxOrder": 700,
-      "images": [
-        "/productos/maletas/active/01.webp"
-      ]
+      "images": ["/productos/maletas/ref-3-complex/01.webp"]
     },
     {
-      "id": "explorer",
-      "name": "Maleta Explorer",
-      "name-title": "maleta-explorer",
+      "id": "ref-4",
+      "name": "BASIC",
+      "name-title": "ref-4-basic",
       "category": "Maletas",
-      "dimensions": {
-        "height": 50,
-        "width": 33,
-        "depth": 22
-      },
-      "material": "Lona Morral Importada",
+      "dimensions": { "height": 43, "width": 30, "depth": 15 },
+      "specifications": [
+        "Diseño minimalista de silueta limpia",
+        "Compartimiento principal de gran apertura con cremallera oculta",
+        "Bolsillo frontal horizontal con cierre de cremallera protegido por solapa",
+        "Bolsillo lateral plano integrado para botellas o elementos pequeños"
+      ],
+      "minOrder": 300,
+      "images": ["/productos/maletas/ref-4-basic/01.webp"]
+    },
+    {
+      "id": "ref-5",
+      "name": "ALL-IN",
+      "name-title": "ref-5-all-in",
+      "category": "Maletas",
+      "dimensions": { "height": 49, "width": 34, "depth": 22 },
+      "specifications": [
+        "Múltiples compartimientos principales de gran volumen con cremalleras bidireccionales",
+        "Dos bolsillos frontales superiores e inferiores de gran relieve con cierres independientes",
+        "Bolsillos adicionales con cremalleras horizontales de acceso rápido en los paneles frontales",
+        "Detalles de cremalleras en contraste de color rojo de alta resistencia"
+      ],
+      "minOrder": 250,
+      "images": ["/productos/maletas/ref-5-all-in/01.webp"]
+    },
+    {
+      "id": "ref-6",
+      "name": "LAPTOP BASIC",
+      "name-title": "ref-6-laptop-basic",
+      "category": "Maletas",
+      "dimensions": { "height": 42, "width": 30, "depth": 12 },
+      "specifications": [
+        "Diseño ultra delgado de perfil rectangular y ejecutivo",
+        "Compartimiento principal con apertura de cremallera perimetral optimizado para tecnología",
+        "Bolsillo interno acolchado dedicado para portátil",
+        "Bolsillo frontal horizontal integrado de acceso rápido con cremallera oculta",
+        "Bolsillo lateral plano y discreto para elementos pequeños o sombrilla compacta"
+      ],
+      "minOrder": 250,
+      "images": ["/productos/maletas/ref-6-laptop-basic/01.webp"]
+    },
+    {
+      "id": "ref-7",
+      "name": "BLACK MEDIUM",
+      "name-title": "ref-7-black-medium",
+      "category": "Maletas",
+      "dimensions": { "height": 46, "width": 31, "depth": 18 },
+      "specifications": [
+        "Tres compartimientos principales con cierres de cremallera independientes",
+        "Bolsillo frontal de gran apertura con costura curva decorativa en la base",
+        "Bolsillos laterales en malla elástica para botellas",
+        "Cintas de compresión laterales con broches plásticos ajustables"
+      ],
+      "minOrder": 300,
+      "images": ["/productos/maletas/ref-7-black-medium/01.webp"]
+    },
+    {
+      "id": "ref-8",
+      "name": "TEXTURE-BLACK",
+      "name-title": "ref-8-texture-black",
+      "category": "Maletas",
+      "dimensions": { "height": 38, "width": 28, "depth": 12 },
+      "specifications": [
+        "Diseño moderno de perfil semi-rectangular con líneas limpias",
+        "Dos compartimientos principales con cierre de cremallera perimetral",
+        "Panel frontal con costuras horizontales que crean un diseño acolchado texturizado",
+        "Bolsillo frontal de acceso rápido con cremallera oculta entre los pliegues"
+      ],
+      "minOrder": 200,
+      "images": ["/productos/maletas/ref-8-texture-black/01.webp"]
+    },
+    {
+      "id": "ref-9",
+      "name": "EXPLORER",
+      "name-title": "ref-9-explorer",
+      "category": "Maletas",
+      "dimensions": { "height": 50, "width": 33, "depth": 22 },
       "specifications": [
         "Cinco compartimientos",
         "Bolsillo para portátil",
@@ -321,45 +143,37 @@
         "Tela resistente al agua"
       ],
       "minOrder": 200,
-      "maxOrder": 600,
-      "images": [
-        "/productos/maletas/explorer/01.webp"
-      ]
+      "images": ["/productos/maletas/ref-9-explorer/01.webp"]
     },
     {
-      "id": "hubemar",
-      "name": "Maleta Hubemar",
-      "name-title": "maleta-hubemar",
+      "id": "ref-10",
+      "name": "ACTIVE",
+      "name-title": "ref-10-active",
       "category": "Maletas",
-      "dimensions": {
-        "height": 44,
-        "width": 29,
-        "depth": 17
-      },
-      "material": "Lona Morral Importada",
+      "dimensions": { "height": 47, "width": 32, "depth": 19 },
       "specifications": [
-        "Múltiples compartimientos",
-        "Bolsillo frontal con cierre",
-        "Bolsillos laterales",
-        "Espaldar y cargaderas acolchadas",
-        "Asa superior reforzada"
+        "Tres compartimientos principales con cierres de cremallera de gran capacidad",
+        "Bolsillo frontal de diseño curvo con cremallera vertical de acceso rápido",
+        "Cintas de compresión laterales con broches plásticos para ajuste de volumen",
+        "Bolsillos laterales de malla elástica con borde reforzado"
       ],
-      "minOrder": 200,
-      "maxOrder": 600,
-      "images": [
-        "/productos/hubemar/hubemar.jpg",
-        "/productos/hubemar/img_2254.jpg",
-        "/productos/hubemar/img_2255.jpg",
-        "/productos/hubemar/img_2257.jpg",
-        "/productos/hubemar/img_2258.jpg",
-        "/productos/hubemar/img_2259.jpg",
-        "/productos/hubemar/img_2261.jpg",
-        "/productos/hubemar/img_2262.jpg",
-        "/productos/hubemar/img_2263.jpg",
-        "/productos/hubemar/img_2264.jpg",
-        "/productos/hubemar/img_2265.jpg",
-        "/productos/hubemar/img_2266.jpg"
-      ]
+      "minOrder": 300,
+      "images": ["/productos/maletas/ref-10-active/01.webp"]
+    },
+    {
+      "id": "ref-11",
+      "name": "URBAN",
+      "name-title": "ref-11-urban",
+      "category": "Maletas",
+      "dimensions": { "height": 45, "width": 31, "depth": 17 },
+      "specifications": [
+        "Tres compartimientos principales con cierres de cremallera de gran apertura",
+        "Bolsillo frontal intermedio de silueta redondeada y amplio almacenamiento",
+        "Panel frontal con costura curva decorativa en la base que unifica el diseño",
+        "Bolsillos laterales en malla elástica reforzada de alta densidad"
+      ],
+      "minOrder": 300,
+      "images": ["/productos/maletas/ref-11-urban/01.webp"]
     }
   ]
-} 
+}

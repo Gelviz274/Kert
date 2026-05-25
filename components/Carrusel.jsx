@@ -16,25 +16,25 @@ import { usePathname } from "next/navigation";
 
 const items = [
   {
-    image: "/productos/isabel/bolso-azul-rojo.jpg",
-    title: "Mochila Corporativa ",
-    description: "Diseñada para resistir el ritmo diario, esta mochila combina estilo y funcionalidad. Ideal para promociones, regalos empresariales o uso escolar. ¡Luce tu marca con calidad!",
+    image: "/productos/maletas/ref-5-all-in/01.webp",
+    title: "ALL-IN",
+    description: "Múltiples compartimientos de gran volumen con cremalleras bidireccionales y detalles en rojo de alta resistencia. La máxima capacidad en una sola maleta.",
     buttonText: "Conócela ahora",
-    href: "/coleccion/maletas/maleta-isabel",
+    href: "/coleccion/maletas/ref-5-all-in",
   },
   {
-    image: "/productos/olimpica/cangureraolimpica.webp",
-    title: "Cangurera Deportiva Olímpica",
-    description: "Práctica, ligera y con el espacio justo para lo esencial. Ideal para eventos, promociones o uso diario. ¡Lleva tu marca a todas partes con estilo y comodidad!",
+    image: "/productos/rinoneras/ref-15-etib/01.webp",
+    title: "ETIB",
+    description: "Dos compartimientos principales, bolsillo frontal de gran relieve y bolsillos laterales en malla elástica. Ideal para el día a día.",
     buttonText: "Descúbrela aquí",
-    href: "/coleccion/rinoneras/rinonera-olimpica",
+    href: "/coleccion/rinoneras/ref-15-etib",
   },
   {
-    image: "/productos/pionero/pioneroh.jpg", // Asumiendo que esta es la ruta de la imagen del Morral Pionero
-    title: "Morral Pionero",
-    description: "Diseñado para los que abren camino. Su robustez y amplio espacio te acompañan en cada aventura, desde la exploración urbana hasta los senderos más desafiantes.",
+    image: "/productos/maletas/ref-9-explorer/01.webp",
+    title: "EXPLORER",
+    description: "Cinco compartimientos, bolsillo para portátil y tela resistente al agua. Diseñada para los que siempre están en movimiento.",
     buttonText: "Explorar",
-    href: "/coleccion/maletas/maleta-pionero", // Ajusta esta ruta según la URL real de tu producto
+    href: "/coleccion/maletas/ref-9-explorer",
   },
   
 ];

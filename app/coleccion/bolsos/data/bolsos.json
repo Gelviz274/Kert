@@ -1,16 +1,11 @@
 {
   "productos": [
     {
-      "id": "city-bag",
-      "name": "Bolso City Bag",
-      "name-title": "bolso-city-bag",
+      "id": "ref-26",
+      "name": "CITY BAG",
+      "name-title": "ref-26-city-bag",
       "category": "Bolsos",
-      "dimensions": {
-        "height": 32,
-        "width": 40,
-        "depth": 12
-      },
-      "material": "Tela resistente",
+      "dimensions": { "height": 32, "width": 40, "depth": 12 },
       "specifications": [
         "Compartimiento principal con cierre",
         "Bolsillo frontal funcional",
@@ -20,22 +15,14 @@
         "Tela resistente"
       ],
       "minOrder": 150,
-      "maxOrder": 500,
-      "images": [
-        "/productos/bolsos/city-bag/01.webp"
-      ]
+      "images": ["/productos/bolsos/ref-26-city-bag/01.webp"]
     },
     {
-      "id": "executive",
-      "name": "Bolso Executive",
-      "name-title": "bolso-executive",
+      "id": "ref-27",
+      "name": "EXECUTIVE",
+      "name-title": "ref-27-executive",
       "category": "Bolsos",
-      "dimensions": {
-        "height": 30,
-        "width": 38,
-        "depth": 10
-      },
-      "material": "Lona Morral Importada",
+      "dimensions": { "height": 30, "width": 38, "depth": 10 },
       "specifications": [
         "Compartimiento acolchado para portátil",
         "Bolsillo organizador",
@@ -45,130 +32,25 @@
         "Forrado con tifón"
       ],
       "minOrder": 150,
-      "maxOrder": 400,
-      "images": [
-        "/productos/bolsos/executive/01.webp"
-      ]
+      "images": ["/productos/bolsos/ref-27-executive/01.webp"]
     },
     {
-      "id": "cross",
-      "name": "Bolso Cross",
-      "name-title": "bolso-cross",
+      "id": "ref-28",
+      "name": "CROSS",
+      "name-title": "ref-28-cross",
       "category": "Bolsos",
-      "dimensions": {
-        "height": 28,
-        "width": 34,
-        "depth": 9
-      },
-      "material": "Tela impermeable",
+      "dimensions": { "height": 50, "width": 33, "depth": 22 },
       "specifications": [
-        "Diseño tipo crossbody",
-        "Bolsillo frontal con cremallera",
-        "Compartimiento principal amplio",
-        "Correa graduable",
-        "Compacto y funcional",
-        "Tela impermeable"
+        "Cinco compartimientos",
+        "Bolsillo para portátil",
+        "Bolsillo frontal con organizador",
+        "Bolsillos laterales con cierre",
+        "Cintas de compresión laterales",
+        "Espaldar y cargaderas acolchadas",
+        "Tela resistente al agua"
       ],
       "minOrder": 200,
-      "maxOrder": 600,
-      "images": [
-        "/productos/bolsos/cross/01.webp"
-      ]
-    },
-    {
-      "id": "bolso-azul",
-      "name": "Bolso Azul",
-      "name-title": "bolso-azul",
-      "category": "Bolsos",
-      "dimensions": {
-        "height": 32,
-        "width": 38,
-        "depth": 12
-      },
-      "material": "Lona resistente",
-      "specifications": [
-        "Compartimiento principal con cierre",
-        "Bolsillo frontal",
-        "Bolsillos laterales",
-        "Asas reforzadas",
-        "Correa ajustable"
-      ],
-      "minOrder": 150,
-      "maxOrder": 500,
-      "images": [
-        "/productos/bolso-azul/img_1849.jpg",
-        "/productos/bolso-azul/img_1850.jpg",
-        "/productos/bolso-azul/img_1851.jpg",
-        "/productos/bolso-azul/img_1852.jpg",
-        "/productos/bolso-azul/img_1853.jpg",
-        "/productos/bolso-azul/img_1854.jpg",
-        "/productos/bolso-azul/img_1855.jpg",
-        "/productos/bolso-azul/img_1856.jpg",
-        "/productos/bolso-azul/img_1857.jpg",
-        "/productos/bolso-azul/img_1858.jpg",
-        "/productos/bolso-azul/img_1859.jpg",
-        "/productos/bolso-azul/img_1860.jpg",
-        "/productos/bolso-azul/img_1861.jpg"
-      ]
-    },
-    {
-      "id": "bolso-azul-medicas",
-      "name": "Bolso Azul Médicas",
-      "name-title": "bolso-azul-medicas",
-      "category": "Bolsos",
-      "dimensions": {
-        "height": 30,
-        "width": 36,
-        "depth": 12
-      },
-      "material": "Lona resistente",
-      "specifications": [
-        "Compartimiento principal amplio",
-        "Bolsillo frontal con cierre",
-        "Organizador interno",
-        "Asas reforzadas",
-        "Correa ajustable"
-      ],
-      "minOrder": 150,
-      "maxOrder": 500,
-      "images": [
-        "/productos/bolso-azul-medicas/img_1846.jpg",
-        "/productos/bolso-azul-medicas/img_1847.jpg",
-        "/productos/bolso-azul-medicas/img_1848.jpg"
-      ]
-    },
-    {
-      "id": "bolso-negro",
-      "name": "Bolso Negro",
-      "name-title": "bolso-negro",
-      "category": "Bolsos",
-      "dimensions": {
-        "height": 34,
-        "width": 40,
-        "depth": 14
-      },
-      "material": "Lona resistente",
-      "specifications": [
-        "Compartimiento principal con cierre",
-        "Bolsillo frontal organizador",
-        "Bolsillos laterales",
-        "Asas reforzadas",
-        "Correa larga ajustable"
-      ],
-      "minOrder": 150,
-      "maxOrder": 500,
-      "images": [
-        "/productos/bolso-negro/img_2278.jpg",
-        "/productos/bolso-negro/img_2280.jpg",
-        "/productos/bolso-negro/img_2281.jpg",
-        "/productos/bolso-negro/img_2282.jpg",
-        "/productos/bolso-negro/img_2283.jpg",
-        "/productos/bolso-negro/img_2286.jpg",
-        "/productos/bolso-negro/img_2287.jpg",
-        "/productos/bolso-negro/img_2288.jpg",
-        "/productos/bolso-negro/img_2289.jpg",
-        "/productos/bolso-negro/img_2290.jpg"
-      ]
+      "images": ["/productos/bolsos/ref-28-cross/01.webp"]
     }
   ]
 }

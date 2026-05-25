@@ -1,129 +1,49 @@
 {
   "productos": [
     {
-      "id": "botiquin",
-      "name": "Botiquín",
-      "name-title": "botiquin",
-      "category": "Maletas",
-      "dimensions": {
-        "height": 25,
-        "width": 30,
-        "depth": 25
-      },
-      "material": "Lona Morral Nacional",
+      "id": "ref-12",
+      "name": "BOTIQUÍN",
+      "name-title": "ref-12-botiquin",
+      "category": "Otros",
+      "dimensions": { "height": 26, "width": 34, "depth": 16 },
       "specifications": [
-        "Cuatro compartimientos", 
-        "Dos bolsillos principales",
-        "Bolsillo frontal y interno",
-        "Incluye organizador", 
-        "Cinta reflectiva"
+        "Dos compartimientos principales de gran apertura con cierre de cremallera perimetral",
+        "Bolsillo frontal de gran relieve con estampado de alta visibilidad \"BOTIQUÍN\" y cruz médica",
+        "Cinta reflectiva horizontal en el panel frontal para condiciones de baja luminosidad",
+        "Ribete negro de refuerzo estructural (manguera/venero) en todos los perfiles del bolso"
       ],
-      "minOrder": 50,      
-      "maxOrder": 150,
-      "images": [
-        "/productos/botiquin-cruz-roja.jpg",
-        "/productos/maleta-botiquin-der.webp"
-      ]
+      "minOrder": 300,
+      "images": ["/productos/otros/ref-12-botiquin/01.webp"]
     },
     {
-      "id": "piernera",
-      "name": "Riñonera Tipo Piernera",
-      "name-title": "rinonera-piernera",
-      "category": "Riñoneras",
-      "dimensions": {
-        "height": 25,
-        "width": 15,
-        "depth": 8
-      },
-      "material": "Lona Morral Importada",
+      "id": "ref-13",
+      "name": "PIERNERA",
+      "name-title": "ref-13-piernera",
+      "category": "Otros",
+      "dimensions": { "height": 28, "width": 22, "depth": 11 },
       "specifications": [
-        "Correas ajustables para la cintura y la pierna.",
-        "Múltiples compartimentos con cierre para guardar objetos personales como el celular,llaves, documentos, herramientas pequeñas, etc.",
-        "Un diseño que permite tener acceso rápido y manos libres."
+        "Diseño táctico y ergonómico tipo piernera con anclaje doble",
+        "Dos compartimientos principales con cierres de cremallera perimetral de gran apertura",
+        "Bolsillo superior plano horizontal integrado de acceso rápido para documentos",
+        "Correa superior ajustable para cintura con reata de alta resistencia y broche plástico de liberación rápida"
       ],
-      "minOrder": 100,
-      "maxOrder": 500,
-      "images": [
-        "/productos/piernera.jpg"
-      ]
+      "minOrder": 200,
+      "images": ["/productos/otros/ref-13-piernera/01.webp"]
     },
     {
-      "id": "cruz-roja-azul",
-      "name": "Cruz Roja Azul",
-      "name-title": "cruz-roja-azul",
-      "category": "Maletas",
-      "dimensions": {
-        "height": 28,
-        "width": 32,
-        "depth": 15
-      },
-      "material": "Lona resistente",
+      "id": "ref-14",
+      "name": "MINIBOTIQUÍN",
+      "name-title": "ref-14-minibotiquin",
+      "category": "Otros",
+      "dimensions": { "height": 16, "width": 24, "depth": 11 },
       "specifications": [
-        "Compartimiento principal amplio",
-        "Bolsillo frontal con cierre",
-        "Cierre resistente",
-        "Asa superior reforzada"
+        "Compartimiento principal único de gran capacidad con cierre de cremallera perimetral superior",
+        "Ventana frontal con aplique de material plástico blanco ideal para marcación o inserción de logos/tarjetas de identificación",
+        "Correa trasera ajustable para cintura fabricada en reata negra de alta resistencia",
+        "Broche plástico de liberación rápida y hebilla reguladora de tensión para un ajuste firme"
       ],
-      "minOrder": 50,
-      "maxOrder": 200,
-      "images": [
-        "/productos/img_1747.webp",
-        "/productos/img_1748.webp",
-        "/productos/cruz-roja-azul/784984.webp",
-        "/productos/cruz-roja-azul/img_1749.webp",
-        "/productos/cruz-roja-azul/img_1750.webp",
-        "/productos/cruz-roja-azul/img_1751.webp",
-        "/productos/cruz-roja-azul/img_1752.webp",
-        "/productos/cruz-roja-azul/img_1753.webp",
-        "/productos/cruz-roja-azul/img_1758.webp",
-        "/productos/cruz-roja-azul/img_1759.webp"
-      ]
-    },
-    {
-      "id": "bolso-computador",
-      "name": "Bolso para Computador",
-      "name-title": "bolso-computador",
-      "category": "Maletas",
-      "dimensions": {
-        "height": 35,
-        "width": 28,
-        "depth": 12
-      },
-      "material": "Lona resistente",
-      "specifications": [
-        "Bolsillo acolchado para portátil",
-        "Compartimiento principal amplio",
-        "Bolsillo frontal organizador",
-        "Asas y correa ajustable"
-      ],
-      "minOrder": 100,
-      "maxOrder": 400,
-      "images": [
-        "/productos/bolso-computador.jpg"
-      ]
-    },
-    {
-      "id": "canguro-coldeportes",
-      "name": "Canguro Coldeportes",
-      "name-title": "canguro-coldeportes",
-      "category": "Maletas",
-      "dimensions": {
-        "height": 38,
-        "width": 30,
-        "depth": 14
-      },
-      "material": "Lona resistente",
-      "specifications": [
-        "Diseño tipo canguro",
-        "Compartimiento principal con cierre",
-        "Bolsillos frontales",
-        "Correas ajustables"
-      ],
-      "minOrder": 100,
-      "maxOrder": 400,
-      "images": [
-        "/productos/canguro-coldeportes.jpg"
-      ]
+      "minOrder": 300,
+      "images": ["/productos/otros/ref-14-minibotiquin/01.webp"]
     }
   ]
-} 
+}
