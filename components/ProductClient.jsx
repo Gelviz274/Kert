@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Ruler, Info, ShoppingBag, Backpack, Briefcase, Package } from "lucide-react";
+import { Ruler, Info, ShoppingBag, Backpack, Briefcase, Package, Tag } from "lucide-react";
 import Image from "next/image";
 
 const iconMap = {
@@ -14,6 +14,8 @@ const iconMap = {
 function ProductClient({ product, iconName }) {
   const Icon = iconName ? iconMap[iconName] : null;
   const [selectedImage, setSelectedImage] = useState(0);
+
+  const refNumber = product.id?.startsWith("ref-") ? product.id : null;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -50,9 +52,17 @@ function ProductClient({ product, iconName }) {
 
           <div className="space-y-6">
             <div>
-              <h2 className="text-3xl font-bold text-azul">
-                {product.name}
-              </h2>
+              <div className="flex items-center gap-3 mb-2">
+                <h2 className="text-3xl font-bold text-azul">
+                  {product.name}
+                </h2>
+                {refNumber && (
+                  <span className="inline-flex items-center gap-1.5 bg-azul text-amarillo px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">
+                    <Tag className="w-3.5 h-3.5" />
+                    {refNumber.toUpperCase()}
+                  </span>
+                )}
+              </div>
               <p className="text-gray-600 flex items-center gap-2">
                 {Icon && <Icon className="w-6 h-6" />}
                 {product.category}

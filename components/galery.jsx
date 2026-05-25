@@ -3,39 +3,39 @@ import React from "react";
 const products = [
   {
     id: 1,
-    name: "Maleta DHL",
+    name: "ALL-IN",
     description:
-      "La maleta DHL es la combinación perfecta entre diseño práctico y materiales de alta calidad. Confeccionado en H600, un material resistente y duradero, este bolso tipo maleta es ideal para quienes buscan comodidad y organización en su día a día.",
-    price: "$299.99",
-    image: "/productos/dhl/bolso-dhl.jpg",
-    href: "/coleccion/maletas/bolso-dhl",
+      "Múltiples compartimientos de gran volumen con cremalleras bidireccionales y detalles en rojo. La solución definitiva para quienes necesitan llevar todo con ellos.",
+    price: "Consultar",
+    image: "/productos/maletas/ref-5-all-in/01.webp",
+    href: "/coleccion/maletas/ref-5-all-in",
   },
   {
     id: 2,
-    name: "Maleta Cemex",
+    name: "COMPLEX",
     description:
-      "La Maleta CEMEX está diseñada para quienes buscan funcionalidad, comodidad y resistencia en su día a día. Fabricada con lona morral, un material altamente duradero, esta maleta ofrece una estructura ligera pero robusta, ideal para el uso diario o profesional.",
-    price: "$249.99",
-    image: "/productos/cemex/maleta-cemex.jpg",
-    href: "/coleccion/maletas/maleta-cemex",
+      "Estructura semirrígida con acabado premium, múltiples compartimientos y correas acolchadas. Diseñada para el uso diario más exigente.",
+    price: "Consultar",
+    image: "/productos/maletas/ref-3-complex/01.webp",
+    href: "/coleccion/maletas/ref-3-complex",
   },
   {
     id: 3,
-    name: "Maleta Isabel",
+    name: "URBAN",
     description:
-      "La Maleta ISABEL es la opción ideal para quienes necesitan amplitud, resistencia y organización en un solo producto. Fabricada con lona morral importada, ofrece una combinación perfecta de estilo y funcionalidad, asegurando un transporte cómodo y seguro para tus pertenencias.",
-    price: "$399.99",
-    image: "/productos/isabel/bolso-azul-rojo.jpg",
-    href: "/coleccion/maletas/bolso-isabel",
+      "Tres compartimientos de gran apertura, bolsillo frontal de silueta redondeada y laterales en malla elástica. Estilo y funcionalidad urbana.",
+    price: "Consultar",
+    image: "/productos/maletas/ref-11-urban/01.webp",
+    href: "/coleccion/maletas/ref-11-urban",
   },
   {
     id: 4,
-    name: "Maleta Save the Children",
+    name: "EXPLORER",
     description:
-      "La Maleta SAVE CHILDREN está diseñada para quienes buscan organización, resistencia y comodidad en su día a día. Confeccionada en lona morral nacional, esta maleta ofrece un diseño práctico y duradero, ideal para estudiantes, trabajadores y viajeros.",
-    price: "$279.99",
-    image: "/productos/save-the-children/bolso-save.jpg",
-    href: "/coleccion/maletas/maleta-save",
+      "Cinco compartimientos, bolsillo para portátil y tela resistente al agua. La compañera ideal para viajes y aventuras.",
+    price: "Consultar",
+    image: "/productos/maletas/ref-9-explorer/01.webp",
+    href: "/coleccion/maletas/ref-9-explorer",
   },
 ];
 

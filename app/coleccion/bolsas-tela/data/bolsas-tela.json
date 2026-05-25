@@ -1,16 +1,11 @@
 {
   "productos": [
     {
-      "id": "canvas-classic",
-      "name": "Bolsa Canvas Classic",
-      "name-title": "bolsa-canvas-classic",
+      "id": "ref-23",
+      "name": "CANVAS CLASSIC",
+      "name-title": "ref-23-canvas-classic",
       "category": "Bolsas en Tela",
-      "dimensions": {
-        "height": 40,
-        "width": 37,
-        "depth": 12
-      },
-      "material": "Lona tipo canvas",
+      "dimensions": { "height": 40, "width": 37, "depth": 12 },
       "specifications": [
         "Tela tipo lona",
         "Asas largas reforzadas",
@@ -20,22 +15,14 @@
         "Ideal para uso diario"
       ],
       "minOrder": 200,
-      "maxOrder": 600,
-      "images": [
-        "/productos/bolsas-tela/canvas-classic/01.webp"
-      ]
+      "images": ["/productos/bolsas-tela/ref-23-canvas-classic/01.webp"]
     },
     {
-      "id": "shopper-premium",
-      "name": "Bolsa Shopper Premium",
-      "name-title": "bolsa-shopper-premium",
+      "id": "ref-24",
+      "name": "SHOPPER PREMIUM",
+      "name-title": "ref-24-shopper-premium",
       "category": "Bolsas en Tela",
-      "dimensions": {
-        "height": 45,
-        "width": 40,
-        "depth": 14
-      },
-      "material": "Tela resistente",
+      "dimensions": { "height": 45, "width": 40, "depth": 14 },
       "specifications": [
         "Amplio compartimento principal",
         "Cierre superior",
@@ -45,22 +32,14 @@
         "Acabados de calidad"
       ],
       "minOrder": 200,
-      "maxOrder": 600,
-      "images": [
-        "/productos/bolsas-tela/shopper-premium/01.webp"
-      ]
+      "images": ["/productos/bolsas-tela/ref-24-shopper-premium/01.webp"]
     },
     {
-      "id": "multiuso",
-      "name": "Bolsa Multiuso",
-      "name-title": "bolsa-multiuso",
+      "id": "ref-25",
+      "name": "MULTIUSOS",
+      "name-title": "ref-25-multiusos",
       "category": "Bolsas en Tela",
-      "dimensions": {
-        "height": 38,
-        "width": 35,
-        "depth": 10
-      },
-      "material": "Tela durable",
+      "dimensions": { "height": 38, "width": 35, "depth": 10 },
       "specifications": [
         "Dos asas cortas y correa larga ajustable",
         "Bolsillo interno",
@@ -70,10 +49,7 @@
         "Ideal para dotación"
       ],
       "minOrder": 150,
-      "maxOrder": 500,
-      "images": [
-        "/productos/bolsas-tela/multiuso/01.webp"
-      ]
+      "images": ["/productos/bolsas-tela/ref-25-multiusos/01.webp"]
     }
   ]
 }

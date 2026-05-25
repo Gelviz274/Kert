@@ -163,21 +163,46 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
+                title: "Maletas",
+                slug: "maletas",
+                image: "/productos/maletas/ref-9-explorer/01.webp",
+                description: "Diseñadas para resistir el ritmo diario, combinando estilo, funcionalidad y materiales de alta calidad.",
+              },
+              {
                 title: "Riñoneras",
-                image: "/productos/olimpica/cangureraolimpica.webp",
-                description:
-                  "El compañero perfecto para tus viajes y actividades diarias, combinando estilo y comodidad.",
+                slug: "rinoneras",
+                image: "/productos/rinoneras/ref-15-etib/01.webp",
+                description: "Prácticas, ligeras y con el espacio justo para lo esencial. Ideal para eventos, promociones o uso diario.",
               },
               {
-                title: "Mochilas",
-                image: "/productos/isabel/bolso-azul-rojo.jpg",
-                description: "Mochilas duraderas para uso diario y aventura",
+                title: "Bolsos",
+                slug: "bolsos",
+                image: "/productos/bolsos/ref-26-city-bag/01.webp",
+                description: "Diseño moderno y funcional, ideal para el viajero urbano que busca calidad y practicidad.",
               },
               {
-                title: "Bolsos de Negocios",
-                image: "/productos/hubemar/hubemar.jpg",
-                description:
-                  "Diseño moderno y funcional, ideal para el viajero urbano que busca calidad y practicidad.",
+                title: "Bolsos Multiuso",
+                slug: "bolsos-multiuso",
+                image: "/productos/bolsos-multiuso/ref-29-weekend/01.webp",
+                description: "Versatilidad y amplitud para tus actividades diarias, viajes y dotación empresarial.",
+              },
+              {
+                title: "Bolsas en Cambrel",
+                slug: "bolsas-cambrel",
+                image: "/productos/bolsas-cambrel/ref-20-cambrel-basic/01.webp",
+                description: "Resistencia y liviandad en una sola bolsa. Ideales para ferias, promociones y eventos.",
+              },
+              {
+                title: "Bolsas en Tela",
+                slug: "bolsas-tela",
+                image: "/productos/bolsas-tela/ref-23-canvas-classic/01.webp",
+                description: "Elegancia y durabilidad en materiales textiles de alta calidad para uso diario.",
+              },
+              {
+                title: "Otros",
+                slug: "otros",
+                image: "/productos/otros/ref-12-botiquin/01.webp",
+                description: "Soluciones especializadas: botiquines, pierneras y accesorios tácticos funcionales.",
               },
             ].map((product, index) => (
               <motion.div
@@ -205,7 +230,7 @@ export default function Home() {
                     whileHover={{ scale: 1.05 }}
                     className="mt-4"
                   >
-                    <Link href={`/coleccion/${product.title.toLowerCase()}`}>
+                    <Link href={`/coleccion/${product.slug}`}>
                       <button className="bg-amarillo/90 hover:bg-amarillo text-azul px-6 py-2 rounded-full text-sm font-semibold transition-colors duration-300">
                         Explorar
                       </button>
