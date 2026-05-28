@@ -174,14 +174,14 @@ export default function ColeccionPage() {
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-amarillo text-azul px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 hover:bg-amarillo/90 transition-all duration-300 shadow-lg hover:shadow-amarillo/20"
+              className="bg-amarillo text-azul px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 hover:bg-amarillo/90 transition-all duration-300 shadow-lg hover:shadow-amarillo/20 cursor-pointer"
             >
               Descargar catálogo <ArrowRight className="w-5 h-5" />
             </motion.a>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white/10 text-white px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 hover:bg-white/20 transition-all duration-300 backdrop-blur-sm"
+              className="bg-white/10 text-white px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 hover:bg-white/20 transition-all duration-300 backdrop-blur-sm cursor-pointer"
               onClick={() =>
                 window.open("https://wa.me/+573116095224", "_blank")
               }

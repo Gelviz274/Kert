@@ -69,7 +69,7 @@ export default function Home() {
                 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => router.push('/sobre-nosotros')}
-                className="bg-amarillo text-azul px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center transition-all duration-300 hover:bg-[#FFD700]"
+                className="bg-amarillo text-azul px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center transition-all duration-300 hover:bg-[#FFD700] cursor-pointer"
               >
                 Conoce más
                 <ChevronRight className="ml-2 h-5 w-5" />
