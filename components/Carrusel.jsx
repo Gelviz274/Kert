@@ -88,7 +88,7 @@ export default function Carrusel() {
   }, [pathname]);
 
   return (
-    <div className="relative w-full h-[700px] overflow-hidden">
+    <div className="relative w-full h-[700px] overflow-hidden bg-azul">
       <Carousel 
         plugins={[plugin.current]}
         className="w-full h-full"
@@ -113,7 +113,7 @@ export default function Carrusel() {
         <CarouselContent className="h-full">
           {items.map((item, index) => (
             <CarouselItem key={index} className="h-full flex items-center justify-center">
-              <Card className="w-full h-full overflow-hidden relative border-none rounded-none">
+              <Card className="w-full h-full overflow-hidden relative border-none rounded-none shadow-none bg-transparent">
                 {/* Imagen de fondo */}
                 <div className="absolute inset-0 w-full h-full overflow-hidden">
                   <img
