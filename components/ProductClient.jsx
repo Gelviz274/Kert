@@ -134,8 +134,15 @@ function ProductClient({ product, iconName }) {
                 ¿Quieres hacer un pedido?
               </p>
               <button
-                onClick={() => window.open('https://wa.me/+573116095224', '_blank')}
-                className="bg-azul hover:bg-azul/95 text-white px-6 py-2 rounded-full"
+                onClick={() => {
+                  const productName = product.name;
+                  const refStr = refNumber ? `${refNumber.toUpperCase()}` : null;
+                  const message = refStr
+                    ? `Hola Kert, me gustaría cotizar un pedido personalizado de ${productName} (Ref. ${refStr})`
+                    : `Hola Kert, me gustaría cotizar un pedido personalizado de ${productName}`;
+                  window.open(`https://wa.me/+573116095224?text=${encodeURIComponent(message)}`, '_blank');
+                }}
+                className="bg-azul hover:bg-azul/95 text-white px-6 py-2 rounded-full cursor-pointer"
               >
                 Solicitar Cotización
               </button>

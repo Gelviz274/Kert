@@ -41,7 +41,7 @@ const items = [
 
 export default function Carrusel() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
+
   const carouselRef = useRef(null);
   const pathname = usePathname();
   
@@ -88,20 +88,18 @@ export default function Carrusel() {
   }, [pathname]);
 
   return (
-    <div className="relative w-full h-[700px] overflow-hidden">
+    <div className="relative w-full h-[700px] overflow-hidden bg-azul">
       <Carousel 
         plugins={[plugin.current]}
         className="w-full h-full"
-        onMouseEnter={() => {
+          onMouseEnter={() => {
           if (plugin.current && typeof plugin.current.stop === 'function') {
             plugin.current.stop();
-            setIsPaused(true);
           }
         }}
         onMouseLeave={() => {
           if (plugin.current && typeof plugin.current.play === 'function') {
             plugin.current.play();
-            setIsPaused(false);
           }
         }}
         setApi={(api) => {
@@ -115,7 +113,7 @@ export default function Carrusel() {
         <CarouselContent className="h-full">
           {items.map((item, index) => (
             <CarouselItem key={index} className="h-full flex items-center justify-center">
-              <Card className="w-full h-full overflow-hidden relative border-none rounded-none">
+              <Card className="w-full h-full overflow-hidden relative border-none rounded-none shadow-none bg-transparent">
                 {/* Imagen de fondo */}
                 <div className="absolute inset-0 w-full h-full overflow-hidden">
                   <img
@@ -195,13 +193,6 @@ export default function Carrusel() {
           ))}
         </div>
         
-        {/* Indicador de pausa */}
-        {isPaused && (
-          <div className="absolute top-4 right-4 bg-black/30 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm z-20">
-            Pausado
-          </div>
-        )}
-
         {/* Indicador de número de slide actual */}
         <div className="absolute top-4 left-4 bg-black/30 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm z-20">
           {activeIndex + 1} / {items.length}

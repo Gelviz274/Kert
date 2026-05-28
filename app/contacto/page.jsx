@@ -13,10 +13,6 @@ function ContactPage() {
         {
             number: '573116095224',
             label: 'Ventas al por mayor'
-        },
-        {
-            number: '573223006013',
-            label: 'Atención al cliente'
         }
     ];
 
@@ -163,15 +159,7 @@ function ContactPage() {
                                         <span className="text-sm text-gray-500 group-hover/link:translate-x-1 transition-transform duration-300">(Ventas)</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a 
-                                        href="tel:+573223006013"
-                                        className="text-azul hover:text-amarillo transition-colors duration-300 group/link flex items-center gap-3"
-                                    >
-                                        <span>+57 322 300 6013</span>
-                                        <span className="text-sm text-gray-500 group-hover/link:translate-x-1 transition-transform duration-300">(Atención)</span>
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                     </motion.div>
