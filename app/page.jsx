@@ -10,10 +10,12 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Testimonios from "@/components/testimonios";
 import { motion } from "framer-motion";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
       <div className="flex text-white bg-azul w-full h-auto">
@@ -66,6 +68,7 @@ export default function Home() {
                   boxShadow: "0 10px 30px rgba(12, 8, 68, 0.2)",
                 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => router.push('/sobre-nosotros')}
                 className="bg-amarillo text-azul px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center transition-all duration-300 hover:bg-[#FFD700]"
               >
                 Conoce más
