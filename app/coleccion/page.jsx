@@ -169,13 +169,15 @@ export default function ColeccionPage() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <motion.button
+            <motion.a
+              href="/Portafolio%202026%20KERT%20S.A.S.pdf"
+              download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-amarillo text-azul px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 hover:bg-amarillo/90 transition-all duration-300 shadow-lg hover:shadow-amarillo/20"
             >
-              Solicitar catálogo <ArrowRight className="w-5 h-5" />
-            </motion.button>
+              Descargar catálogo <ArrowRight className="w-5 h-5" />
+            </motion.a>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
