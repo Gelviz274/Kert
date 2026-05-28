@@ -38,13 +38,6 @@ export default function ContactoLayout({ children }) {
                   "contactType": "customer service",
                   "areaServed": "CO",
                   "availableLanguage": "Spanish"
-                },
-                {
-                  "@type": "ContactPoint",
-                  "telephone": "+573223006013",
-                  "contactType": "sales",
-                  "areaServed": "CO",
-                  "availableLanguage": "Spanish"
                 }
               ],
               "email": "contacto@creacionkert.com"
