@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-27T21:14:00.000Z",
+  "title": "Design System: Kert S.A.S",
+  "extensions": {
+    "colorMeta": {
+      "azul": {
+        "role": "primary",
+        "displayName": "Deep Azul",
+        "canonical": "#0C0844",
+        "tonalRamp": ["#030112", "#060324", "#090536", "#0C0844", "#1a1a6e", "#3333a0", "#6666c8", "#9999e0"]
+      },
+      "amarillo": {
+        "role": "secondary",
+        "displayName": "Bright Amarillo",
+        "canonical": "#FFCF00",
+        "tonalRamp": ["#4d4000", "#7a6600", "#a88c00", "#FFCF00", "#ffd633", "#ffdd66", "#ffe599", "#ffedcc"]
+      },
+      "coral": {
+        "role": "tertiary",
+        "displayName": "Coral",
+        "canonical": "#ff5a5f",
+        "tonalRamp": ["#4d1a1b", "#7a2a2c", "#a83a3c", "#ff5a5f", "#ff7d81", "#ffa0a3", "#ffc3c5", "#ffe6e7"]
+      },
+      "azul-dark": {
+        "role": "surface",
+        "displayName": "Azul Dark",
+        "canonical": "#05004c",
+        "tonalRamp": ["#010012", "#020024", "#030038", "#05004c", "#1a1a80", "#3333b0", "#6666d0", "#9999e8"]
+      },
+      "azul-deepest": {
+        "role": "surface",
+        "displayName": "Azul Deepest",
+        "canonical": "#050422",
+        "tonalRamp": ["#010108", "#020210", "#030318", "#050422", "#1a1a50", "#333380", "#6666b0", "#9999d0"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headlines, main page headers. Maximum visual impact." },
+      "headline": { "displayName": "Headline", "purpose": "Section headers. Identify each content block." },
+      "title": { "displayName": "Title", "purpose": "Card titles, product names, section subtitles." },
+      "body": { "displayName": "Body", "purpose": "Main text, descriptions, editorial content. 65-75ch max." },
+      "label": { "displayName": "Label", "purpose": "Buttons, badges, navigation labels. Functional, not decorative." }
+    },
+    "shadows": [
+      { "name": "ambient", "value": "0 4px 24px rgba(12, 8, 68, 0.12)", "purpose": "Subtle separation under cards at rest." },
+      { "name": "elevated", "value": "0 10px 40px rgba(12, 8, 68, 0.18)", "purpose": "Cards in hover state, interactive elements." },
+      { "name": "dramatic", "value": "0 20px 60px rgba(12, 8, 68, 0.25)", "purpose": "Focused elements: modals, dropdowns." }
+    ],
+    "motion": [
+      { "name": "ease-out-quart", "value": "cubic-bezier(0.25, 1, 0.5, 1)", "purpose": "Default easing for state transitions." },
+      { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Scroll-reveal entrance animations." },
+      { "name": "ease-in-out", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Color and opacity transitions." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main CTA button. Yellow background, navy text, full-rounded pill shape.",
+      "html": "<button class=\"ds-btn-primary\">Explorar</button>",
+      "css": ".ds-btn-primary { background: #FFCF00; color: #0C0844; padding: 16px 32px; border-radius: 9999px; font-weight: 600; font-family: Roboto, sans-serif; font-size: 1rem; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; } .ds-btn-primary:hover { transform: scale(1.05); box-shadow: 0 4px 24px rgba(12, 8, 68, 0.18); } .ds-btn-primary:focus-visible { outline: 2px solid #0C0844; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action. Transparent background, white text. Used in dark sections.",
+      "html": "<button class=\"ds-btn-ghost\">Ver Más</button>",
+      "css": ".ds-btn-ghost { background: transparent; color: #ffffff; padding: 12px 24px; border-radius: 8px; font-weight: 500; font-family: Roboto, sans-serif; font-size: 0.875rem; border: 1px solid rgba(255,255,255,0.2); cursor: pointer; transition: background 0.2s, color 0.2s; } .ds-btn-ghost:hover { background: rgba(255,255,255,0.1); color: #FFCF00; }"
+    },
+    {
+      "name": "Content Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White card with xl radius and ambient shadow. Used for value propositions, product info.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-header\"><h3 class=\"ds-card-title\">Calidad Garantizada</h3></div><div class=\"ds-card-content\"><p>Cada producto cumple con los más altos estándares.</p></div></div>",
+      "css": ".ds-card { background: #ffffff; color: #0a0a0a; border-radius: 16px; padding: 24px 32px; box-shadow: 0 4px 24px rgba(12, 8, 68, 0.12); transition: box-shadow 0.3s, transform 0.3s; } .ds-card:hover { box-shadow: 0 10px 40px rgba(12, 8, 68, 0.18); transform: translateY(-4px); } .ds-card-header { margin-bottom: 16px; } .ds-card-title { font-size: 1.25rem; font-weight: 600; color: #0C0844; } .ds-card-content { font-size: 1rem; line-height: 1.6; color: #737373; }"
+    },
+    {
+      "name": "Navbar",
+      "kind": "nav",
+      "refersTo": "navbar",
+      "description": "Fixed top navigation. Deep azul background, white text, logo left, links center.",
+      "html": "<header class=\"ds-navbar\"><a href=\"/\" class=\"ds-navbar-logo\"><img src=\"/logo.png\" alt=\"Kert\" width=\"80\" height=\"80\" /></a><nav class=\"ds-navbar-links\"><a href=\"/\">Inicio</a><a href=\"/coleccion\">Colección</a><a href=\"/sobre-nosotros\">Sobre Nosotros</a><a href=\"/contacto\">Contacto</a></nav></header>",
+      "css": ".ds-navbar { position: fixed; top: 0; left: 0; width: 100%; background: #0C0844; color: #ffffff; padding: 16px 24px; display: flex; justify-content: space-around; align-items: center; z-index: 50; } .ds-navbar-logo img { width: 80px; height: 80px; } .ds-navbar-links { display: flex; gap: 24px; } .ds-navbar-links a { color: #ffffff; text-decoration: none; font-weight: 500; transition: color 0.3s; } .ds-navbar-links a:hover { color: #FFCF00; }"
+    },
+    {
+      "name": "Footer",
+      "kind": "nav",
+      "refersTo": "footer",
+      "description": "Full-width footer with azul-to-darkest gradient. Three columns: brand, links, contact.",
+      "html": "<footer class=\"ds-footer\"><div class=\"ds-footer-inner\"><div class=\"ds-footer-brand\"><img src=\"/logo.png\" alt=\"Kert\" width=\"150\" /><p>Productos de alta calidad para tu negocio.</p></div><div class=\"ds-footer-links\"><h3>Enlaces Rápidos</h3><a href=\"/\">Inicio</a><a href=\"/coleccion\">Colección</a></div><div class=\"ds-footer-contact\"><h3>Contacto</h3><a href=\"mailto:contacto@creacionkert.com\">contacto@creacionkert.com</a><a href=\"https://wa.me/573116095224\">WhatsApp</a></div></div></footer>",
+      "css": ".ds-footer { background: linear-gradient(to bottom, #0C0844, #050422); color: #ffffff; padding: 48px 16px; } .ds-footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; } .ds-footer-brand p { color: #d4d4d4; font-size: 0.875rem; line-height: 1.6; margin-top: 16px; } .ds-footer-links h3, .ds-footer-contact h3 { font-size: 1.125rem; font-weight: 700; border-bottom: 2px solid #FFCF00; padding-bottom: 8px; margin-bottom: 16px; display: inline-block; } .ds-footer-links a, .ds-footer-contact a { display: block; color: #d4d4d4; text-decoration: none; margin-bottom: 8px; transition: color 0.3s; } .ds-footer-links a:hover, .ds-footer-contact a:hover { color: #FFCF00; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Editorial Workshop",
+    "overview": "Kert transmite la calidez de una fábrica que sabe hacer las cosas bien, combinada con la precisión visual de una revista de diseño. Cada página es una oportunidad de mostrar el producto como protagonista. El sitio no grita; comunica confianza a través de limpieza y estructura.",
+    "keyCharacteristics": [
+      "Fotografía de producto como protagonista absoluto",
+      "Paleta de tres colores con roles claros y sin superposiciones",
+      "Tipografía bold como herramienta de jerarquía, no decoración",
+      "Espacio en blanco generoso que comunica premium",
+      "Animaciones sutiles al servicio de la navegación, no del espectáculo"
+    ],
+    "rules": [
+      { "name": "The 60-30-10 Rule", "body": "Azul ocupa ~60%, blanco ~30%, amarillo+coral ~10%. El amarillo no compite con el azul; lo complementa con precisión quirúrgica.", "section": "colors" },
+      { "name": "The One Weight Rule", "body": "Un peso por contexto: Display/headline 700, body 400. La jerarquía se logra con tamaño y espacio, no con variaciones de peso.", "section": "typography" },
+      { "name": "The Layered Depth Rule", "body": "Profundidad en tres capas: fondo blanco, secciones azul oscuro, elementos con sombra. Cada capa se distingue por color, no solo por sombra.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do usar la paleta de tres colores con roles claros",
+      "Do mantener el amarillo como color de CTA exclusivo",
+      "Do usar tipografía bold solo para headings",
+      "Do dar espacio generoso (py-24 mínimo)",
+      "Do usar framer-motion para scroll-reveal y hover",
+      "Do mantener WhatsApp visible siempre",
+      "Do usar fotografía de producto real como protagonista"
+    ],
+    "donts": [
+      "Don't usar gradientes de texto (background-clip: text)",
+      "Don't usar glassmorphism, blur, ni backdrop-filter decorativo",
+      "Don't usar sombras en texto",
+      "Don't crear identical card grids",
+      "Don't usar modals como primera opción de interacción",
+      "Don't usar stock photos de gente sonriendo",
+      "Don't animar propiedades CSS de layout",
+      "Don't usar border-left/border-right >1px como acento",
+      "Don't usar dark mode por defecto",
+      "Don't usar superlativos genéricos en copy"
+    ]
+  }
+}
