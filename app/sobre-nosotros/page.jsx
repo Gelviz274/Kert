@@ -23,7 +23,7 @@ function NosotrosPage() {
     return (
         <>
             <div className="relative h-[800px] bg-azul flex items-center justify-center" style={{
-                backgroundImage: "url('/productos/olimpica-frente.webp')",
+                backgroundImage: "url('/productos/maletas/background.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundBlend: 'overlay'
