@@ -21,6 +21,102 @@ export default function Home() {
       <div className="flex text-white bg-azul w-full h-auto">
         <Carrusel />
       </div>
+
+      {/* Transición sutil entre carrusel y disclaimer */}
+      <div className="relative h-16 md:h-20 bg-azul overflow-hidden -mt-1">
+        <div className="absolute inset-0 bg-gradient-to-b from-azul/0 via-amarillo/[0.02] to-azul" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] md:w-[40%] h-px bg-gradient-to-r from-transparent via-amarillo/20 to-transparent" />
+      </div>
+
+      {/* Disclaimer destacado */}
+      <section className="bg-azul py-20 md:py-28 relative overflow-hidden border-b border-white/5">
+        {/* Brillos sutiles con opacidad (sin blur para respetar el design system) */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle_at_center,rgba(255,207,0,0.03)_0%,transparent_70%)] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[radial-gradient(circle_at_center,rgba(255,207,0,0.02)_0%,transparent_70%)] pointer-events-none" />
+
+        <div className="relative max-w-7xl mx-auto px-4">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              initial: {},
+              animate: {
+                transition: {
+                  staggerChildren: 0.1,
+                },
+              },
+            }}
+            className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center border border-white/10 rounded-sm p-8 md:p-12 lg:p-16 relative bg-white/[0.01]"
+          >
+            {/* Esquinas decorativas de precisión (concepto de taller editorial/artesanal) */}
+            <div className="absolute -top-[1px] -left-[1px] w-4 h-4 border-t-2 border-l-2 border-amarillo/40 rounded-tl-sm" />
+            <div className="absolute -top-[1px] -right-[1px] w-4 h-4 border-t-2 border-r-2 border-amarillo/40 rounded-tr-sm" />
+            <div className="absolute -bottom-[1px] -left-[1px] w-4 h-4 border-b-2 border-l-2 border-amarillo/40 rounded-bl-sm" />
+            <div className="absolute -bottom-[1px] -right-[1px] w-4 h-4 border-b-2 border-r-2 border-amarillo/40 rounded-br-sm" />
+
+            {/* Columna Izquierda: Titular y Badge */}
+            <div className="lg:col-span-7 space-y-4">
+              <motion.span
+                variants={{
+                  initial: { opacity: 0, y: 15 },
+                  animate: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
+                }}
+                className="inline-flex items-center gap-2 text-amarillo text-xs font-bold tracking-[0.25em] uppercase"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-amarillo animate-pulse" />
+                Personalización Empresarial
+              </motion.span>
+              <motion.h2
+                variants={{
+                  initial: { opacity: 0, y: 20 },
+                  animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
+                }}
+                className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight"
+              >
+                Tu marca, <br className="hidden md:inline" />
+                en cada detalle.
+              </motion.h2>
+            </div>
+
+            {/* Divisor Vertical Elegante (solo en desktop) */}
+            <div className="hidden lg:flex lg:col-span-1 justify-center h-full py-4">
+              <div className="w-px h-32 bg-white/10" />
+            </div>
+
+            {/* Columna Derecha: Texto descriptivo y CTA */}
+            <div className="lg:col-span-4 flex flex-col justify-center space-y-6 lg:pl-4">
+              <motion.p
+                variants={{
+                  initial: { opacity: 0, y: 20 },
+                  animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
+                }}
+                className="text-white/60 text-base md:text-lg leading-relaxed font-normal"
+              >
+                Maletas, morrales y bolsos corporativos personalizados y fabricados a la medida de tu organización.
+              </motion.p>
+              <motion.div
+                variants={{
+                  initial: { opacity: 0, y: 15 },
+                  animate: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
+                }}
+              >
+                <motion.a
+                  href="https://wa.me/573116095224"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.03, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="inline-flex items-center justify-center bg-amarillo text-azul px-8 py-4 rounded-full font-bold text-sm tracking-wide shadow-lg hover:bg-amarillo/90 transition-all cursor-pointer w-full lg:w-auto"
+                >
+                  Cotizar ahora
+                </motion.a>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* About Kert Section */}
       <section className="py-24 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
@@ -214,31 +310,29 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-amarillo/20 transition-all duration-500"
+                className="group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-amarillo/20 transition-all duration-500 cursor-pointer"
               >
                 <div
-                  className="h-96 bg-cover bg-center transition-all duration-700 group-hover:scale-110"
+                  className="h-96 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                   style={{ backgroundImage: `url(${product.image})` }}
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-azul/90 via-azul/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="absolute inset-0 flex flex-col items-center justify-end p-8 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                  <h3 className="text-amarillo text-3xl font-bold mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <div className="absolute inset-0 bg-linear-to-t from-azul/90 via-azul/40 to-azul/10" />
+                <div className="absolute inset-0 flex flex-col items-center justify-end p-8">
+                  <h3 className="text-amarillo text-3xl font-bold mb-3">
                     {product.title}
                   </h3>
-                  <p className="text-white/90 text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+                  <p className="text-white/90 text-center max-w-xs">
                     {product.description}
                   </p>
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileHover={{ scale: 1.05 }}
-                    className="mt-4"
-                  >
-                    <Link href={`/coleccion/${product.slug}`}>
-                      <button className="bg-amarillo/90 hover:bg-amarillo text-azul px-6 py-2 rounded-full text-sm font-semibold transition-colors duration-300">
-                        Explorar
-                      </button>
-                    </Link>
-                  </motion.div>
+                  <Link href={`/coleccion/${product.slug}`} className="mt-4">
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="bg-amarillo/90 hover:bg-amarillo text-azul px-6 py-2 rounded-full text-sm font-semibold transition-colors duration-300 cursor-pointer"
+                    >
+                      Explorar
+                    </motion.button>
+                  </Link>
                 </div>
               </motion.div>
             ))}
