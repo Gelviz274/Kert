@@ -22,14 +22,8 @@ export default function Home() {
         <Carrusel />
       </div>
 
-      {/* Transición sutil entre carrusel y disclaimer */}
-      <div className="relative h-16 md:h-20 bg-azul overflow-hidden -mt-1">
-        <div className="absolute inset-0 bg-gradient-to-b from-azul/0 via-amarillo/[0.02] to-azul" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] md:w-[40%] h-px bg-gradient-to-r from-transparent via-amarillo/20 to-transparent" />
-      </div>
-
       {/* Disclaimer destacado */}
-      <section className="bg-azul py-20 md:py-28 relative overflow-hidden border-b border-white/5">
+      <section className="bg-azul py-20 md:py-20 relative overflow-hidden border-b border-white/5">
         {/* Brillos sutiles con opacidad (sin blur para respetar el design system) */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle_at_center,rgba(255,207,0,0.03)_0%,transparent_70%)] pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[radial-gradient(circle_at_center,rgba(255,207,0,0.02)_0%,transparent_70%)] pointer-events-none" />
