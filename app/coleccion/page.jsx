@@ -4,6 +4,7 @@ import React from "react";
 import { motion} from "framer-motion";
 import {
   ArrowRight,
+  Download,
   Package,
   Truck,
   Users,
@@ -127,7 +128,7 @@ export default function ColeccionPage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/productos/isabel/bolso-azul-rojo.jpg"
+            src="/productos/maletas/ref-5-all-in/02.webp"
             alt="Hero background"
             fill
             className="object-cover opacity-20"
@@ -176,7 +177,7 @@ export default function ColeccionPage() {
               whileTap={{ scale: 0.95 }}
               className="bg-amarillo text-azul px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 hover:bg-amarillo/90 transition-all duration-300 shadow-lg hover:shadow-amarillo/20 cursor-pointer"
             >
-              Descargar catálogo <ArrowRight className="w-5 h-5" />
+              Descargar catálogo <Download className="w-5 h-5" />
             </motion.a>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -197,6 +198,82 @@ export default function ColeccionPage() {
         >
           <ChevronRight className="w-8 h-8 text-white/50 rotate-90" />
         </motion.div>
+      </section>
+
+      {/* Disclaimer llamativo */}
+      <section className="py-20 md:py-24 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              initial: {},
+              animate: {
+                transition: { staggerChildren: 0.1 },
+              },
+            }}
+            className="relative bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden border border-white/10"
+          >
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amarillo via-amarillo/60 to-transparent" />
+            <div className="absolute -top-[1px] -left-[1px] w-4 h-4 border-t-2 border-l-2 border-amarillo/40 rounded-tl-sm" />
+            <div className="absolute -top-[1px] -right-[1px] w-4 h-4 border-t-2 border-r-2 border-amarillo/40 rounded-tr-sm" />
+            <div className="absolute -bottom-[1px] -left-[1px] w-4 h-4 border-b-2 border-l-2 border-amarillo/40 rounded-bl-sm" />
+            <div className="absolute -bottom-[1px] -right-[1px] w-4 h-4 border-b-2 border-r-2 border-amarillo/40 rounded-br-sm" />
+
+            <div className="relative flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+              <div className="flex-1 text-center lg:text-left">
+                <motion.span
+                  variants={{
+                    initial: { opacity: 0, y: 15 },
+                    animate: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
+                  }}
+                  className="inline-flex items-center gap-2 text-amarillo text-xs font-bold tracking-[0.25em] uppercase mb-4"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-amarillo animate-pulse" />
+                  Personalización Empresarial
+                </motion.span>
+                <motion.h2
+                  variants={{
+                    initial: { opacity: 0, y: 20 },
+                    animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
+                  }}
+                  className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight mb-4"
+                >
+                  Tu marca, <br className="hidden md:inline" />
+                  en cada detalle.
+                </motion.h2>
+                <motion.p
+                  variants={{
+                    initial: { opacity: 0, y: 20 },
+                    animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
+                  }}
+                  className="text-white/60 text-base md:text-lg leading-relaxed max-w-2xl font-normal"
+                >
+                  Maletas, morrales y bolsos corporativos personalizados y fabricados a la medida de tu organización.
+                </motion.p>
+              </div>
+              <motion.div
+                variants={{
+                  initial: { opacity: 0, y: 15 },
+                  animate: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
+                }}
+                className="flex-shrink-0"
+              >
+                <motion.a
+                  href="https://wa.me/573116095224"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.03, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="inline-flex items-center justify-center bg-amarillo text-azul px-8 py-4 rounded-full font-bold text-sm tracking-wide shadow-lg hover:bg-amarillo/90 transition-all cursor-pointer"
+                >
+                  Cotizar ahora
+                </motion.a>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* Stats Section - Nueva */}
@@ -321,63 +398,96 @@ export default function ColeccionPage() {
         </div>
       </section>
 
-      {/* Featured Products - Mejorado */}
-      <section className="bg-white/5 py-24 relative">
-        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
+      {/* Featured Products - Rediseñado premium */}
+      <section className="bg-white/5 py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />
         <div className="max-w-7xl mx-auto px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="text-center mb-16"
           >
-            <span className="text-amarillo font-medium mb-2 block">
+            <span className="text-amarillo text-xs font-bold tracking-[0.25em] uppercase mb-3 block">
               Productos destacados
             </span>
-            <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-linear-to-r from-white to-white/80">
-              Productos Más Vendidos
+            <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+              Los Más Vendidos
             </h2>
+            <div className="w-16 h-px bg-amarillo/40 mx-auto mt-4 rounded-full" />
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {mas_vendidos.map((item, index) => (
               <motion.div
                 key={item.id}
-                className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-white/10 hover:border-amarillo/30 transition-all duration-300"
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -10 }}
+                transition={{ duration: 0.6, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
+                whileHover={{ y: -6 }}
+                className="group bg-white/[0.05] backdrop-blur-sm rounded-2xl overflow-hidden border border-white/[0.06] hover:border-amarillo/30 transition-all duration-500"
               >
-                <div className="relative aspect-square mb-4 rounded-lg overflow-hidden">
+                {/* Imagen con overlay hover */}
+                <div className="relative aspect-square overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.Nombre}
                     fill
-                    className="object-cover transition-transform duration-500 hover:scale-110"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
-                  <div className="absolute top-2 right-2 bg-amarillo text-azul px-2 py-1 rounded-full text-xs font-semibold">
-                    Más vendido
+                  <div className="absolute inset-0 bg-gradient-to-t from-azul/80 via-azul/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                  {/* Badge Más vendido */}
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.12 + 0.2, ease: [0.16, 1, 0.3, 1] }}
+                    className="absolute top-3 left-3"
+                  >
+                    <span className="inline-flex items-center gap-1.5 bg-amarillo text-azul text-[10px] font-bold px-2.5 py-1 rounded-full tracking-wide shadow-lg shadow-amarillo/20">
+                      <span className="w-1.5 h-1.5 rounded-full bg-azul animate-pulse" />
+                      Más vendido
+                    </span>
+                  </motion.div>
+                </div>
+
+                {/* Información del producto */}
+                <div className="p-5 space-y-3">
+                  <h3 className="text-lg font-bold text-white group-hover:text-amarillo transition-colors duration-300">
+                    {item.Nombre}
+                  </h3>
+
+                  <div className="space-y-1.5">
+                    <div className="flex items-center gap-3">
+                      <span className="text-white/30 text-[10px] font-bold uppercase tracking-[0.12em] min-w-[64px]">
+                        Material
+                      </span>
+                      <span className="text-white/70 text-sm">
+                        {item.Material}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-white/30 text-[10px] font-bold uppercase tracking-[0.12em] min-w-[64px]">
+                        Mínimo
+                      </span>
+                      <span className="text-amarillo font-bold text-sm">
+                        {item.Pedido_min} unidades
+                      </span>
+                    </div>
                   </div>
+
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    onClick={() => window.open("https://wa.me/+573116095224", "_blank")}
+                    className="w-full mt-2 bg-amarillo/10 hover:bg-amarillo text-amarillo hover:text-azul border border-amarillo/20 hover:border-amarillo px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-300 cursor-pointer"
+                  >
+                    Consultar precio
+                  </motion.button>
                 </div>
-                <h3 className="text-lg font-semibold mb-2">{item.Nombre}</h3>
-                <p className="text-amarillo mb-2">
-                  Mínimo {item.Pedido_min} unidades
-                </p>
-                <div className="flex w-full gap-2">
-                  <p className="text-white/80 font-medium">Material: </p>
-                  <p className="text-gray-400">{item.Material}</p>
-                </div>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full mt-4 bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg transition-colors duration-300"
-                  onClick={() =>
-                    window.open("https://wa.me/+573116095224", "_blank")
-                  }
-                >
-                  Consultar precio
-                </motion.button>
               </motion.div>
             ))}
           </div>

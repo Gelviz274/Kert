@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { Ruler, Info, ShoppingBag, Backpack, Briefcase, Package, Tag } from "lucide-react";
+import { Ruler, Info, ShoppingBag, Backpack, Briefcase, Package, Tag, Sparkles } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const iconMap = {
   backpack: Backpack,
@@ -68,6 +69,33 @@ function ProductClient({ product, iconName }) {
                 {product.category}
               </p>
             </div>
+
+            {/* Banner personalización - Soft UI */}
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
+              whileHover={{ y: -3 }}
+              className="bg-white rounded-2xl shadow-lg transition-shadow duration-300 hover:shadow-xl cursor-default overflow-hidden"
+            >
+              <div className="h-1.5 bg-linear-to-r from-amarillo via-amarillo/70 to-amarillo/20" />
+              <div className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-azul/5 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5 ring-1 ring-azul/10">
+                    <Sparkles className="w-5 h-5 text-azul" />
+                  </div>
+                  <div className="min-w-0 space-y-2">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-azul uppercase tracking-[0.08em]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amarillo" />
+                      Personalizable
+                    </span>
+                    <p className="text-gray-900 leading-relaxed font-medium">
+                      Cada producto se fabrica a la medida de tu organización, con opciones de personalización en materiales, colores, dimensiones, compartimientos, bordados, estampados y acabados.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
 
             <div className="bg-white p-4 rounded-lg shadow-md">
               <p className="text-gray-600">
