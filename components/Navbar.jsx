@@ -19,6 +19,7 @@ import {
   BriefcaseBusiness,
   Menu,
   X,
+  Layers,
 } from "lucide-react";
 
 const components = [
@@ -50,6 +51,13 @@ const components = [
       "Otros ergonómicas y resistentes, perfectas para estudiantes y viajeros.",
   },
 ];
+
+const materialesItem = {
+  icon: Layers,
+  title: "Materiales",
+  href: "/materiales",
+  description: "Catálogo técnico de lonas, cremalleras, herrajes y más.",
+}
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -111,6 +119,14 @@ export default function Navbar() {
                   ))}
                 </ul>
               </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                href="/materiales"
+                className={navigationMenuTriggerStyle()}
+              >
+                Materiales
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
@@ -241,6 +257,13 @@ export default function Navbar() {
                 }}
               >
                 <div className="grid grid-cols-2 gap-3">
+                  <SecondaryLink
+                    href="/materiales"
+                    onClick={handleLinkClick}
+                  >
+                    Materiales
+                  </SecondaryLink>
+
                   <SecondaryLink
                     href="/sobre-nosotros"
                     onClick={handleLinkClick}

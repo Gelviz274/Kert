@@ -16,6 +16,8 @@ La memoria del proyecto está en el vault de Obsidian en `memory/`. Este archivo
 ```
 memory/
 ├── _index.md         # Mapa raíz del vault
+├── audit/            # Auditorías y revisiones del código
+│   └── YYYY-MM-DD.md # Reportes de revisión general
 ├── sessions/         # Resúmenes de sesiones de trabajo
 │   ├── current.md    # Sesión activa
 │   └── YYYY-MM-DD.md # Sesiones archivadas
@@ -45,3 +47,12 @@ memory/
 - **No instalar dependencias sin preguntar**: preguntar antes de ejecutar `npm install` / `pnpm add` cualquier paquete nuevo
 - **Scope limitado**: no modificar archivos fuera del alcance de la tarea actual
 - **Registrar feedback del usuario**: si el usuario da feedback sobre algo, guardarlo en la nota correspondiente de `memory/` para recordarlo
+- **Consultar auditoría**: antes de iniciar cambios arquitectónicos o refactors grandes, leer `[[memory/audit/]]` más reciente para conocer el estado actual del código y problemas conocidos
+- **Nunca en main**: nunca hacer cambios directamente en la rama `main`. Siempre crear una rama nueva con nombre descriptivo (ej. `fix/nombre-del-cambio`, `feat/nombre-de-funcionalidad`), trabajar allí, y al terminar preguntar antes de hacer merge o PR
+- **Editar, no reescribir**: preferir ediciones quirúrgicas con `edit` sobre reescribir archivos completos. Si un archivo necesita cambios mayores, leerlo completo primero para mantener imports y convenciones existentes
+- **Build > Lint**: ejecutar `pnpm build` además de `pnpm lint` para verificar que el proyecto compila (el lint puede fallar por errores pre-existentes no relacionados)
+- **Tool calls en paralelo**: al buscar información independiente (varios archivos, varios patrones), lanzar los tool calls en paralelo en un solo mensaje en lugar de secuencialmente
+- **Task agent para exploración grande**: si la tarea requiere buscar en más de 5 archivos o patrones, usar el subagente `explore` con thoroughness `medium` o `very thorough` para no saturar el contexto
+- **No preguntar lo que ya está en memory**: antes de hacer una pregunta al usuario, revisar `memory/` (notas del cliente, decisiones, glosario) para ver si ya está documentado
+- **No sugerir migraciones no solicitadas**: no proponer cambios de stack (TypeScript, cambio de librerías, refactors arquitectónicos) a menos que el usuario lo pida explícitamente
+- **Preguntar antes de eliminar**: no borrar archivos o componentes sin consultar primero al usuario

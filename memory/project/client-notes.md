@@ -8,7 +8,7 @@ Información sobre Kert S.A.S y el contexto del negocio.
 - **Giro**: Fabricante de maletas, mochilas, riñoneras, bolsos y accesorios de viaje
 - **Ubicación**: Colombia
 - **Mercado**: B2B — mayoristas, empresas y distribuidores
-- **Web**: [kert.com.co](https://kert.com.co) (pendiente de confirmar)
+- **Web**: [creacionkert.com](https://creacionkert.com) 
 
 ## Audiencia
 
