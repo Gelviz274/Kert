@@ -1,56 +1,34 @@
 # Sesión actual
 
-**Fecha**: 2026-06-13
-**Objetivos**:
-1. Corregir animación de scroll y hovers en `/materiales`
-2. Eliminar botón de contacto redundante del CTA final
-3. Realizar auditoría general del proyecto
-4. Agregar reglas a AGENTS.md
-5. Rediseñar UI de `/materiales` con más color y hovers fluidos
-6. Subir cambios al repositorio
+**Fecha**: 2026-06-14
+**Rama**: `feat/material-button-producto`
+**Objetivo**: Agregar botón de acceso al catálogo de materiales desde la página de detalle de producto.
 
 ---
 
 ## Resumen
 
-### Parte 1 — Correcciones rápidas en /materiales
+- Creada rama `feat/material-button-producto` desde `main`
+- Modificado `components/ProductClient.jsx`:
+  - Agregados imports: `Link` (next/link), `Layers` y `ArrowRight` (lucide-react)
+  - Reemplazada sección de Material (que renderizaba `product.material` como undefined) por una tarjeta atractiva con:
+    - Barra superior con gradiente azul
+    - Icono `Layers` en contenedor circular con ring
+    - Badge "Materiales e Insumos"
+    - Texto descriptivo sobre el catálogo técnico
+    - Botón "Catálogo de materiales" → `/materiales` con hover scale y animación de flecha
+    - Animación Framer Motion consistente con el banner de personalización
 
-- Eliminada progress bar de scroll + dependencias `useScroll`/`useSpring`
-- Hovers acelerados: `duration-300` → `duration-150`
-- Eliminado botón "Formulario de Contacto" del CTA final
+## Archivos modificados/creados
 
-### Parte 2 — Auditoría general
-
-Revisión de los 63 archivos fuente. Documentado en `memory/audit/revision-general-2026-06-13.md`.
-
-### Parte 3 — AGENTS.md
-
-Agregadas 11 reglas nuevas: auditoría, branch segura, editar no reescribir, build > lint, tool calls en paralelo, task agent para exploración, preguntar en memory primero, no migraciones no solicitadas, no eliminar sin permiso, registrar feedback.
-
-### Parte 4 — Rediseño UI de /materiales
-
-- **Hovers**: `transition: { duration: 0.08 }` en todas las cards + `transition-colors` en className
-- **Color por rango**: premium → azul, estándar → cyan/teal, económica → rose
-- **Cremalleras**: dots de color + badges con tint según tipo (ámbar, sky, gris)
-- **Herrajes**: cada subsección con tint distinto (ámbar chapas, sky argollas, rose mosquetones)
-- **Insumos**: cada card con color propio (ámbar, sky, rose, azul)
-- **Fondos alternados**: secciones con gradient tenue para ritmo visual
-- **Fix**: `useActiveSection` envuelto en `useMemo` para evitar re-renders infinitos
-
-### Archivos modificados/creados
-
-- `app/materiales/page.jsx` — Rediseño completo con colores y hovers rápidos
-- `AGENTS.md` — +11 reglas
-- `memory/audit/revision-general-2026-06-13.md` — Nuevo (auditoría)
-- `memory/decisions/auditoria-codigo-2026-06-13.md` — Nuevo (ADR)
-- `memory/learned/errores.md` — +4 errores
-- `memory/_index.md` — Link a auditoría
-- `memory/tasks/current.md` — Sprints priorizados
-- `memory/decisions/_index.md` — Actualizado
+- `components/ProductClient.jsx` — Nueva tarjeta de materiales con CTA
+- `.opencode/opencode.json` — Nuevo, con `instructions: ["AGENTS.md"]`
+- `AGENTS.md` — Banner de instrucción obligatoria + protocolo de inicio elevado al inicio
 - `memory/sessions/current.md` — Este archivo
+- `memory/sessions/2026-06-13.md` — Archivada sesión anterior
 
 ---
 
-## Próximos pasos
+## Pendiente
 
-Ver [[../../tasks/current]] para el plan de trabajo priorizado en 3 sprints.
+- Preguntar antes de hacer merge a `main`

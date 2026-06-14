@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { Ruler, Info, ShoppingBag, Backpack, Briefcase, Package, Tag, Sparkles } from "lucide-react";
+import { Ruler, Info, ShoppingBag, Backpack, Briefcase, Package, Tag, Sparkles, Layers, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const iconMap = {
@@ -97,11 +98,39 @@ function ProductClient({ product, iconName }) {
               </div>
             </motion.div>
 
-            <div className="bg-white p-4 rounded-lg shadow-md">
-              <p className="text-gray-600">
-                <span className="font-semibold text-azul">Material:</span> {product.material}
-              </p>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
+              whileHover={{ y: -3 }}
+              className="bg-white rounded-2xl shadow-lg transition-shadow duration-300 hover:shadow-xl cursor-default overflow-hidden"
+            >
+              <div className="h-1.5 bg-linear-to-r from-azul via-azul/70 to-azul/20" />
+              <div className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-azul/5 rounded-xl flex items-center justify-center shrink-0 mt-0.5 ring-1 ring-azul/10">
+                    <Layers className="w-5 h-5 text-azul" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-azul uppercase tracking-[0.08em] mb-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amarillo" />
+                      Materiales e Insumos
+                    </span>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Conoce las lonas, cremalleras, herrajes y acabados con los que fabricamos cada producto.
+                    </p>
+                    <Link
+                      href="/materiales"
+                      className="group mt-3 inline-flex items-center gap-2 bg-azul hover:bg-azul/90 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all hover:scale-[1.02]"
+                    >
+                      <Layers className="w-4 h-4" />
+                      Catálogo de materiales
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
 
             <div className="bg-white p-4 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold flex items-center gap-2 mb-3">
