@@ -2,6 +2,7 @@
 import React from "react";
 import Carrusel from "@/components/Carrusel";
 import Image from "next/image";
+import Script from "next/script";
 import {
   TrendingUp,
   Shield,
@@ -19,6 +20,59 @@ export default function Home() {
   const router = useRouter();
   return (
     <>
+      <Script
+        id="schema-faq"
+        strategy="beforeInteractive"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Cuál es el pedido mínimo para maletas al por mayor?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "El pedido mínimo varía según el producto: maletas desde 50 unidades, riñoneras desde 150 unidades, y bolsos desde 150 unidades. Contáctanos para una cotización personalizada según tus necesidades."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Personalizan productos con la marca de mi empresa?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí, en Kert personalizamos maletas, morrales y bolsos corporativos con tu marca. Trabajamos con bordados, estampados y personalización total en materiales, colores y dimensiones."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Hacen envíos a todo Colombia?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí, realizamos envíos a nivel nacional en Colombia con una red de distribución eficiente que garantiza entregas puntuales."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué materiales utilizan en la fabricación?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Trabajamos con más de 18 tipos de lona (840, Ducati, Oxford, Rombo premium, entre otras), cremalleras de nylon y metálicas, herrajes de alta resistencia y espumas Yumbolon para acolchado."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cómo puedo solicitar una cotización?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Puedes contactarnos directamente por WhatsApp al +57 311 609 5224, por teléfono al +57 321 306 2852, o por correo electrónico a contacto@creacionkert.com para recibir una cotización personalizada."
+                }
+              }
+            ]
+          })
+        }}
+      />
       <div className="flex text-white bg-azul w-full h-auto">
         <Carrusel />
       </div>
@@ -62,16 +116,16 @@ export default function Home() {
                 <span className="w-1.5 h-1.5 rounded-full bg-amarillo animate-pulse" />
                 Personalización Empresarial
               </motion.span>
-              <motion.h2
-                variants={{
-                  initial: { opacity: 0, y: 20 },
-                  animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
-                }}
-                className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight"
-              >
-                Tu marca, <br className="hidden md:inline" />
-                en cada detalle.
-              </motion.h2>
+                <motion.h1
+                  variants={{
+                    initial: { opacity: 0, y: 20 },
+                    animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
+                  }}
+                  className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight"
+                >
+                  Tu marca, <br className="hidden md:inline" />
+                  en cada detalle.
+                </motion.h1>
             </div>
 
             {/* Divisor Vertical Elegante (solo en desktop) */}
@@ -128,7 +182,7 @@ export default function Home() {
                   width={1200}
                   height={1200}
                   src="/fabrica/img_1871.jpg"
-                  alt="Kert Workspace"
+                  alt="Taller de fabricación de maletas Kert S.A.S - Proceso de producción artesanal e industrial"
                   className="rounded-2xl shadow-2xl"
                 />
                 <div className="absolute inset-0 bg-azul opacity-10 rounded-2xl"></div>

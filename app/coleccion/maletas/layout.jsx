@@ -14,6 +14,7 @@ const bags = maletasData.maletas.map(maleta => ({
 export const metadata = {
   title: "Maletas | Kert S.A.S - Catálogo de Maletas al Por Mayor",
   description: "Explora nuestra exclusiva colección de maletas al por mayor. Calidad premium, diseños modernos y materiales duraderos para distribuidores.",
+  keywords: "maletas al por mayor Colombia, maletas corporativas Bogotá, comprar maletas por mayor, maletas ejecutivas Colombia, maletas promocionales personalizadas, morrales por mayor, catálogo maletas Kert, maletas para viaje Colombia",
   alternates: {
     canonical: "https://creacionkert.com/coleccion/maletas",
   },

@@ -8,7 +8,8 @@ export async function generateMetadata({ params }) {
   const maleta = maletasData.maletas.find(m => m['name-title'] === nameTitle);
   return {
     title: maleta ? `${maleta.name} | Kert S.A.S - Maletas al Por Mayor` : 'Maleta no encontrada',
-    description: maleta ? `Detalles de ${maleta.name} - ${maleta.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Maleta no encontrada',
+    description: maleta ? `${maleta.name} - ${maleta.category} premium fabricada al por mayor en Colombia. Especificaciones técnicas, características, dimensiones y opciones de pedido mayorista con personalización empresarial.` : 'Maleta no encontrada',
+    keywords: maleta ? `maleta ${maleta.name}, maletas al por mayor Colombia, maleta corporativa personalizada, comprar maleta ${maleta.name}, fabricante maletas Bogotá, maleta ejecutiva Colombia, ${maleta.category?.toLowerCase()} por mayor, cotizar maleta, pedido mínimo maletas` : 'maletas',
     alternates: {
       canonical: `https://creacionkert.com/coleccion/maletas/${nameTitle}`,
     },

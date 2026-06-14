@@ -14,6 +14,7 @@ const productos = OtrosProductos.productos.map(producto => ({
 export const metadata = {
   title: "Otros Productos | Kert S.A.S - Catálogo de Productos al Por Mayor",
   description: "Descubre nuestra línea de productos al por mayor. Diseños modernos, materiales duraderos y precios competitivos para distribuidores.",
+  keywords: "botiquines al por mayor, pierneras tácticas, accesorios de seguridad Colombia, fabricante botiquines, productos tácticos por mayor, morrales tácticos Colombia, dotación seguridad industrial",
   alternates: {
     canonical: "https://creacionkert.com/coleccion/otros",
   },

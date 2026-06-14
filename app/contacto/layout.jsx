@@ -7,7 +7,7 @@ export const viewport = {
 export const metadata = {
   title: "Contacto | Kert S.A.S - Hablemos de tu Proyecto",
   description: "Contáctanos para obtener información sobre pedidos al por mayor de maletas, mochilas y accesorios. Estamos listos para ayudarte con tu proyecto.",
-  keywords: "contacto fabricante maletas, pedidos mayoristas bolsos, cotizar maletas al por mayor, proveedores mochilas Colombia, contacto Kert, comunicarse con fabricante",
+  keywords: "contactar fabricante maletas Colombia, solicitar cotización maletas, pedido mayorista maletas, proveedor maletas Bogotá, cotizar bolsos al por mayor, contacto Kert S.A.S, WhatsApp fabricante maletas, teléfono fabrica maletas Colombia",
   alternates: {
     canonical: "https://creacionkert.com/contacto",
   },

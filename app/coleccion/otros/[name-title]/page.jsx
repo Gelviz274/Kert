@@ -10,8 +10,9 @@ export async function generateMetadata({ params }) {
   );
 
   return {
-    title: producto ? `${producto.name} | Kert S.A.S` : 'Producto no encontrado',
-    description: producto ? `Detalles de ${producto.name} - ${producto.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Producto no encontrado',
+    title: producto ? `${producto.name} | Kert S.A.S - Productos al Por Mayor` : 'Producto no encontrado',
+    description: producto ? `${producto.name} - ${producto.category} premium fabricado al por mayor en Colombia. Especificaciones técnicas, características, dimensiones y opciones de pedido mayorista.` : 'Producto no encontrado',
+    keywords: producto ? `${producto.category?.toLowerCase() || 'producto'} ${producto.name}, ${producto.category?.toLowerCase()} al por mayor Colombia, ${producto.name} personalizado, fabricante ${producto.category?.toLowerCase() || 'productos'} Bogotá, ${producto.category?.toLowerCase()} por mayor, accesorios tácticos Colombia, cotizar ${producto.name}` : 'productos',
     alternates: {
       canonical: `https://creacionkert.com/coleccion/otros/${nameTitle}`,
     },

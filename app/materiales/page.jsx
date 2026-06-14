@@ -670,7 +670,7 @@ export default function MaterialesPage() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
-                href="https://wa.me/+573116095224?text=Hola%2C%20quieo%20una%20cotizaci%C3%B3n%20de%20materiales"
+                href="https://wa.me/+573116095224?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n%20de%20materiales"
                 target="_blank"
                 className="group inline-flex items-center gap-2.5 bg-amarillo text-azul font-semibold px-8 py-4 rounded-full hover:scale-[1.03] transition-transform text-lg"
               >

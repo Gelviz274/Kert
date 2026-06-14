@@ -14,6 +14,7 @@ const bags = data.productos.map(producto => ({
 export const metadata = {
   title: "Bolsos Multiuso | Kert S.A.S - Catálogo al Por Mayor",
   description: "Descubre nuestra línea de bolsos multiuso al por mayor. Versátiles y funcionales para viaje, dotación y uso diario.",
+  keywords: "bolsos multiuso al por mayor, bolsos de viaje por mayor, morrales multiuso Colombia, bolsos para dotación empresarial, fabricante bolsos multiuso, bolsos weekend por mayor, bolso shopper al por mayor",
   alternates: {
     canonical: "https://creacionkert.com/coleccion/bolsos-multiuso",
   },

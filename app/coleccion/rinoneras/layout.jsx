@@ -14,6 +14,7 @@ const bags = rinonerasData.rinoneras.map(rinonera => ({
 export const metadata = {
   title: "Riñoneras | Kert S.A.S - Catálogo de Riñoneras al Por Mayor",
   description: "Explora nuestra colección de riñoneras al por mayor. Diseños funcionales y modernos para distribuidores y empresas.",
+  keywords: "riñoneras al por mayor Colombia, comprar riñoneras por mayor, riñoneras personalizadas con logo, riñoneras promocionales, fabricante riñoneras Bogotá, riñoneras mayoristas Colombia, riñoneras para eventos, riñoneras corporativas",
   alternates: {
     canonical: "https://creacionkert.com/coleccion/rinoneras",
   },

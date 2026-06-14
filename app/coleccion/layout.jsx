@@ -7,7 +7,7 @@ export const viewport = {
 export const metadata = {
   title: "Colección | Kert S.A.S - Catálogo de Productos al Por Mayor",
   description: "Explora nuestra colección de maletas, mochilas, riñoneras y accesorios al por mayor. Productos de alta calidad para distribuidores y mayoristas en Colombia.",
-  keywords: "catálogo de maletas, maletas por mayor, mochilas mayoristas, riñoneras por mayor, accesorios de viaje Colombia, bolsos corporativos, maletas empresariales",
+  keywords: "catálogo maletas al por mayor, colección maletas Colombia, maletas corporativas catálogo, riñoneras por mayor catálogo, bolsos al por mayor Colombia, mochilas mayoristas Bogotá, productos Kert, distribuidor de maletas Colombia, comprar maletas al por mayor",
   alternates: {
     canonical: "https://creacionkert.com/coleccion",
   },
@@ -38,10 +38,10 @@ export const metadata = {
 const categories = [
   { name: "Maletas", slug: "maletas", image: "https://creacionkert.com/productos/isabel/bolso-azul-rojo.jpg" },
   { name: "Riñoneras", slug: "rinoneras", image: "https://creacionkert.com/productos/rinonera-olimpica.jpg" },
-  { name: "Bolsos", slug: "bolsos", image: "https://creacionkert.com/productos/bolsos/cross/01.webp" },
-  { name: "Bolsos Multiuso", slug: "bolsos-multiuso", image: "https://creacionkert.com/productos/bolsos-multiuso/shopper/01.webp" },
-  { name: "Bolsas en Cambrel", slug: "bolsas-cambrel", image: "https://creacionkert.com/productos/bolsas-cambrel/cambrel-basic/01.webp" },
-  { name: "Bolsas en Tela", slug: "bolsas-tela", image: "https://creacionkert.com/productos/bolsas-tela/canvas-classic/01.webp" },
+  { name: "Bolsos", slug: "bolsos", image: "https://creacionkert.com/productos/bolsos/ref-28-cross/01.webp" },
+  { name: "Bolsos Multiuso", slug: "bolsos-multiuso", image: "https://creacionkert.com/productos/bolsos-multiuso/ref-29-weekend/01.webp" },
+  { name: "Bolsas en Cambrel", slug: "bolsas-cambrel", image: "https://creacionkert.com/productos/bolsas-cambrel/ref-20-cambrel-basic/01.webp" },
+  { name: "Bolsas en Tela", slug: "bolsas-tela", image: "https://creacionkert.com/productos/bolsas-tela/ref-23-canvas-classic/01.webp" },
   { name: "Otros Productos", slug: "otros", image: "https://creacionkert.com/productos/botiquin-cruz-roja.jpg" },
 ];
 

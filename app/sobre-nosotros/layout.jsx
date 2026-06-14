@@ -7,7 +7,7 @@ export const viewport = {
 export const metadata = {
   title: "Sobre Nosotros | Kert S.A.S - Nuestra Historia y Valores",
   description: "Conoce la historia detrás de Kert S.A.S, nuestros valores y el equipo que hace posible ofrecer las mejores maletas y mochilas al por mayor en Colombia.",
-  keywords: "fabricante maletas Colombia, historia Kert, valores empresa fabricación, equipo producción textil, industria maletas Colombia, fabricación bolsos",
+  keywords: "fabricante de maletas Colombia, empresa fabricación maletas, maletería colombiana, calidad en maletas, producción textil Colombia, taller de maletas Bogotá, industria marroquinería Colombia, historia Kert S.A.S, valores corporativos",
   alternates: {
     canonical: "https://creacionkert.com/sobre-nosotros",
   },

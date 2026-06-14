@@ -14,6 +14,7 @@ const bags = data.productos.map(producto => ({
 export const metadata = {
   title: "Bolsas en Cambrel | Kert S.A.S - Catálogo al Por Mayor",
   description: "Descubre nuestra línea de bolsas en cambrel al por mayor. Ideales para eventos, ferias y uso promocional.",
+  keywords: "bolsas en cambrel al por mayor, bolsas cambrel promocionales, bolsas para ferias Colombia, fabricante bolsas cambrel, bolsas publicitarias cambrel, bolsos de cambrel personalizados, bolsas evento por mayor",
   alternates: {
     canonical: "https://creacionkert.com/coleccion/bolsas-cambrel",
   },

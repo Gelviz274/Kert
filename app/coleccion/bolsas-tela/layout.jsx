@@ -14,6 +14,7 @@ const bags = data.productos.map(producto => ({
 export const metadata = {
   title: "Bolsas en Tela | Kert S.A.S - Catálogo al Por Mayor",
   description: "Descubre nuestra línea de bolsas en tela al por mayor. Diseños para uso diario, dotación y promociones.",
+  keywords: "bolsas en tela al por mayor, bolsas de tela personalizadas, bolsas canvas Colombia, fabricante bolsas tela, bolsas ecológicas por mayor, shopper tela al por mayor, bolsa multiusos tela, dotación bolsas tela",
   alternates: {
     canonical: "https://creacionkert.com/coleccion/bolsas-tela",
   },

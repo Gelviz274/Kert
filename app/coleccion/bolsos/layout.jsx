@@ -14,6 +14,7 @@ const bags = data.productos.map(producto => ({
 export const metadata = {
   title: "Bolsos | Kert S.A.S - Catálogo de Bolsos al Por Mayor",
   description: "Explora nuestra colección de bolsos al por mayor. Diseños modernos y funcionales para distribuidores.",
+  keywords: "bolsos al por mayor Colombia, comprar bolsos por mayor, bolsos personalizados para empresas, fabricante bolsos Bogotá, bolsos corporativos Colombia, bolsos publicitarios, city bag por mayor, cross body al por mayor",
   alternates: {
     canonical: "https://creacionkert.com/coleccion/bolsos",
   },

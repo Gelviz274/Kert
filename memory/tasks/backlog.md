@@ -4,7 +4,7 @@
 
 ## Próximas iteraciones
 
-- [ ] Revisar SEO del sitio
+- [x] Revisar SEO del sitio (completado 2026-06-14)
 - [ ] Optimizar imágenes de producto
 - [ ] Agregar más categorías de producto
 - [ ] Mejorar rendimiento mobile
