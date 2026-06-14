@@ -1,8 +1,10 @@
-# Memory
+# 🚨 INSTRUCCIÓN OBLIGATORIA — LEER SIEMPRE
 
-La memoria del proyecto está en el vault de Obsidian en `memory/`. Este archivo le indica al AI cómo interactuar con ella.
+La IA DEBE leer y seguir este archivo COMPLETO al iniciar cada sesión. No saltarse ninguna sección.
 
-## Protocolo
+---
+
+## Protocolo de inicio (ejecutar siempre)
 
 1. **Al iniciar sesión**: leer `memory/_index.md` para orientarse
 2. **Memoria activa**: leer `memory/sessions/current.md` si existe para retomar contexto
@@ -10,6 +12,12 @@ La memoria del proyecto está en el vault de Obsidian en `memory/`. Este archivo
 4. **Decisiones nuevas**: registrar en `memory/decisions/` con formato ADR ligero
 5. **Tareas**: mantener actualizado `memory/tasks/current.md`
 6. **Errores**: registrar en `memory/learned/errores.md` cualquier error cometido para no repetirlo
+
+---
+
+# Memory
+
+La memoria del proyecto está en el vault de Obsidian en `memory/`. Este archivo le indica al AI cómo interactuar con ella.
 
 ## Estructura
 
