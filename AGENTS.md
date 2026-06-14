@@ -42,3 +42,6 @@ memory/
 - **Seguir convenciones**: revisar archivos vecinos antes de crear nuevos para mantener consistencia en imports, nomenclatura y patrones
 - **No asumir librerías**: verificar imports reales y `package.json` antes de usar una librería externa
 - **Verificar cambios**: ejecutar `pnpm lint` después de modificar código
+- **No instalar dependencias sin preguntar**: preguntar antes de ejecutar `npm install` / `pnpm add` cualquier paquete nuevo
+- **Scope limitado**: no modificar archivos fuera del alcance de la tarea actual
+- **Registrar feedback del usuario**: si el usuario da feedback sobre algo, guardarlo en la nota correspondiente de `memory/` para recordarlo
