@@ -9,6 +9,7 @@ La memoria del proyecto está en el vault de Obsidian en `memory/`. Este archivo
 3. **Al completar trabajo**: actualizar `memory/sessions/` con un resumen de lo hecho
 4. **Decisiones nuevas**: registrar en `memory/decisions/` con formato ADR ligero
 5. **Tareas**: mantener actualizado `memory/tasks/current.md`
+6. **Errores**: registrar en `memory/learned/errores.md` cualquier error cometido para no repetirlo
 
 ## Estructura
 
@@ -23,6 +24,8 @@ memory/
 ├── tasks/            # Plan de trabajo
 │   ├── current.md
 │   └── backlog.md
+├── learned/          # Errores y lecciones aprendidas
+│   └── errores.md
 └── project/          # Notas del dominio de negocio
     ├── glossary.md
     └── client-notes.md
@@ -34,3 +37,8 @@ memory/
 - Usar links de Obsidian `[[wiki-links]]` para conectar notas relacionadas
 - Las sesiones se archivan con fecha `YYYY-MM-DD.md` al cerrar
 - No incluir información sensible (contraseñas, API keys, etc.)
+- **Errores propios**: si la IA comete un error (código incorrecto, suposición equivocada, patrón incorrecto), debe registrarlo en `[[memory/learned/errores|learned/errores]]` inmediatamente al notarlo
+- **Leer antes de escribir**: siempre leer los archivos existentes antes de editarlos para entender contexto, imports y convenciones
+- **Seguir convenciones**: revisar archivos vecinos antes de crear nuevos para mantener consistencia en imports, nomenclatura y patrones
+- **No asumir librerías**: verificar imports reales y `package.json` antes de usar una librería externa
+- **Verificar cambios**: ejecutar `pnpm lint` después de modificar código

@@ -16,6 +16,7 @@ Creación de la estructura `memory/` y `AGENTS.md` para que el AI recuerde conte
 - `memory/decisions/_index.md` — Índice de decisiones
 - `memory/tasks/current.md` — Tareas activas
 - `memory/tasks/backlog.md` — Backlog
+- `memory/learned/errores.md` — Registro de errores de la IA
 - `memory/project/glossary.md` — Glosario
 - `memory/project/client-notes.md` — Notas del cliente
 

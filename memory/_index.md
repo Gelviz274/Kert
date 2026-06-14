@@ -18,6 +18,7 @@ Sitio web corporativo y catálogo B2B de **Kert S.A.S**, fabricante colombiano d
 | [[../tasks/backlog|Backlog]] | Ideas y tareas pendientes |
 | [[../sessions/current|Sesión activa]] | Resumen de la sesión en curso |
 | [[../decisions/_index|Decisiones]] | Registro de decisiones técnicas |
+| [[../learned/errores|Errores]] | Errores cometidos y lecciones aprendidas |
 | [[../project/glossary|Glosario]] | Términos del negocio |
 | [[../project/client-notes|Notas del cliente]] | Información sobre el cliente/negocio |
 
