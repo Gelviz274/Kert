@@ -7,7 +7,7 @@ export const viewport = {
 export const metadata = {
   title: "Materiales e Insumos | Kert S.A.S - Catálogo Técnico para Fabricación",
   description: "Conoce todos los materiales, lonas, cremalleras, herrajes y acolchados que Kert S.A.S utiliza en la fabricación de maletas, morrales y accesorios al por mayor en Colombia.",
-  keywords: "materiales para maletas, lonas para maletas, cremalleras, herrajes, insumos de marroquinería, fabricación de maletas Colombia, proveedor de insumos, lonas PVC, acolchados, espumas",
+  keywords: "lonas para maletas Colombia, materiales marroquinería, cremalleras para maletas, herrajes marroquinería, lona Oxford, lona PVC, lona 840, espumas Yumbolon, proveedor insumos maletas, fabricación maletas materiales, telas para morrales, acolchados maletas",
   alternates: {
     canonical: "https://creacionkert.com/materiales",
   },

@@ -8,7 +8,8 @@ export async function generateMetadata({ params }) {
   const producto = data.productos.find(p => p['name-title'] === nameTitle);
   return {
     title: producto ? `${producto.name} | Kert S.A.S - Bolsas en Tela al Por Mayor` : 'Producto no encontrado',
-    description: producto ? `Detalles de ${producto.name} - ${producto.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Producto no encontrado',
+    description: producto ? `${producto.name} - ${producto.category} premium fabricada al por mayor en Colombia. Especificaciones técnicas, características, dimensiones y opciones de pedido mayorista con personalización.` : 'Producto no encontrado',
+    keywords: producto ? `bolsa tela ${producto.name}, bolsas en tela al por mayor Colombia, bolsa tela personalizada, comprar bolsa tela, fabricante bolsas tela Bogotá, ${producto.category?.toLowerCase()} por mayor, bolsa ecológica tela, cotizar bolsas tela` : 'bolsas tela',
     alternates: {
       canonical: `https://creacionkert.com/coleccion/bolsas-tela/${nameTitle}`,
     },

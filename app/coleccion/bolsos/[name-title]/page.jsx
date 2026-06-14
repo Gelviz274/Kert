@@ -8,7 +8,8 @@ export async function generateMetadata({ params }) {
   const producto = data.productos.find(p => p['name-title'] === nameTitle);
   return {
     title: producto ? `${producto.name} | Kert S.A.S - Bolsos al Por Mayor` : 'Producto no encontrado',
-    description: producto ? `Detalles de ${producto.name} - ${producto.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Producto no encontrado',
+    description: producto ? `${producto.name} - ${producto.category} premium fabricado al por mayor en Colombia. Especificaciones técnicas, características, dimensiones y opciones de pedido mayorista con personalización.` : 'Producto no encontrado',
+    keywords: producto ? `bolso ${producto.name}, bolsos al por mayor Colombia, bolso corporativo personalizado, comprar bolso ${producto.name}, fabricante bolsos Bogotá, bolso ejecutivo Colombia, ${producto.category?.toLowerCase()} por mayor, cotizar bolsos` : 'bolsos',
     alternates: {
       canonical: `https://creacionkert.com/coleccion/bolsos/${nameTitle}`,
     },

@@ -1,13 +1,21 @@
 # Tareas actuales
 
-> Última actualización: 2026-06-13
+> Última actualización: 2026-06-14
 
 ## Sprint 1 — Correcciones inmediatas
 
-- [ ] Corregir font-family en body para que use Roboto (`globals.css:92`)
+- [x] Corregir font-family en body para que use Roboto (`globals.css:93`)
 - [ ] Eliminar código muerto (`components/galery.jsx`, `components/SEOLink.jsx`)
-- [ ] Arreglar URLs de imágenes en `app/coleccion/layout.jsx` (JSON-LD)
-- [ ] Agregar `/materiales` al sitemap (`app/sitemap.js`)
+- [x] Arreglar URLs de imágenes en `app/coleccion/layout.jsx` (JSON-LD + imágenes de categoría)
+- [x] Agregar `/materiales` al sitemap (`app/sitemap.js`)
+- [x] Eliminar `public/sitemap.xml` (conflicto con sitemap dinámico)
+- [x] Agregar `<h1>` faltante en homepage y productos
+- [x] Agregar texto descriptivo a páginas de categoría (bajo número de palabras)
+- [x] Agregar FAQPage JSON-LD en homepage
+- [x] Agregar hreflang y lang="es-CO"
+- [x] Revisar y mejorar keywords de todas las páginas
+- [x] Corregir typo WhatsApp en materiales
+- [x] Agregar sizes a imágenes en CategoryListing
 
 ## Sprint 2
 

@@ -22,7 +22,7 @@ export const metadata = {
   description:
     "Fabricante líder de maletas, mochilas y accesorios al por mayor en Colombia. Calidad premium, precios competitivos y pedidos mínimos accesibles.",
   keywords:
-    "maletas al por mayor, fabricante de maletas, maletas promocionales, maletas corporativas, mochilas al por mayor, accesorios de viaje, producción de maletas, Colombia, maletas personalizadas, maletas publicitarias, riñoneras mayoristas, bolsos empresariales",
+    "fábrica de maletas Colombia, maletas al por mayor, fabricante de maletas Bogotá, maletas corporativas personalizadas, mochilas al por mayor Colombia, proveedor de maletas, bolsos empresariales Colombia, maletas promocionales, riñoneras mayoristas, maletas personalizadas con logo, dotación empresarial maletas, fabricación de morrales Colombia, bolsos publicitarios, pedido mínimo maletas",
   alternates: {
     canonical: "https://creacionkert.com",
   },
@@ -65,13 +65,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" data-scroll-behavior="smooth">
+    <html lang="es-CO" data-scroll-behavior="smooth">
       <head>
         {/* Google Site Verification */}
         <meta
           name="google-site-verification"
           content="CNOPBrrmzN2I9WHIMN-XW5mT6WdZ4i6LgzqB39MeJ38"
         />
+        {/* Hreflang */}
+        <link rel="alternate" hreflang="es-CO" href="https://creacionkert.com" />
+        <link rel="alternate" hreflang="x-default" href="https://creacionkert.com" />
         {/* Manifest para PWA */}
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
@@ -170,13 +173,10 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
 
-        <div>
-
-          <WhatsappButton
-            message="¡Hola! Quisiera más información."
-            phoneNumber="+573116095224"
-          />
-        </div>
+        <WhatsappButton
+          message="¡Hola! Quisiera más información."
+          phoneNumber="+573116095224"
+        />
       </body>
     </html>
   );

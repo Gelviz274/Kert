@@ -8,7 +8,8 @@ export async function generateMetadata({ params }) {
   const rinonera = rinonerasData.rinoneras.find(r => r['name-title'] === nameTitle);
   return {
     title: rinonera ? `${rinonera.name} | Kert S.A.S - Riñoneras al Por Mayor` : 'Riñonera no encontrada',
-    description: rinonera ? `Detalles de ${rinonera.name} - ${rinonera.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Riñonera no encontrada',
+    description: rinonera ? `${rinonera.name} - ${rinonera.category} premium fabricada al por mayor en Colombia. Especificaciones técnicas, características, dimensiones y opciones de pedido mayorista con personalización.` : 'Riñonera no encontrada',
+    keywords: rinonera ? `riñonera ${rinonera.name}, riñoneras al por mayor Colombia, riñonera corporativa personalizada, comprar riñonera ${rinonera.name}, fabricante riñoneras Bogotá, ${rinonera.category?.toLowerCase()} por mayor, cotizar riñoneras, riñonera promocional` : 'riñoneras',
     alternates: {
       canonical: `https://creacionkert.com/coleccion/rinoneras/${nameTitle}`,
     },

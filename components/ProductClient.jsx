@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import { Ruler, Info, ShoppingBag, Backpack, Briefcase, Package, Tag, Sparkles, Layers, ArrowRight } from "lucide-react";
+import React, { useState, useMemo } from "react";
+import { Ruler, Info, ShoppingBag, Backpack, Briefcase, Package, Tag, Sparkles, Layers, ArrowRight, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -18,6 +18,12 @@ function ProductClient({ product, iconName }) {
   const [selectedImage, setSelectedImage] = useState(0);
 
   const refNumber = product.id?.startsWith("ref-") ? product.id : null;
+
+  const description = useMemo(() => {
+    const specs = product.specifications || [];
+    const features = specs.map(s => s.charAt(0).toLowerCase() + s.slice(1)).join(". ");
+    return `La ${product.name} de Kert S.A.S es una ${product.category?.toLowerCase() || "maleta"} fabricada al por mayor en Colombia con materiales de alta calidad. ${features ? `Entre sus características se destacan: ${features}.` : ""} Ideal para distribución mayorista, personalización empresarial y dotación corporativa. Fabricada con materiales resistentes y acabados premium que garantizan durabilidad y funcionalidad en el uso diario.`;
+  }, [product]);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -55,9 +61,9 @@ function ProductClient({ product, iconName }) {
           <div className="space-y-6">
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <h2 className="text-3xl font-bold text-azul">
+                <h1 className="text-3xl font-bold text-azul">
                   {product.name}
-                </h2>
+                </h1>
                 {refNumber && (
                   <span className="inline-flex items-center gap-1.5 bg-azul text-amarillo px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">
                     <Tag className="w-3.5 h-3.5" />
@@ -159,14 +165,27 @@ function ProductClient({ product, iconName }) {
               </div>
             </div>
 
-            <div className="bg-white p-4 rounded-lg shadow-md">
-              <h3 className="text-lg font-semibold flex items-center gap-2 mb-3">
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <h3 className="text-lg font-semibold flex items-center gap-2 mb-2 text-azul">
                 <Info className="text-azul" />
-                Especificaciones
+                Descripción del Producto
               </h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-600">
+              <p className="text-gray-700 leading-relaxed text-sm">
+                {description}
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <h3 className="text-lg font-semibold flex items-center gap-2 mb-4 text-azul">
+                <CheckCircle2 className="text-azul" />
+                Especificaciones Técnicas
+              </h3>
+              <ul className="space-y-3">
                 {product.specifications.map((spec, index) => (
-                  <li key={index}>{spec}</li>
+                  <li key={index} className="flex items-start gap-3 text-gray-700 text-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amarillo mt-2 shrink-0" />
+                    {spec}
+                  </li>
                 ))}
               </ul>
             </div>

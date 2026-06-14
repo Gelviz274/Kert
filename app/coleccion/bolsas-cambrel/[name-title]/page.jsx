@@ -8,7 +8,8 @@ export async function generateMetadata({ params }) {
   const producto = data.productos.find(p => p['name-title'] === nameTitle);
   return {
     title: producto ? `${producto.name} | Kert S.A.S - Bolsas en Cambrel al Por Mayor` : 'Producto no encontrado',
-    description: producto ? `Detalles de ${producto.name} - ${producto.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Producto no encontrado',
+    description: producto ? `${producto.name} - ${producto.category} premium fabricada al por mayor en Colombia. Especificaciones técnicas, características, dimensiones y opciones de pedido mayorista con personalización.` : 'Producto no encontrado',
+    keywords: producto ? `bolsa cambrel ${producto.name}, bolsas en cambrel al por mayor Colombia, bolsa cambrel personalizada, comprar bolsa cambrel, fabricante bolsas cambrel Bogotá, ${producto.category?.toLowerCase()} por mayor, bolsa promocional cambrel, cotizar bolsas cambrel` : 'bolsas cambrel',
     alternates: {
       canonical: `https://creacionkert.com/coleccion/bolsas-cambrel/${nameTitle}`,
     },
