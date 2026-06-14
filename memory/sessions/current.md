@@ -1,25 +1,56 @@
 # Sesión actual
 
 **Fecha**: 2026-06-13
-**Rama**: `obsidian-memory`
-**Objetivo**: Configurar el sistema de memoria del proyecto con Obsidian.
+**Objetivos**:
+1. Corregir animación de scroll y hovers en `/materiales`
+2. Eliminar botón de contacto redundante del CTA final
+3. Realizar auditoría general del proyecto
+4. Agregar reglas a AGENTS.md
+5. Rediseñar UI de `/materiales` con más color y hovers fluidos
+6. Subir cambios al repositorio
+
+---
 
 ## Resumen
 
-Creación de la estructura `memory/` y `AGENTS.md` para que el AI recuerde contexto del proyecto entre sesiones usando un vault de Obsidian compartido.
+### Parte 1 — Correcciones rápidas en /materiales
 
-## Archivos creados
+- Eliminada progress bar de scroll + dependencias `useScroll`/`useSpring`
+- Hovers acelerados: `duration-300` → `duration-150`
+- Eliminado botón "Formulario de Contacto" del CTA final
 
-- `AGENTS.md` — Protocolo para el AI sobre cómo usar la memoria
-- `memory/_index.md` — Mapa raíz del vault
-- `memory/sessions/current.md` — Esta nota
-- `memory/decisions/_index.md` — Índice de decisiones
-- `memory/tasks/current.md` — Tareas activas
-- `memory/tasks/backlog.md` — Backlog
-- `memory/learned/errores.md` — Registro de errores de la IA
-- `memory/project/glossary.md` — Glosario
-- `memory/project/client-notes.md` — Notas del cliente
+### Parte 2 — Auditoría general
+
+Revisión de los 63 archivos fuente. Documentado en `memory/audit/revision-general-2026-06-13.md`.
+
+### Parte 3 — AGENTS.md
+
+Agregadas 11 reglas nuevas: auditoría, branch segura, editar no reescribir, build > lint, tool calls en paralelo, task agent para exploración, preguntar en memory primero, no migraciones no solicitadas, no eliminar sin permiso, registrar feedback.
+
+### Parte 4 — Rediseño UI de /materiales
+
+- **Hovers**: `transition: { duration: 0.08 }` en todas las cards + `transition-colors` en className
+- **Color por rango**: premium → azul, estándar → cyan/teal, económica → rose
+- **Cremalleras**: dots de color + badges con tint según tipo (ámbar, sky, gris)
+- **Herrajes**: cada subsección con tint distinto (ámbar chapas, sky argollas, rose mosquetones)
+- **Insumos**: cada card con color propio (ámbar, sky, rose, azul)
+- **Fondos alternados**: secciones con gradient tenue para ritmo visual
+- **Fix**: `useActiveSection` envuelto en `useMemo` para evitar re-renders infinitos
+
+### Archivos modificados/creados
+
+- `app/materiales/page.jsx` — Rediseño completo con colores y hovers rápidos
+- `AGENTS.md` — +11 reglas
+- `memory/audit/revision-general-2026-06-13.md` — Nuevo (auditoría)
+- `memory/decisions/auditoria-codigo-2026-06-13.md` — Nuevo (ADR)
+- `memory/learned/errores.md` — +4 errores
+- `memory/_index.md` — Link a auditoría
+- `memory/tasks/current.md` — Sprints priorizados
+- `memory/decisions/_index.md` — Actualizado
+- `memory/sessions/current.md` — Este archivo
+
+---
 
 ## Próximos pasos
 
-- [ ] Definir tareas iniciales en [[../../tasks/current|tasks/current]]
+Ver [[../../tasks/current]] para el plan de trabajo priorizado en 3 sprints.

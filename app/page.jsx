@@ -12,6 +12,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Testimonios from "@/components/testimonios";
+import SectorBanners from "@/components/SectorBanners";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -352,6 +353,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      <SectorBanners />
       <Testimonios />
     </>
   );
