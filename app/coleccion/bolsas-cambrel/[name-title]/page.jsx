@@ -11,17 +11,17 @@ export async function generateMetadata({ params }) {
     description: producto ? `${producto.name} - ${producto.category} premium fabricada al por mayor en Colombia. Especificaciones técnicas, características, dimensiones y opciones de pedido mayorista con personalización.` : 'Producto no encontrado',
     keywords: producto ? `bolsa cambrel ${producto.name}, bolsas en cambrel al por mayor Colombia, bolsa cambrel personalizada, comprar bolsa cambrel, fabricante bolsas cambrel Bogotá, ${producto.category?.toLowerCase()} por mayor, bolsa promocional cambrel, cotizar bolsas cambrel` : 'bolsas cambrel',
     alternates: {
-      canonical: `https://creacionkert.com/coleccion/bolsas-cambrel/${nameTitle}`,
+      canonical: `https://www.creacionkert.com/coleccion/bolsas-cambrel/${nameTitle}`,
     },
     openGraph: {
       title: producto ? `${producto.name} | Kert S.A.S - Bolsas en Cambrel al Por Mayor` : 'Producto no encontrado',
       description: producto ? `Detalles de ${producto.name} - ${producto.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Producto no encontrado',
-      url: `https://creacionkert.com/coleccion/bolsas-cambrel/${nameTitle}`,
+      url: `https://www.creacionkert.com/coleccion/bolsas-cambrel/${nameTitle}`,
       type: "website",
       locale: "es_CO",
       siteName: "Kert S.A.S",
       images: producto?.images?.[0] ? [{
-        url: `https://creacionkert.com${producto.images[0]}`,
+        url: `https://www.creacionkert.com${producto.images[0]}`,
         width: 800,
         height: 600,
         alt: producto.name,
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: producto ? `${producto.name} | Kert S.A.S - Bolsas en Cambrel al Por Mayor` : 'Producto no encontrado',
       description: producto ? `Detalles de ${producto.name} - ${producto.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Producto no encontrado',
-      images: producto?.images?.[0] ? [`https://creacionkert.com${producto.images[0]}`] : [],
+      images: producto?.images?.[0] ? [`https://www.creacionkert.com${producto.images[0]}`] : [],
     },
   };
 }
@@ -51,8 +51,8 @@ export default async function BolsaCambrelPage({ params }) {
   }
 
   const productImage = producto.images?.[0]
-    ? `https://creacionkert.com${producto.images[0]}`
-    : "https://creacionkert.com/og-image.jpg";
+    ? `https://www.creacionkert.com${producto.images[0]}`
+    : "https://www.creacionkert.com/og-image.jpg";
 
   return (
     <>
@@ -72,7 +72,7 @@ export default async function BolsaCambrelPage({ params }) {
               "@type": "Offer",
               "priceCurrency": "COP",
               "availability": "https://schema.org/InStock",
-              "url": `https://creacionkert.com/coleccion/bolsas-cambrel/${nameTitle}`,
+              "url": `https://www.creacionkert.com/coleccion/bolsas-cambrel/${nameTitle}`,
             },
           }),
         }}
@@ -85,10 +85,10 @@ export default async function BolsaCambrelPage({ params }) {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://creacionkert.com" },
-              { "@type": "ListItem", "position": 2, "name": "Colección", "item": "https://creacionkert.com/coleccion" },
-              { "@type": "ListItem", "position": 3, "name": "Bolsas en Cambrel", "item": "https://creacionkert.com/coleccion/bolsas-cambrel" },
-              { "@type": "ListItem", "position": 4, "name": producto.name, "item": `https://creacionkert.com/coleccion/bolsas-cambrel/${nameTitle}` },
+              { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.creacionkert.com" },
+              { "@type": "ListItem", "position": 2, "name": "Colección", "item": "https://www.creacionkert.com/coleccion" },
+              { "@type": "ListItem", "position": 3, "name": "Bolsas en Cambrel", "item": "https://www.creacionkert.com/coleccion/bolsas-cambrel" },
+              { "@type": "ListItem", "position": 4, "name": producto.name, "item": `https://www.creacionkert.com/coleccion/bolsas-cambrel/${nameTitle}` },
             ],
           }),
         }}

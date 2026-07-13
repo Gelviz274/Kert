@@ -11,17 +11,17 @@ export async function generateMetadata({ params }) {
     description: rinonera ? `${rinonera.name} - ${rinonera.category} premium fabricada al por mayor en Colombia. Especificaciones técnicas, características, dimensiones y opciones de pedido mayorista con personalización.` : 'Riñonera no encontrada',
     keywords: rinonera ? `riñonera ${rinonera.name}, riñoneras al por mayor Colombia, riñonera corporativa personalizada, comprar riñonera ${rinonera.name}, fabricante riñoneras Bogotá, ${rinonera.category?.toLowerCase()} por mayor, cotizar riñoneras, riñonera promocional` : 'riñoneras',
     alternates: {
-      canonical: `https://creacionkert.com/coleccion/rinoneras/${nameTitle}`,
+      canonical: `https://www.creacionkert.com/coleccion/rinoneras/${nameTitle}`,
     },
     openGraph: {
       title: rinonera ? `${rinonera.name} | Kert S.A.S - Riñoneras al Por Mayor` : 'Riñonera no encontrada',
       description: rinonera ? `Detalles de ${rinonera.name} - ${rinonera.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Riñonera no encontrada',
-      url: `https://creacionkert.com/coleccion/rinoneras/${nameTitle}`,
+      url: `https://www.creacionkert.com/coleccion/rinoneras/${nameTitle}`,
       type: "website",
       locale: "es_CO",
       siteName: "Kert S.A.S",
       images: rinonera?.images?.[0] ? [{
-        url: `https://creacionkert.com${rinonera.images[0]}`,
+        url: `https://www.creacionkert.com${rinonera.images[0]}`,
         width: 800,
         height: 600,
         alt: rinonera.name,
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: rinonera ? `${rinonera.name} | Kert S.A.S - Riñoneras al Por Mayor` : 'Riñonera no encontrada',
       description: rinonera ? `Detalles de ${rinonera.name} - ${rinonera.category}. Especificaciones, características y opciones de pedido al por mayor.` : 'Riñonera no encontrada',
-      images: rinonera?.images?.[0] ? [`https://creacionkert.com${rinonera.images[0]}`] : [],
+      images: rinonera?.images?.[0] ? [`https://www.creacionkert.com${rinonera.images[0]}`] : [],
     },
   };
 }
@@ -51,8 +51,8 @@ export default async function RinoneraPage({ params }) {
   }
 
   const productImage = rinonera.images?.[0]
-    ? `https://creacionkert.com${rinonera.images[0]}`
-    : "https://creacionkert.com/og-image.jpg";
+    ? `https://www.creacionkert.com${rinonera.images[0]}`
+    : "https://www.creacionkert.com/og-image.jpg";
 
   return (
     <>
@@ -72,7 +72,7 @@ export default async function RinoneraPage({ params }) {
               "@type": "Offer",
               "priceCurrency": "COP",
               "availability": "https://schema.org/InStock",
-              "url": `https://creacionkert.com/coleccion/rinoneras/${nameTitle}`,
+              "url": `https://www.creacionkert.com/coleccion/rinoneras/${nameTitle}`,
             },
           }),
         }}
@@ -85,10 +85,10 @@ export default async function RinoneraPage({ params }) {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://creacionkert.com" },
-              { "@type": "ListItem", "position": 2, "name": "Colección", "item": "https://creacionkert.com/coleccion" },
-              { "@type": "ListItem", "position": 3, "name": "Riñoneras", "item": "https://creacionkert.com/coleccion/rinoneras" },
-              { "@type": "ListItem", "position": 4, "name": rinonera.name, "item": `https://creacionkert.com/coleccion/rinoneras/${nameTitle}` },
+              { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.creacionkert.com" },
+              { "@type": "ListItem", "position": 2, "name": "Colección", "item": "https://www.creacionkert.com/coleccion" },
+              { "@type": "ListItem", "position": 3, "name": "Riñoneras", "item": "https://www.creacionkert.com/coleccion/rinoneras" },
+              { "@type": "ListItem", "position": 4, "name": rinonera.name, "item": `https://www.creacionkert.com/coleccion/rinoneras/${nameTitle}` },
             ],
           }),
         }}

@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Términos y Condiciones de Kert S.A.S según la legislación colombiana. Conoce tus derechos y obligaciones al utilizar nuestros servicios.',
   keywords: 'términos y condiciones Kert, condiciones de uso sitio web, términos legales Colombia, estatuto consumidor Colombia, condiciones compra maletas, términos servicio fabricante',
   alternates: {
-    canonical: "https://creacionkert.com/terminos-y-condiciones",
+    canonical: "https://www.creacionkert.com/terminos-y-condiciones",
   },
 };
 

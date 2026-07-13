@@ -1,6 +1,6 @@
 # Tareas actuales
 
-> Última actualización: 2026-06-14
+> Última actualización: 2026-07-13
 
 ## Sprint 1 — Correcciones inmediatas
 
@@ -16,6 +16,7 @@
 - [x] Revisar y mejorar keywords de todas las páginas
 - [x] Corregir typo WhatsApp en materiales
 - [x] Agregar sizes a imágenes en CategoryListing
+- [x] Unificar dominio a `www.creacionkert.com` en todos los archivos (21 archivos)
 
 ## Sprint 2
 

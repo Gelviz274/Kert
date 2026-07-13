@@ -24,7 +24,7 @@ export const metadata = {
   keywords:
     "fábrica de maletas Colombia, maletas al por mayor, fabricante de maletas Bogotá, maletas corporativas personalizadas, mochilas al por mayor Colombia, proveedor de maletas, bolsos empresariales Colombia, maletas promocionales, riñoneras mayoristas, maletas personalizadas con logo, dotación empresarial maletas, fabricación de morrales Colombia, bolsos publicitarios, pedido mínimo maletas",
   alternates: {
-    canonical: "https://creacionkert.com",
+    canonical: "https://www.creacionkert.com",
   },
   openGraph: {
     title: "Kert S.A.S | Fabricante de Maletas al Por Mayor en Colombia",
@@ -33,10 +33,10 @@ export const metadata = {
     type: "website",
     locale: "es_CO",
     siteName: "Kert S.A.S",
-    url: "https://creacionkert.com",
+    url: "https://www.creacionkert.com",
     images: [
       {
-        url: "https://creacionkert.com/og-image.jpg",
+        url: "https://www.creacionkert.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Kert S.A.S - Maletas al por mayor",
@@ -47,7 +47,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Kert S.A.S | Fabricante de Maletas al Por Mayor en Colombia",
     description: "Fabricante líder de maletas, mochilas y accesorios al por mayor en Colombia.",
-    images: ["https://creacionkert.com/og-image.jpg"],
+    images: ["https://www.creacionkert.com/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -73,8 +73,8 @@ export default function RootLayout({ children }) {
           content="CNOPBrrmzN2I9WHIMN-XW5mT6WdZ4i6LgzqB39MeJ38"
         />
         {/* Hreflang */}
-        <link rel="alternate" hreflang="es-CO" href="https://creacionkert.com" />
-        <link rel="alternate" hreflang="x-default" href="https://creacionkert.com" />
+        <link rel="alternate" hreflang="es-CO" href="https://www.creacionkert.com" />
+        <link rel="alternate" hreflang="x-default" href="https://www.creacionkert.com" />
         {/* Manifest para PWA */}
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
@@ -93,8 +93,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Kert S.A.S",
-              "url": "https://creacionkert.com",
-              "logo": "https://creacionkert.com/logo.png",
+              "url": "https://www.creacionkert.com",
+              "logo": "https://www.creacionkert.com/logo.png",
               "description": "Fabricante líder de maletas, mochilas y accesorios al por mayor en Colombia.",
               "contactPoint": {
                 "@type": "ContactPoint",
@@ -120,15 +120,15 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://creacionkert.com" },
-                { "@type": "ListItem", "position": 2, "name": "Colección", "item": "https://creacionkert.com/coleccion" },
-                { "@type": "ListItem", "position": 3, "name": "Maletas", "item": "https://creacionkert.com/coleccion/maletas" },
-                { "@type": "ListItem", "position": 4, "name": "Riñoneras", "item": "https://creacionkert.com/coleccion/rinoneras" },
-                { "@type": "ListItem", "position": 5, "name": "Bolsos", "item": "https://creacionkert.com/coleccion/bolsos" },
-                { "@type": "ListItem", "position": 6, "name": "Bolsos Multiuso", "item": "https://creacionkert.com/coleccion/bolsos-multiuso" },
-                { "@type": "ListItem", "position": 7, "name": "Bolsas en Cambrel", "item": "https://creacionkert.com/coleccion/bolsas-cambrel" },
-                { "@type": "ListItem", "position": 8, "name": "Bolsas en Tela", "item": "https://creacionkert.com/coleccion/bolsas-tela" },
-                { "@type": "ListItem", "position": 9, "name": "Otros Productos", "item": "https://creacionkert.com/coleccion/otros" }
+                { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.creacionkert.com" },
+                { "@type": "ListItem", "position": 2, "name": "Colección", "item": "https://www.creacionkert.com/coleccion" },
+                { "@type": "ListItem", "position": 3, "name": "Maletas", "item": "https://www.creacionkert.com/coleccion/maletas" },
+                { "@type": "ListItem", "position": 4, "name": "Riñoneras", "item": "https://www.creacionkert.com/coleccion/rinoneras" },
+                { "@type": "ListItem", "position": 5, "name": "Bolsos", "item": "https://www.creacionkert.com/coleccion/bolsos" },
+                { "@type": "ListItem", "position": 6, "name": "Bolsos Multiuso", "item": "https://www.creacionkert.com/coleccion/bolsos-multiuso" },
+                { "@type": "ListItem", "position": 7, "name": "Bolsas en Cambrel", "item": "https://www.creacionkert.com/coleccion/bolsas-cambrel" },
+                { "@type": "ListItem", "position": 8, "name": "Bolsas en Tela", "item": "https://www.creacionkert.com/coleccion/bolsas-tela" },
+                { "@type": "ListItem", "position": 9, "name": "Otros Productos", "item": "https://www.creacionkert.com/coleccion/otros" }
               ]
             })
           }}

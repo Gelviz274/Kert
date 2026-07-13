@@ -1,10 +1,8 @@
-# 🚨 INSTRUCCIÓN OBLIGATORIA — LEER SIEMPRE
+# Memory
 
-La IA DEBE leer y seguir este archivo COMPLETO al iniciar cada sesión. No saltarse ninguna sección.
+La memoria del proyecto está en el vault de Obsidian en `memory/`. Este archivo le indica al AI cómo interactuar con ella.
 
----
-
-## Protocolo de inicio (ejecutar siempre)
+## Protocolo
 
 1. **Al iniciar sesión**: leer `memory/_index.md` para orientarse
 2. **Memoria activa**: leer `memory/sessions/current.md` si existe para retomar contexto
@@ -12,12 +10,6 @@ La IA DEBE leer y seguir este archivo COMPLETO al iniciar cada sesión. No salta
 4. **Decisiones nuevas**: registrar en `memory/decisions/` con formato ADR ligero
 5. **Tareas**: mantener actualizado `memory/tasks/current.md`
 6. **Errores**: registrar en `memory/learned/errores.md` cualquier error cometido para no repetirlo
-
----
-
-# Memory
-
-La memoria del proyecto está en el vault de Obsidian en `memory/`. Este archivo le indica al AI cómo interactuar con ella.
 
 ## Estructura
 
@@ -45,7 +37,7 @@ memory/
 
 - Todas las notas se escriben en español (idioma del proyecto)
 - Usar links de Obsidian `[[wiki-links]]` para conectar notas relacionadas
-- Las sesiones se archivan con fecha `YYYY-MM-DD.md` al cerrar
+- Las sesiones se archivan con fecha `YYYY-MM-DD.md` al cerrar 
 - No incluir información sensible (contraseñas, API keys, etc.)
 - **Errores propios**: si la IA comete un error (código incorrecto, suposición equivocada, patrón incorrecto), debe registrarlo en `[[memory/learned/errores|learned/errores]]` inmediatamente al notarlo
 - **Leer antes de escribir**: siempre leer los archivos existentes antes de editarlos para entender contexto, imports y convenciones

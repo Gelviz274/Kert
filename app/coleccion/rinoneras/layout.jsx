@@ -16,18 +16,18 @@ export const metadata = {
   description: "Explora nuestra colección de riñoneras al por mayor. Diseños funcionales y modernos para distribuidores y empresas.",
   keywords: "riñoneras al por mayor Colombia, comprar riñoneras por mayor, riñoneras personalizadas con logo, riñoneras promocionales, fabricante riñoneras Bogotá, riñoneras mayoristas Colombia, riñoneras para eventos, riñoneras corporativas",
   alternates: {
-    canonical: "https://creacionkert.com/coleccion/rinoneras",
+    canonical: "https://www.creacionkert.com/coleccion/rinoneras",
   },
   openGraph: {
     title: "Riñoneras | Kert S.A.S - Catálogo de Riñoneras al Por Mayor",
     description: "Explora nuestra colección de riñoneras al por mayor. Diseños funcionales y modernos para distribuidores y empresas.",
-    url: "https://creacionkert.com/coleccion/rinoneras",
+    url: "https://www.creacionkert.com/coleccion/rinoneras",
     type: "website",
     locale: "es_CO",
     siteName: "Kert S.A.S",
     images: [
       {
-        url: "https://creacionkert.com/og-image.jpg",
+        url: "https://www.creacionkert.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Riñoneras al por mayor - Kert S.A.S",
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Riñoneras | Kert S.A.S - Catálogo de Riñoneras al Por Mayor",
     description: "Explora nuestra colección de riñoneras al por mayor. Diseños funcionales y modernos para distribuidores y empresas.",
-    images: ["https://creacionkert.com/og-image.jpg"],
+    images: ["https://www.creacionkert.com/og-image.jpg"],
   },
 };
 

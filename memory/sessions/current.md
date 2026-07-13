@@ -1,91 +1,40 @@
 # Sesión actual
 
-**Fecha**: 2026-06-14
-**Rama**: `feat/material-button-producto`
-**Objetivo**: SEO optimization integral — corrección de errores SEMrush, mejora de palabras clave y visibilidad en IA.
+**Fecha**: 2026-07-13
+**Rama**: `fix/dominio-www-unificado`
+**Objetivo**: Corregir errores SEMrush de "Hreflang redirect (308)" y "Sitemap Redirect" unificando todas las URLs del dominio a `www.creacionkert.com`.
 
 ---
 
 ## Resumen
 
-### SEO técnico
-- Eliminado `public/sitemap.xml` (archivo estático obsoleto que causaba "16 páginas incorrectas en sitemap.xml")
-- Agregada página `/materiales` al sitemap dinámico (`app/sitemap.js`)
-- Agregado atributo `sizes` a imágenes en `CategoryListing.jsx` (Core Web Vitals)
-- Agregado hreflang (`es-CO`, `x-default`) en layout raíz
-- Cambiado `lang="es"` → `lang="es-CO"` en layout raíz
-- Corregido div sin cierre que envolvía `WhatsappButton`
+### Problema
+SEMrush reportó 34 errores:
+- **17 "Hreflang redirect (308)"** — los tags hreflang apuntaban a `creacionkert.com` (sin www) que redirect 308 a `www.creacionkert.com`
+- **17 "Sitemap Redirect"** — el sitemap generaba URLs sin www que redirigían
 
-### On-page SEO (encabezados y contenido)
-- Homepage: cambiado `<motion.h2>` → `<motion.h1>` en "Tu marca, en cada detalle"
-- `ProductClient.jsx`: cambiado `<h2>` → `<h1>` en nombre del producto (afecta 7 categorías)
-- Agregada **descripción enriquecida** generada dinámicamente desde especificaciones en `ProductClient.jsx` (+50-100 palabras por producto)
-- Agregadas **secciones de texto descriptivo** (150-250 palabras) en las 7 páginas de categoría:
-  - `/coleccion/maletas`, `/coleccion/rinoneras`, `/coleccion/bolsos`, `/coleccion/bolsos-multiuso`, `/coleccion/bolsas-cambrel`, `/coleccion/bolsas-tela`, `/coleccion/otros`
-- Mejorado alt text de imagen de fábrica en homepage
+Causa raíz: todo el sitio usaba `https://creacionkert.com` (sin www) en canónicos, OG, JSON-LD, breadcrumbs y sitemap, pero el dominio con www es el que sirve el contenido (redirect 308 de Vercel de no-www → www).
 
-### Enlaces rotos e imágenes
-- Corregidas **3 URLs de imágenes rotas** en `app/coleccion/layout.jsx` (categorías JSON-LD apuntaban a directorios vacíos)
-- Corregido typo "quieo" → "quiero" en WhatsApp link en `app/materiales/page.jsx`
+### Cambios realizados
+Se aplicó `replaceAll` de `https://creacionkert.com` → `https://www.creacionkert.com` en **21 archivos**:
 
-### Palabras clave
-Actualizadas todas las keywords del sitio con estrategia de long-tail + intención de compra:
+| Categoría | Archivos |
+|-----------|----------|
+| Root layout | `app/layout.jsx` |
+| Colección | `app/coleccion/layout.jsx` |
+| Categorías (x7) | `maletas/`, `rinoneras/`, `bolsos/`, `bolsos-multiuso/`, `bolsas-cambrel/`, `bolsas-tela/`, `otros/` |
+| Productos (x7) | `*/[name-title]/page.jsx` |
+| Otras páginas | `contacto/`, `materiales/`, `sobre-nosotros/`, `politica-de-privacidad/`, `terminos-y-condiciones/` |
+| Sitemap | `app/sitemap.js` |
 
-| Página | Mejora clave |
-|--------|-------------|
-| Root layout | Keywords con intención transaccional: "fábrica de maletas Colombia", "proveedor de maletas" |
-| 7 categorías | Keywords específicas con variantes de producto + ubicación |
-| 7 productos dinámicos | Keywords con nombre de producto + "comprar/cotizar" |
-| Materiales | Lonas específicas: "lona Oxford", "lona 840", "espumas Yumbolon" |
-| Contacto | "solicitar cotización maletas", "WhatsApp fabricante maletas" |
-
-### Datos estructurados (JSON-LD)
-- Agregado **FAQPage** con 5 preguntas frecuentes en homepage (pedido mínimo, personalización, envíos, materiales, cotización)
-- Agregados **keywords metadata** a todas las páginas de detalle de producto (7 archivos)
-- Mejoradas **meta descriptions** con texto más descriptivo y rico en entidades
-
-## Archivos modificados
-
-- `app/layout.jsx`
-- `app/page.jsx`
-- `app/sitemap.js`
-- `app/globals.css` (no modificado, solo verificado)
-- `app/contacto/layout.jsx`
-- `app/sobre-nosotros/layout.jsx`
-- `app/materiales/layout.jsx`
-- `app/materiales/page.jsx`
-- `app/politica-de-privacidad/page.jsx`
-- `app/terminos-y-condiciones/page.jsx`
-- `app/coleccion/layout.jsx`
-- `app/coleccion/maletas/layout.jsx`
-- `app/coleccion/maletas/page.jsx`
-- `app/coleccion/maletas/[name-title]/page.jsx`
-- `app/coleccion/rinoneras/layout.jsx`
-- `app/coleccion/rinoneras/page.jsx`
-- `app/coleccion/rinoneras/[name-title]/page.jsx`
-- `app/coleccion/bolsos/layout.jsx`
-- `app/coleccion/bolsos/page.jsx`
-- `app/coleccion/bolsos/[name-title]/page.jsx`
-- `app/coleccion/bolsos-multiuso/layout.jsx`
-- `app/coleccion/bolsos-multiuso/page.jsx`
-- `app/coleccion/bolsos-multiuso/[name-title]/page.jsx`
-- `app/coleccion/bolsas-cambrel/layout.jsx`
-- `app/coleccion/bolsas-cambrel/page.jsx`
-- `app/coleccion/bolsas-cambrel/[name-title]/page.jsx`
-- `app/coleccion/bolsas-tela/layout.jsx`
-- `app/coleccion/bolsas-tela/page.jsx`
-- `app/coleccion/bolsas-tela/[name-title]/page.jsx`
-- `app/coleccion/otros/layout.jsx`
-- `app/coleccion/otros/page.jsx`
-- `app/coleccion/otros/[name-title]/page.jsx`
-- `components/ProductClient.jsx`
-- `components/CategoryListing.jsx`
-- `public/sitemap.xml` (eliminado)
-
----
+### Verificación
+- `pnpm build` → compilación exitosa, 0 errores
+- `rg "https://creacionkert\.com"` → 0 ocurrencias restantes sin www
 
 ## Pendiente
-
+- Hacer deploy a producción
+- Verificar en SEMrush que los errores se resolvieron
 - Preguntar antes de hacer merge a `main`
-- Corregir font-family Roboto en body (`globals.css`)
-- Verificar en SEMrush si los errores se resolvieron tras el deploy
+
+---
+**Sesiones anteriores**: [[2026-06-14|SEO integral (2026-06-14)]] · [[2026-06-13|Rediseño materiales + auditoría (2026-06-13)]]

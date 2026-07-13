@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Política de Privacidad de Kert S.A.S según la legislación colombiana. Conoce cómo protegemos tus datos personales.',
   keywords: 'política de privacidad Kert, protección datos personales Colombia, ley 1581 de 2012, habeas data, tratamiento datos personales, política tratamiento información',
   alternates: {
-    canonical: "https://creacionkert.com/politica-de-privacidad",
+    canonical: "https://www.creacionkert.com/politica-de-privacidad",
   },
 };
 

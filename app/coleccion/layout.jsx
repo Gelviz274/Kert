@@ -9,18 +9,18 @@ export const metadata = {
   description: "Explora nuestra colección de maletas, mochilas, riñoneras y accesorios al por mayor. Productos de alta calidad para distribuidores y mayoristas en Colombia.",
   keywords: "catálogo maletas al por mayor, colección maletas Colombia, maletas corporativas catálogo, riñoneras por mayor catálogo, bolsos al por mayor Colombia, mochilas mayoristas Bogotá, productos Kert, distribuidor de maletas Colombia, comprar maletas al por mayor",
   alternates: {
-    canonical: "https://creacionkert.com/coleccion",
+    canonical: "https://www.creacionkert.com/coleccion",
   },
   openGraph: {
     title: "Colección | Kert S.A.S - Catálogo de Productos al Por Mayor",
     description: "Explora nuestra colección de maletas, mochilas, riñoneras y accesorios al por mayor en Colombia.",
-    url: "https://creacionkert.com/coleccion",
+    url: "https://www.creacionkert.com/coleccion",
     type: "website",
     locale: "es_CO",
     siteName: "Kert S.A.S",
     images: [
       {
-        url: "https://creacionkert.com/og-image.jpg",
+        url: "https://www.creacionkert.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Colección de productos al por mayor - Kert S.A.S",
@@ -31,18 +31,18 @@ export const metadata = {
     card: "summary_large_image",
     title: "Colección | Kert S.A.S - Catálogo de Productos al Por Mayor",
     description: "Explora nuestra colección de maletas, mochilas, riñoneras y accesorios al por mayor en Colombia.",
-    images: ["https://creacionkert.com/og-image.jpg"],
+    images: ["https://www.creacionkert.com/og-image.jpg"],
   },
 };
 
 const categories = [
-  { name: "Maletas", slug: "maletas", image: "https://creacionkert.com/productos/isabel/bolso-azul-rojo.jpg" },
-  { name: "Riñoneras", slug: "rinoneras", image: "https://creacionkert.com/productos/rinonera-olimpica.jpg" },
-  { name: "Bolsos", slug: "bolsos", image: "https://creacionkert.com/productos/bolsos/ref-28-cross/01.webp" },
-  { name: "Bolsos Multiuso", slug: "bolsos-multiuso", image: "https://creacionkert.com/productos/bolsos-multiuso/ref-29-weekend/01.webp" },
-  { name: "Bolsas en Cambrel", slug: "bolsas-cambrel", image: "https://creacionkert.com/productos/bolsas-cambrel/ref-20-cambrel-basic/01.webp" },
-  { name: "Bolsas en Tela", slug: "bolsas-tela", image: "https://creacionkert.com/productos/bolsas-tela/ref-23-canvas-classic/01.webp" },
-  { name: "Otros Productos", slug: "otros", image: "https://creacionkert.com/productos/botiquin-cruz-roja.jpg" },
+  { name: "Maletas", slug: "maletas", image: "https://www.creacionkert.com/productos/isabel/bolso-azul-rojo.jpg" },
+  { name: "Riñoneras", slug: "rinoneras", image: "https://www.creacionkert.com/productos/rinonera-olimpica.jpg" },
+  { name: "Bolsos", slug: "bolsos", image: "https://www.creacionkert.com/productos/bolsos/ref-28-cross/01.webp" },
+  { name: "Bolsos Multiuso", slug: "bolsos-multiuso", image: "https://www.creacionkert.com/productos/bolsos-multiuso/ref-29-weekend/01.webp" },
+  { name: "Bolsas en Cambrel", slug: "bolsas-cambrel", image: "https://www.creacionkert.com/productos/bolsas-cambrel/ref-20-cambrel-basic/01.webp" },
+  { name: "Bolsas en Tela", slug: "bolsas-tela", image: "https://www.creacionkert.com/productos/bolsas-tela/ref-23-canvas-classic/01.webp" },
+  { name: "Otros Productos", slug: "otros", image: "https://www.creacionkert.com/productos/botiquin-cruz-roja.jpg" },
 ];
 
 export default function ColeccionLayout({ children }) {
@@ -62,7 +62,7 @@ export default function ColeccionLayout({ children }) {
                 "@type": "Product",
                 "name": cat.name,
                 "description": `${cat.name} de alta calidad para distribución al por mayor`,
-                "url": `https://creacionkert.com/coleccion/${cat.slug}`,
+                "url": `https://www.creacionkert.com/coleccion/${cat.slug}`,
                 "image": cat.image,
                 "offers": {
                   "@type": "AggregateOffer",

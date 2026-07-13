@@ -6,7 +6,7 @@ import bolsosMultiusoData from "@/app/coleccion/bolsos-multiuso/data/bolsos-mult
 import bolsasCambrelData from "@/app/coleccion/bolsas-cambrel/data/bolsas-cambrel.json";
 import bolsasTelaData from "@/app/coleccion/bolsas-tela/data/bolsas-tela.json";
 
-const BASE_URL = "https://creacionkert.com";
+const BASE_URL = "https://www.creacionkert.com";
 
 export default async function sitemap() {
   const staticPages = [
