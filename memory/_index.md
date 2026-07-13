@@ -26,7 +26,7 @@ Sitio web corporativo y catálogo B2B de **Kert S.A.S**, fabricante colombiano d
 | [[../sessions/2026-06-14|Sesión anterior]] | SEO integral (2026-06-14) |
 | [[../sessions/2026-06-13|Sesión anterior]] | Rediseño materiales + auditoría (2026-06-13) |
 | [[../log|Log]] | Registro cronológico de operaciones |
-| [[../decisions/_index|Decisiones]] | Registro de decisiones técnicas (ADRs) |
+| [[../decisions/indice|Decisiones]] | Registro de decisiones técnicas (ADRs) |
 | [[../learned/errores|Errores]] | Errores cometidos y lecciones aprendidas |
 | [[../project/glossary|Glosario]] | Términos del negocio |
 | [[../project/client-notes|Notas del cliente]] | Información sobre el cliente/negocio |
