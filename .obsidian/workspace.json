@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "244720a740d39022",
+        "id": "f59d02292ecc0343",
         "type": "tabs",
         "children": [
           {
-            "id": "ebdf74a4f6cc8d59",
+            "id": "3f6753a9d71b2e38",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "memory/audit/revision-general-2026-06-13.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "revision-general-2026-06-13"
             }
           }
         ]
@@ -176,8 +180,37 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "ebdf74a4f6cc8d59",
+  "active": "3f6753a9d71b2e38",
   "lastOpenFiles": [
+    "memory/tasks/backlog.md",
+    "_tmp_33704_004aa1db6f39bc0227c0d8075b12dd29",
+    "_tmp_25460_c50be7e8114300508ca02452b18f011d",
+    "_tmp_33452_2cc6f0289e501e7196c85ef1b61caf40",
+    "_tmp_23636_bca4891582c889107548c91a87a1c89c",
+    "_tmp_10060_e130202dd496f065853ba3816f003cca",
+    "memory/decisions/_index.md",
+    "_tmp_17488_8bf0926cd533fc3019da582e8cfab2e0",
+    "_tmp_9084_2ae85da002128c8c949d3b7cacf93b19",
+    "_tmp_36228_e39b6f20e1bcd2a05b0f58c104735649",
+    "memory/sessions/2026-06-13.md",
+    "memory/decisions/pagina-materiales-catalogo-tecnico.md",
+    "memory/decisions/auditoria-codigo-2026-06-13.md",
+    "memory/audit/revision-general-2026-06-13.md",
+    "memory/audit",
+    "components/SectorBanners.jsx",
+    "memory/learned/errores.md",
+    "memory/project/client-notes.md",
+    "memory/project/glossary.md",
+    "memory/sessions/current.md",
+    "README.md",
+    "PRODUCT.md",
+    "DESIGN.md",
+    "AGENTS.md",
+    "public/fabrica/img_1867.jpg",
+    "public/icons/icon-72x72.png",
+    "public/og-image.jpg",
+    "public/logo.png",
+    "memory/tasks/current.md",
     "memory/Sin título.canvas"
   ]
 }
