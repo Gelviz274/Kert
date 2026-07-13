@@ -1,3 +1,10 @@
+---
+tags: [memoria/decision]
+date: 2026-06-13
+tipo: decision
+estado: implementada
+---
+
 # Auditoría General del Código — 2026-06-13
 
 **Fecha**: 2026-06-13

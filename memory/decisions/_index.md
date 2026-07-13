@@ -1,3 +1,10 @@
+---
+tags: [memoria/decision]
+date: 2026-07-13
+tipo: decision
+estado: indice
+---
+
 # Decisiones
 
 Registro de decisiones técnicas y de diseño (ADRs ligeros).

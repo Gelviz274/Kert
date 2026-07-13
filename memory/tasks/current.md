@@ -1,3 +1,10 @@
+---
+tags: [memoria/tareas]
+date: 2026-07-13
+tipo: tareas
+estado: activo
+---
+
 # Tareas actuales
 
 > Última actualización: 2026-07-13

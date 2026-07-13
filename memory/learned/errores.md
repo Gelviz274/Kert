@@ -1,3 +1,9 @@
+---
+tags: [memoria/error]
+date: 2026-07-13
+tipo: error
+---
+
 # 🧠 Errores y aprendizajes
 
 Registro de errores cometidos por la IA para no repetirlos. Cada entrada documenta qué pasó, por qué ocurrió y cómo evitarlo.

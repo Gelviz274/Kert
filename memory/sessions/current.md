@@ -1,3 +1,10 @@
+---
+tags: [memoria/sesion]
+date: 2026-07-13
+tipo: sesion
+estado: activa
+---
+
 # Sesión actual
 
 **Fecha**: 2026-07-13

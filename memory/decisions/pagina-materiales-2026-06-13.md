@@ -1,3 +1,10 @@
+---
+tags: [memoria/decision]
+date: 2026-06-13
+tipo: decision
+estado: implementada
+---
+
 # Página de Catálogo Técnico de Materiales
 
 **Fecha**: 2026-06-13

@@ -1,3 +1,10 @@
+---
+tags: [memoria/decision]
+date: 2026-07-13
+tipo: decision
+estado: implementada
+---
+
 # Estandarización del dominio canónico a `www.creacionkert.com`
 
 **Fecha**: 2026-07-13
