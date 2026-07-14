@@ -1,3 +1,9 @@
+---
+tags: [memoria/proyecto]
+date: 2026-06-13
+tipo: proyecto
+---
+
 # Notas del cliente
 
 Información sobre Kert S.A.S y el contexto del negocio.

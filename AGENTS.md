@@ -1,10 +1,8 @@
-# 🚨 INSTRUCCIÓN OBLIGATORIA — LEER SIEMPRE
+# Memory
 
-La IA DEBE leer y seguir este archivo COMPLETO al iniciar cada sesión. No saltarse ninguna sección.
+La memoria del proyecto está en el vault de Obsidian en `memory/`. Este archivo le indica al AI cómo interactuar con ella.
 
----
-
-## Protocolo de inicio (ejecutar siempre)
+## Protocolo
 
 1. **Al iniciar sesión**: leer `memory/_index.md` para orientarse
 2. **Memoria activa**: leer `memory/sessions/current.md` si existe para retomar contexto
@@ -12,12 +10,7 @@ La IA DEBE leer y seguir este archivo COMPLETO al iniciar cada sesión. No salta
 4. **Decisiones nuevas**: registrar en `memory/decisions/` con formato ADR ligero
 5. **Tareas**: mantener actualizado `memory/tasks/current.md`
 6. **Errores**: registrar en `memory/learned/errores.md` cualquier error cometido para no repetirlo
-
----
-
-# Memory
-
-La memoria del proyecto está en el vault de Obsidian en `memory/`. Este archivo le indica al AI cómo interactuar con ella.
+7. **Log**: al completar una operación (ingest, fix, refactor, lint), agregar entrada en `memory/log.md` con formato `## [YYYY-MM-DD] tipo | Título`
 
 ## Estructura
 
@@ -36,16 +29,18 @@ memory/
 │   └── backlog.md
 ├── learned/          # Errores y lecciones aprendidas
 │   └── errores.md
-└── project/          # Notas del dominio de negocio
-    ├── glossary.md
-    └── client-notes.md
+├── project/          # Notas del dominio de negocio
+│   ├── glossary.md
+│   └── client-notes.md
+├── log.md            # Registro cronológico de operaciones
+└── llm-wiki.md       # Documento de referencia del patrón LLM Wiki
 ```
 
 ## Reglas
 
 - Todas las notas se escriben en español (idioma del proyecto)
 - Usar links de Obsidian `[[wiki-links]]` para conectar notas relacionadas
-- Las sesiones se archivan con fecha `YYYY-MM-DD.md` al cerrar
+- Las sesiones se archivan con fecha `YYYY-MM-DD.md` al cerrar 
 - No incluir información sensible (contraseñas, API keys, etc.)
 - **Errores propios**: si la IA comete un error (código incorrecto, suposición equivocada, patrón incorrecto), debe registrarlo en `[[memory/learned/errores|learned/errores]]` inmediatamente al notarlo
 - **Leer antes de escribir**: siempre leer los archivos existentes antes de editarlos para entender contexto, imports y convenciones
@@ -64,3 +59,21 @@ memory/
 - **No preguntar lo que ya está en memory**: antes de hacer una pregunta al usuario, revisar `memory/` (notas del cliente, decisiones, glosario) para ver si ya está documentado
 - **No sugerir migraciones no solicitadas**: no proponer cambios de stack (TypeScript, cambio de librerías, refactors arquitectónicos) a menos que el usuario lo pida explícitamente
 - **Preguntar antes de eliminar**: no borrar archivos o componentes sin consultar primero al usuario
+
+## Patrón LLM Wiki
+
+Este proyecto sigue el patrón [[memory/llm-wiki|LLM Wiki]]: la IA construye y mantiene un wiki persistente que acumula conocimiento sesión tras sesión.
+
+### Las tres capas
+
+| Capa | Descripción |
+|------|-------------|
+| **Raw sources** | El código fuente (`app/`, `components/`, etc.) — la IA lee pero nunca modifica |
+| **The wiki** | `memory/` — la IA escribe y mantiene todo el contenido |
+| **The schema** | `AGENTS.md` — define cómo la IA opera sobre el wiki |
+
+### Operaciones
+
+- **Ingest**: cuando se completa una tarea (fix, feat, refactor), la IA actualiza el wiki: registra en el log, archiva la sesión, crea ADRs si aplica, documenta errores.
+- **Query**: cuando el usuario pregunta algo, la IA busca en el wiki primero (regla: "no preguntar lo que ya está en memory") y sintetiza respuestas con referencias.
+- **Lint**: periódicamente, la IA debe revisar la salud del wiki: páginas huérfanas, contradicciones, enlaces rotos, tareas desactualizadas.

@@ -16,18 +16,18 @@ export const metadata = {
   description: "Descubre nuestra línea de productos al por mayor. Diseños modernos, materiales duraderos y precios competitivos para distribuidores.",
   keywords: "botiquines al por mayor, pierneras tácticas, accesorios de seguridad Colombia, fabricante botiquines, productos tácticos por mayor, morrales tácticos Colombia, dotación seguridad industrial",
   alternates: {
-    canonical: "https://creacionkert.com/coleccion/otros",
+    canonical: "https://www.creacionkert.com/coleccion/otros",
   },
   openGraph: {
     title: "Otros Productos | Kert S.A.S - Catálogo de Productos al Por Mayor",
     description: "Descubre nuestra línea de productos al por mayor. Diseños modernos, materiales duraderos y precios competitivos para distribuidores.",
-    url: "https://creacionkert.com/coleccion/otros",
+    url: "https://www.creacionkert.com/coleccion/otros",
     type: "website",
     locale: "es_CO",
     siteName: "Kert S.A.S",
     images: [
       {
-        url: "https://creacionkert.com/og-image.jpg",
+        url: "https://www.creacionkert.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Productos al por mayor - Kert S.A.S",
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Otros Productos | Kert S.A.S - Catálogo de Productos al Por Mayor",
     description: "Descubre nuestra línea de productos al por mayor. Diseños modernos, materiales duraderos y precios competitivos para distribuidores.",
-    images: ["https://creacionkert.com/og-image.jpg"],
+    images: ["https://www.creacionkert.com/og-image.jpg"],
   },
 };
 

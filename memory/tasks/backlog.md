@@ -1,3 +1,10 @@
+---
+tags: [memoria/tareas]
+date: 2026-06-14
+tipo: tareas
+estado: backlog
+---
+
 # Backlog
 
 > Ideas, mejoras y tareas pendientes sin priorizar.

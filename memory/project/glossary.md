@@ -1,3 +1,9 @@
+---
+tags: [memoria/proyecto]
+date: 2026-06-13
+tipo: proyecto
+---
+
 # Glosario
 
 Términos específicos del negocio y del proyecto.

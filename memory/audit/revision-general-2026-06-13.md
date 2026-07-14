@@ -1,3 +1,9 @@
+---
+tags: [memoria/auditoria]
+date: 2026-06-13
+tipo: auditoria
+---
+
 # Auditoría General del Proyecto — 2026-06-13
 
 Revisión exhaustiva de todos los archivos, funciones, estilos, lógica de programación y lógica de negocio del sitio web Kert S.A.S.

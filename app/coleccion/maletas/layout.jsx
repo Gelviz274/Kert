@@ -16,18 +16,18 @@ export const metadata = {
   description: "Explora nuestra exclusiva colección de maletas al por mayor. Calidad premium, diseños modernos y materiales duraderos para distribuidores.",
   keywords: "maletas al por mayor Colombia, maletas corporativas Bogotá, comprar maletas por mayor, maletas ejecutivas Colombia, maletas promocionales personalizadas, morrales por mayor, catálogo maletas Kert, maletas para viaje Colombia",
   alternates: {
-    canonical: "https://creacionkert.com/coleccion/maletas",
+    canonical: "https://www.creacionkert.com/coleccion/maletas",
   },
   openGraph: {
     title: "Maletas | Kert S.A.S - Catálogo de Maletas al Por Mayor",
     description: "Explora nuestra exclusiva colección de maletas al por mayor. Calidad premium, diseños modernos y materiales duraderos para distribuidores.",
-    url: "https://creacionkert.com/coleccion/maletas",
+    url: "https://www.creacionkert.com/coleccion/maletas",
     type: "website",
     locale: "es_CO",
     siteName: "Kert S.A.S",
     images: [
       {
-        url: "https://creacionkert.com/og-image.jpg",
+        url: "https://www.creacionkert.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Maletas al por mayor - Kert S.A.S",
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Maletas | Kert S.A.S - Catálogo de Maletas al Por Mayor",
     description: "Explora nuestra exclusiva colección de maletas al por mayor. Calidad premium, diseños modernos y materiales duraderos para distribuidores.",
-    images: ["https://creacionkert.com/og-image.jpg"],
+    images: ["https://www.creacionkert.com/og-image.jpg"],
   },
 };
 

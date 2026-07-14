@@ -16,18 +16,18 @@ export const metadata = {
   description: "Explora nuestra colección de bolsos al por mayor. Diseños modernos y funcionales para distribuidores.",
   keywords: "bolsos al por mayor Colombia, comprar bolsos por mayor, bolsos personalizados para empresas, fabricante bolsos Bogotá, bolsos corporativos Colombia, bolsos publicitarios, city bag por mayor, cross body al por mayor",
   alternates: {
-    canonical: "https://creacionkert.com/coleccion/bolsos",
+    canonical: "https://www.creacionkert.com/coleccion/bolsos",
   },
   openGraph: {
     title: "Bolsos | Kert S.A.S - Catálogo de Bolsos al Por Mayor",
     description: "Explora nuestra colección de bolsos al por mayor. Diseños modernos y funcionales para distribuidores.",
-    url: "https://creacionkert.com/coleccion/bolsos",
+    url: "https://www.creacionkert.com/coleccion/bolsos",
     type: "website",
     locale: "es_CO",
     siteName: "Kert S.A.S",
     images: [
       {
-        url: "https://creacionkert.com/og-image.jpg",
+        url: "https://www.creacionkert.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Bolsos al por mayor - Kert S.A.S",
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Bolsos | Kert S.A.S - Catálogo de Bolsos al Por Mayor",
     description: "Explora nuestra colección de bolsos al por mayor. Diseños modernos y funcionales para distribuidores.",
-    images: ["https://creacionkert.com/og-image.jpg"],
+    images: ["https://www.creacionkert.com/og-image.jpg"],
   },
 };
 
